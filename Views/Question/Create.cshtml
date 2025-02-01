@@ -1,0 +1,20 @@
+﻿@model ElectroLab.Models.Question
+
+<h2>Add Question</h2>
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="TestId" value="@ViewBag.TestId" />
+
+    <label>Question Text:</label>
+    <input asp-for="Text" class="form-control" />
+
+    <label>Options:</label>
+    <input type="text" name="options" class="form-control" placeholder="Option 1" />
+    <input type="text" name="options" class="form-control" placeholder="Option 2" />
+    <input type="text" name="options" class="form-control" placeholder="Option 3" />
+    <input type="text" name="options" class="form-control" placeholder="Option 4" />
+
+    <label>Correct Answer:</label>
+    <input asp-for="CorrectAnswer" class="form-control" />
+
+    <button type="submit" class="btn btn-success">Save</button>
+</form>

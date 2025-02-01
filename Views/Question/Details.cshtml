@@ -1,0 +1,22 @@
+﻿@model ElectroLab.Models.Test
+
+<h2>@Model.Title</h2>
+
+<a asp-action="Create" asp-controller="Question" asp-route-testId="@Model.Id" class="btn btn-primary">Add Question</a>
+
+<h3>Questions</h3>
+<ul>
+    @foreach (var question in Model.Questions)
+    {
+        <li>
+            <strong>@question.Text</strong>
+            <ul>
+                @foreach (var option in question.Options)
+                {
+                    <li>@option</li>
+                }
+            </ul>
+            <p><strong>Correct Answer:</strong> @question.CorrectAnswer</p>
+        </li>
+    }
+</ul>

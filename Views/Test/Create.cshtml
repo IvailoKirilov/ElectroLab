@@ -1,0 +1,11 @@
+﻿@model ElectroLab.Models.Test
+
+<h2>Create Test</h2>
+<form asp-action="Create" method="post">
+    <input type="hidden" asp-for="CourseId" value="@ViewBag.CourseId" />
+
+    <label>Title:</label>
+    <input asp-for="Title" class="form-control" />
+
+    <button type="submit" class="btn btn-success">Save</button>
+</form>
