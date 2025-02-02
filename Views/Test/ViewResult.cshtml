@@ -1,0 +1,51 @@
+﻿@model ElectroLab.Models.Submission
+
+@{
+    ViewData["Title"] = "Test Submission Result";
+}
+
+<div class="container mt-4">
+    <div class="card shadow-lg">
+        <div class="card-header bg-primary text-white">
+            <h2 class="mb-0">Test Submission Result</h2>
+        </div>
+        <div class="card-body">
+            <h3 class="text-primary">@Model.Test.Title</h3>
+            <p><strong>Date Submitted:</strong> @Model.DateSubmitted.ToString("f")</p>
+            <p><strong>User:</strong> @Model.User.UserName</p>
+            <p><strong>Score:</strong> <span class="badge bg-success fs-5">@Model.Score</span></p>
+        </div>
+    </div>
+
+    <h2 class="mt-4">Submission Answers</h2>
+
+    @foreach (var answer in Model.SubmissionAnswers)
+    {
+        <div class="card my-3 shadow-sm">
+            <div class="card-header bg-dark text-white">
+                <strong>Question:</strong> @answer.Question.Text
+            </div>
+            <div class="card-body">
+                <p><strong>Your Answer:</strong> @answer.Answer</p>
+                <p><strong>Correct Answer:</strong> @answer.Question.CorrectAnswer</p>
+                <p>
+                    <strong>Is Correct:</strong>
+                    @if (answer.IsCorrect)
+                    {
+                        <span class="badge bg-success">Correct</span>
+                    }
+                    else
+                    {
+                        <span class="badge bg-danger">Incorrect</span>
+                    }
+                </p>
+            </div>
+        </div>
+    }
+
+    <div class="text-center mt-4">
+        <a href="@Url.Action("TakeTest", "Test", new { id = Model.TestId })" class="btn btn-primary btn-lg">
+            Take Another Test
+        </a>
+    </div>
+</div>

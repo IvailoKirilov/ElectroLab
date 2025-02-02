@@ -9,10 +9,10 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
 
-namespace ElectroLab.Data.Migrations
+namespace ElectroLab.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250131170409_InitialMigration")]
+    [Migration("20250202101124_InitialMigration")]
     partial class InitialMigration
     {
         /// <inheritdoc />
@@ -110,15 +110,13 @@ namespace ElectroLab.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("UserId")
-                        .HasColumnType("int");
-
-                    b.Property<string>("UserId1")
+                    b.Property<string>("UserId")
+                        .IsRequired()
                         .HasColumnType("nvarchar(450)");
 
                     b.HasKey("Id");
 
-                    b.HasIndex("UserId1");
+                    b.HasIndex("UserId");
 
                     b.ToTable("Courses");
                 });
@@ -139,7 +137,7 @@ namespace ElectroLab.Data.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<int>("TestId")
+                    b.Property<int?>("TestId")
                         .HasColumnType("int");
 
                     b.Property<string>("Text")
@@ -151,6 +149,73 @@ namespace ElectroLab.Data.Migrations
                     b.HasIndex("TestId");
 
                     b.ToTable("Questions");
+                });
+
+            modelBuilder.Entity("ElectroLab.Models.Submission", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("Score")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TestId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("TestId1")
+                        .HasColumnType("int");
+
+                    b.Property<string>("UserId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("TestId");
+
+                    b.HasIndex("TestId1");
+
+                    b.HasIndex("UserId");
+
+                    b.ToTable("Submissions");
+                });
+
+            modelBuilder.Entity("ElectroLab.Models.SubmissionAnswer", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Answer")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<bool>("IsCorrect")
+                        .HasColumnType("bit");
+
+                    b.Property<int?>("QuestionId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("QuestionId1")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("SubmissionId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("QuestionId");
+
+                    b.HasIndex("QuestionId1");
+
+                    b.HasIndex("SubmissionId");
+
+                    b.ToTable("SubmissionAnswers");
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Test", b =>
@@ -316,7 +381,9 @@ namespace ElectroLab.Data.Migrations
                 {
                     b.HasOne("ElectroLab.Models.ApplicationUser", "User")
                         .WithMany("Courses")
-                        .HasForeignKey("UserId1");
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
 
                     b.Navigation("User");
                 });
@@ -326,10 +393,53 @@ namespace ElectroLab.Data.Migrations
                     b.HasOne("ElectroLab.Models.Test", "Test")
                         .WithMany("Questions")
                         .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Test");
+                });
+
+            modelBuilder.Entity("ElectroLab.Models.Submission", b =>
+                {
+                    b.HasOne("ElectroLab.Models.Test", "Test")
+                        .WithMany()
+                        .HasForeignKey("TestId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("ElectroLab.Models.Test", null)
+                        .WithMany("Submissions")
+                        .HasForeignKey("TestId1");
+
+                    b.HasOne("ElectroLab.Models.ApplicationUser", "User")
+                        .WithMany("Submissions")
+                        .HasForeignKey("UserId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
                     b.Navigation("Test");
+
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ElectroLab.Models.SubmissionAnswer", b =>
+                {
+                    b.HasOne("ElectroLab.Models.Question", "Question")
+                        .WithMany()
+                        .HasForeignKey("QuestionId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.HasOne("ElectroLab.Models.Question", null)
+                        .WithMany("SubmissionAnswers")
+                        .HasForeignKey("QuestionId1");
+
+                    b.HasOne("ElectroLab.Models.Submission", "Submission")
+                        .WithMany()
+                        .HasForeignKey("SubmissionId")
+                        .OnDelete(DeleteBehavior.NoAction);
+
+                    b.Navigation("Question");
+
+                    b.Navigation("Submission");
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Test", b =>
@@ -397,6 +507,8 @@ namespace ElectroLab.Data.Migrations
             modelBuilder.Entity("ElectroLab.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Courses");
+
+                    b.Navigation("Submissions");
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Course", b =>
@@ -404,9 +516,16 @@ namespace ElectroLab.Data.Migrations
                     b.Navigation("Tests");
                 });
 
+            modelBuilder.Entity("ElectroLab.Models.Question", b =>
+                {
+                    b.Navigation("SubmissionAnswers");
+                });
+
             modelBuilder.Entity("ElectroLab.Models.Test", b =>
                 {
                     b.Navigation("Questions");
+
+                    b.Navigation("Submissions");
                 });
 #pragma warning restore 612, 618
         }

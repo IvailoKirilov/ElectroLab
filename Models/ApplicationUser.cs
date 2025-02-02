@@ -6,5 +6,7 @@ namespace ElectroLab.Models
     {
         public ICollection<Course> Courses { get; set; }
 
+        public ICollection<Submission> Submissions { get; set; }
+
     }
 }

@@ -4,8 +4,91 @@
 <form asp-action="Create" method="post">
     <input type="hidden" asp-for="CourseId" value="@ViewBag.CourseId" />
 
-    <label>Title:</label>
-    <input asp-for="Title" class="form-control" />
+    <div class="card mb-4 p-3">
+        <div class="card-header">
+            <h5 class="card-title">Test Title</h5>
+        </div>
+        <div class="card-body">
+            <label>Title:</label>
+            <input asp-for="Title" class="form-control" />
+        </div>
+    </div>
+
+    <div id="questions-container" class="mb-4">
+        <h3>Questions</h3>
+
+        <div class="card mb-4 question" id="question-0">
+            <div class="card-header d-flex justify-content-between">
+                <h5 class="card-title">Question 1</h5>
+                <button type="button" class="btn btn-danger btn-sm remove-question">Remove</button>
+            </div>
+            <div class="card-body">
+                <label>Question Text:</label>
+                <input class="form-control mb-2" name="Questions[0].Text" />
+
+                <label>Options:</label>
+                <input class="form-control mb-2" name="Questions[0].Options[0]" placeholder="Option 1" />
+                <input class="form-control mb-2" name="Questions[0].Options[1]" placeholder="Option 2" />
+                <input class="form-control mb-2" name="Questions[0].Options[2]" placeholder="Option 3" />
+                <input class="form-control mb-2" name="Questions[0].Options[3]" placeholder="Option 4" />
+
+                <label>Correct Answer:</label>
+                <select class="form-control mb-2" name="Questions[0].CorrectAnswer">
+                    <option value="Option 1">Option 1</option>
+                    <option value="Option 2">Option 2</option>
+                    <option value="Option 3">Option 3</option>
+                    <option value="Option 4">Option 4</option>
+                </select>
+            </div>
+        </div>
+    </div>
+
+    <button type="button" id="add-question" class="btn btn-secondary mb-3">Add Question</button>
 
     <button type="submit" class="btn btn-success">Save</button>
 </form>
+
+@section Scripts {
+    <script>
+        let questionIndex = 1;
+
+        document.getElementById("add-question").addEventListener("click", function () {
+            let questionContainer = document.createElement("div");
+            questionContainer.classList.add("card", "mb-4", "question");
+            questionContainer.id = `question-${questionIndex}`;
+
+            questionContainer.innerHTML = `
+                        <div class="card-header d-flex justify-content-between">
+                            <h5 class="card-title">Question ${questionIndex + 1}</h5>
+                            <button type="button" class="btn btn-danger btn-sm remove-question">Remove</button>
+                        </div>
+                        <div class="card-body">
+                            <label>Question Text:</label>
+                            <input class="form-control mb-2" name="Questions[${questionIndex}].Text" />
+
+                            <label>Options:</label>
+                            <input class="form-control mb-2" name="Questions[${questionIndex}].Options[0]" placeholder="Option 1" />
+                            <input class="form-control mb-2" name="Questions[${questionIndex}].Options[1]" placeholder="Option 2" />
+                            <input class="form-control mb-2" name="Questions[${questionIndex}].Options[2]" placeholder="Option 3" />
+                            <input class="form-control mb-2" name="Questions[${questionIndex}].Options[3]" placeholder="Option 4" />
+
+                            <label>Correct Answer:</label>
+                            <select class="form-control mb-2" name="Questions[${questionIndex}].CorrectAnswer">
+                                <option value="Option 1">Option 1</option>
+                                <option value="Option 2">Option 2</option>
+                                <option value="Option 3">Option 3</option>
+                                <option value="Option 4">Option 4</option>
+                            </select>
+                        </div>
+                    `;
+
+            document.getElementById("questions-container").appendChild(questionContainer);
+
+            questionContainer.querySelector(".remove-question").addEventListener("click", function () {
+                questionContainer.remove();
+            });
+
+            questionIndex++;
+        });
+    </script>
+}

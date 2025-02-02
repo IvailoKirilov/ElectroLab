@@ -1,0 +1,15 @@
+﻿@model IEnumerable<ElectroLab.Models.Test>
+
+<h2>Courses</h2>
+<a asp-action="Create" class="btn btn-primary">Create New Course</a>
+
+@foreach (var course in Model)
+{
+    <div class="card text-center m-4">
+
+        <div class="card-body">
+            <h5 class="card-title">@course.Title</h5>
+            <a asp-action="TakeTest" asp-route-id="@course.Id" class="btn btn-info btn-sm">Take Test</a>
+        </div>
+    </div>
+}
