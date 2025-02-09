@@ -1,5 +1,8 @@
 ﻿@model ElectroLab.Models.Course
 
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
 <div class="card shadow-sm mb-4">
     <div class="card-body">
 
@@ -8,7 +11,7 @@
 
         <hr class="my-4">
 
-        <h3 class="card-subtitle mb-3 text-muted">Contents</h3>
+        <h3 class="card-subtitle mb-3 text-muted">@Localizer["Content"]</h3>
         <div class="card-text mb-4">@Html.Raw(Model.ContentHtml)</div>
 
         <hr class="my-4">
@@ -20,25 +23,25 @@
 
 <div class="card shadow-sm mb-4">
     <div class="card-header">
-        <h4>User Actions</h4>
+        <h4>@Localizer["Actions"]</h4>
     </div>
     <div class="card-body">
         <div class="d-flex justify-content-start">
-            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">Do Test</a>
-            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">Like Course</a>
-            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-danger mx-2">Report Course</a>
+            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">@Localizer["DoTest"]</a>
+            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">@Localizer["Like"]</a>
+            <a asp-action="Create" asp-controller="Report" asp-route-courseId="@Model.Id" class="btn btn-danger mx-2">@Localizer["ReportCourse"]</a>
         </div>
     </div>
 </div>
 
 <div class="card shadow-sm mb-4">
     <div class="card-header">
-        <h4>Owner Actions</h4>
+        <h4>@Localizer["OwnerActions"]</h4>
     </div>
     <div class="card-body">
         <div class="d-flex justify-content-start">
-            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">Add Test</a>
-            <a asp-action="Delete" asp-controller="Course" asp-route-courseId="@Model.Id" class="btn btn-danger mx-2">Delete Test</a>
+            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">@Localizer["AddTest"]</a>
+            <a asp-action="Delete" asp-controller="Course" asp-route-courseId="@Model.Id" class="btn btn-danger mx-2">@Localizer["DeleteTest"]</a>
             <a href="#" class="btn btn-secondary mx-2">More Actions</a>
         </div>
     </div>

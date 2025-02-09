@@ -1,0 +1,48 @@
+﻿@model ElectroLab.Models.Report
+
+@{
+    ViewData["Title"] = "Report Content";
+}
+
+<h2>Report Issue</h2>
+
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="ReportType" class="form-label">Report Type</label>
+        <select asp-for="ReportType" class="form-select" required>
+            <option value="Course">Course</option>
+            <option value="Test">Test</option>
+            <option value="User">User</option>
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CourseId" class="form-label">Course (if applicable)</label>
+        <select asp-for="CourseId" class="form-select">
+            <option value="">Select Course (if reporting a course)</option>
+            @foreach (var course in ViewBag.Courses)
+            {
+                <option value="@course.Id">@course.Name</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="UserReportedId" class="form-label">User (if applicable)</label>
+        <select asp-for="UserReportedId" class="form-select">
+            <option value="">Select User (if reporting a user)</option>
+            @foreach (var user in ViewBag.Users)
+            {
+                <option value="@user.Id">@user.UserName</option>
+            }
+        </select>
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ReportContent" class="form-label">Report Details</label>
+        <textarea asp-for="ReportContent" class="form-control" rows="4" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Submit Report</button>
+</form>

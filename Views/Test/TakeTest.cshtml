@@ -8,8 +8,9 @@
 <form asp-action="SubmitTest" method="post">
     <input type="hidden" name="testId" value="@Model.Id" />
 
-    @foreach (var question in Model.Questions)
+    @for (int qIndex = 0; qIndex < Model.Questions.Count(); qIndex++)
     {
+        var question = Model.Questions[qIndex];
         <div class="card mb-3">
             <div class="card-header">
                 <strong>@question.Text</strong>
@@ -18,10 +19,9 @@
                 @for (int i = 0; i < question.Options.Count(); i++)
                 {
                     <div class="form-check">
-                        <!-- Bind to SubmissionAnswer collection using the correct question index -->
                         <input class="form-check-input"
                                type="radio"
-                               name="submissionAnswers[@question.Id].Answer"
+                               name="submissionAnswers[@qIndex].Answer"  
                                value="@question.Options.ElementAt(i)"
                                id="option@question.Id-@i" />
                         <label class="form-check-label"
@@ -30,6 +30,8 @@
                         </label>
                     </div>
                 }
+
+                <input type="hidden" name="submissionAnswers[@qIndex].QuestionId" value="@question.Id" />
             </div>
         </div>
     }

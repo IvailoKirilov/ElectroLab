@@ -1,5 +1,15 @@
-﻿<!DOCTYPE html>
-<html lang="en">
+﻿@using Microsoft.AspNetCore.Localization
+@using Microsoft.AspNetCore.Mvc.Localization
+@using Microsoft.Extensions.Localization
+@inject IViewLocalizer Localizer
+
+@{
+    var requestCulture = Context.Features.Get<IRequestCultureFeature>();
+    var currentCulture = requestCulture?.RequestCulture.Culture.Name ?? "en";
+}
+
+<!DOCTYPE html>
+<html lang="@currentCulture">
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -13,7 +23,7 @@
           selector: 'textarea#tiny',
               plugins: [
                 'accordion', 'advlist', 'anchor', 'autolink', 'autosave',
-                'charmap', 'code', 'codesample', 'directionality', 
+                'charmap', 'code', 'codesample', 'directionality',
                 'fullscreen', 'help', 'image',
                 'insertdatetime', 'link', 'lists', 'media', 'nonbreaking',
                 'pagebreak', 'preview', 'quickbars', 'save', 'searchreplace', 'table',
@@ -29,7 +39,6 @@
               menubar: 'edit view insert format table help'
         })
     </script>
-
 </head>
 <body>
     <header>
@@ -43,12 +52,25 @@
                 <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Course" asp-action="Index">Courses</a>
+                            <a class="nav-link" asp-controller="Course" asp-action="Index">@Localizer["Courses"]</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" asp-controller="Test" asp-action="Index">Tests</a>
+                            <a class="nav-link" asp-controller="Test" asp-action="Index">@Localizer["Tests"]</a>
                         </li>
                     </ul>
+
+                    <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-flex align-items-center me-3">
+                        <select name="culture" class="form-select" onchange="this.form.submit()">
+                            <option value="en" selected="@(currentCulture == "en" ? "selected" : null)">
+                                <img src="https://flagsapi.com/GB/shiny/64.png" alt="English" />English
+                            </option>
+                            <option value="bg-BG" selected="@(currentCulture == "bg-BG" ? "selected" : null)">
+                                <img src="https://flagsapi.com/BG/shiny/64.png" alt="Bulgarian" />Български
+                            </option>
+                        </select>
+                    </form>
+
+
                     <partial name="_LoginPartial" />
                 </div>
             </div>
@@ -62,9 +84,10 @@
 
     <footer class="border-top footer text-muted">
         <div class="container">
-            &copy; 2025 - ElectroLab - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            &copy; 2025 - ElectroLab - <a asp-area="" asp-controller="Home" asp-action="Privacy">@Localizer["Privacy"]</a>
         </div>
     </footer>
+
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>

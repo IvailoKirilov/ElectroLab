@@ -1,15 +1,41 @@
 ﻿@model IEnumerable<ElectroLab.Models.Test>
 
-<h2>Courses</h2>
-<a asp-action="Create" class="btn btn-primary">Create New Course</a>
+<h2 class="text-center my-4">Courses</h2>
 
-@foreach (var course in Model)
-{
-    <div class="card text-center m-4">
-
-        <div class="card-body">
-            <h5 class="card-title">@course.Title</h5>
-            <a asp-action="TakeTest" asp-route-id="@course.Id" class="btn btn-info btn-sm">Take Test</a>
+<div class="container">
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <form method="get" asp-action="Index">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="Search courses..." name="searchTerm" value="@ViewData["SearchTerm"]" />
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-search"></i> Search
+                    </button>
+                </div>
+            </form>
         </div>
     </div>
-}
+
+    @if(User.Identity.IsAuthenticated){
+    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+        @foreach (var course in Model)
+        {
+            <div class="col">
+                <div class="card shadow-sm border-light rounded-3 h-100">
+                    <div class="card-body">
+                        <h5 class="card-title text-center">@course.Title</h5>
+                        <div class="d-flex justify-content-center">
+                            <a asp-action="TakeTest" asp-route-id="@course.Id" class="btn btn-info btn-sm px-4">Take Test</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        }
+    </div>
+    }else{
+    <div class="alert alert-info text-center" role="alert">
+        <h4 class="alert-heading">You are not logged in!</h4>
+        <p>Please login to take a test.</p>
+    </div>
+    }
+</div>

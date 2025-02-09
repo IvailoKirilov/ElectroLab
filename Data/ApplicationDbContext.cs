@@ -12,6 +12,7 @@ namespace ElectroLab.Data
             public DbSet<Question> Questions { get; set; }
             public DbSet<Submission> Submissions { get; set; }  
             public DbSet<SubmissionAnswer> SubmissionAnswers { get; set; }
+            public DbSet<Report> Reports { get; set; }
 
 
 
@@ -19,13 +20,11 @@ namespace ElectroLab.Data
         {
             base.OnModelCreating(modelBuilder);
 
-            // Explicitly configure the foreign key relationships with NoAction for cascade delete
-
             // Submissions -> Test
             modelBuilder.Entity<Submission>()
-                .HasOne(s => s.Test)  // A Submission has one Test
-                .WithMany()  // Test can have many Submissions (no navigation property in Test)
-                .HasForeignKey(s => s.TestId)  // Foreign key is TestId
+                .HasOne(s => s.Test)  
+                .WithMany()  
+                .HasForeignKey(s => s.TestId)  
                 .OnDelete(DeleteBehavior.NoAction);  // Disable cascade delete
 
             // SubmissionAnswers -> Question
@@ -48,6 +47,22 @@ namespace ElectroLab.Data
                 .WithMany(t => t.Questions)  // A Test has many Questions
                 .HasForeignKey(q => q.TestId)  // Foreign key is TestId
                 .OnDelete(DeleteBehavior.Cascade);  // Disable cascade delete
+
+            // Reports -> Course
+            modelBuilder.Entity<Report>()
+                .HasOne(r => r.Course)  
+                .WithMany()  
+                .HasForeignKey(r => r.CourseId)  
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Report>()
+                .HasOne(r => r.UserReported)
+                .WithMany(u => u.Reports)
+                .HasForeignKey(r => r.UserReportedId)
+                .OnDelete(DeleteBehavior.NoAction);
+
+
+
         }
 
 

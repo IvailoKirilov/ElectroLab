@@ -8,5 +8,7 @@ namespace ElectroLab.Models
 
         public ICollection<Submission> Submissions { get; set; }
 
+        public ICollection<Report> Reports { get; set; }
+
     }
 }

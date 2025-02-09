@@ -115,7 +115,7 @@ namespace ElectroLab.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Courses");
+                    b.ToTable("Courses", (string)null);
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Question", b =>
@@ -145,7 +145,43 @@ namespace ElectroLab.Migrations
 
                     b.HasIndex("TestId");
 
-                    b.ToTable("Questions");
+                    b.ToTable("Questions", (string)null);
+                });
+
+            modelBuilder.Entity("ElectroLab.Models.Report", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("CourseId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("ReportContent")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReportStatus")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("ReportType")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("UserReportedId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("CourseId");
+
+                    b.HasIndex("UserReportedId");
+
+                    b.ToTable("Reports", (string)null);
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Submission", b =>
@@ -180,7 +216,7 @@ namespace ElectroLab.Migrations
 
                     b.HasIndex("UserId");
 
-                    b.ToTable("Submissions");
+                    b.ToTable("Submissions", (string)null);
                 });
 
             modelBuilder.Entity("ElectroLab.Models.SubmissionAnswer", b =>
@@ -220,7 +256,7 @@ namespace ElectroLab.Migrations
 
                     b.HasIndex("SubmissionId1");
 
-                    b.ToTable("SubmissionAnswers");
+                    b.ToTable("SubmissionAnswers", (string)null);
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Test", b =>
@@ -242,7 +278,7 @@ namespace ElectroLab.Migrations
 
                     b.HasIndex("CourseId");
 
-                    b.ToTable("Tests");
+                    b.ToTable("Tests", (string)null);
                 });
 
             modelBuilder.Entity("Microsoft.AspNetCore.Identity.IdentityRole", b =>
@@ -403,6 +439,25 @@ namespace ElectroLab.Migrations
                     b.Navigation("Test");
                 });
 
+            modelBuilder.Entity("ElectroLab.Models.Report", b =>
+                {
+                    b.HasOne("ElectroLab.Models.Course", "Course")
+                        .WithMany()
+                        .HasForeignKey("CourseId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.HasOne("ElectroLab.Models.ApplicationUser", "UserReported")
+                        .WithMany("Reports")
+                        .HasForeignKey("UserReportedId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
+                    b.Navigation("Course");
+
+                    b.Navigation("UserReported");
+                });
+
             modelBuilder.Entity("ElectroLab.Models.Submission", b =>
                 {
                     b.HasOne("ElectroLab.Models.Test", "Test")
@@ -516,6 +571,8 @@ namespace ElectroLab.Migrations
             modelBuilder.Entity("ElectroLab.Models.ApplicationUser", b =>
                 {
                     b.Navigation("Courses");
+
+                    b.Navigation("Reports");
 
                     b.Navigation("Submissions");
                 });

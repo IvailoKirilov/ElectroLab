@@ -16,17 +16,17 @@ namespace ElectroLab.Controllers
             _context = context;
             _userManager = userManager;
         }
-        async public Task<IActionResult> Index()
-        {
-            var tests = _context.Tests.ToList();
+      //  async public Task<IActionResult> Index()
+     //   {
+      //      var tests = _context.Tests.ToList();
 
           //  foreach (var course in courses)
-            //{
-              //  course.User = await _userManager.FindByIdAsync(course.UserId.ToString());
+          //  {
+          //  course.User = await _userManager.FindByIdAsync(course.UserId.ToString());
           //  }
 
-            return View(tests);
-        }
+       //     return View(tests);
+      //  }
 
         public IActionResult Create(int courseId)
         {
@@ -37,35 +37,56 @@ namespace ElectroLab.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Test test)
         {
+            _context.Tests.Add(test);
 
-                _context.Tests.Add(test);
-                await _context.SaveChangesAsync(); 
+            foreach (var question in test.Questions)
+            {
+                question.TestId = test.Id;
 
-                // Now, assign the generated Test.Id to each Question
-                foreach (var question in test.Questions)
+
+                string[] parts = question.CorrectAnswer.Split(' ');
+                if (parts.Length > 1)
                 {
-                    question.TestId = test.Id; 
-                    _context.Questions.Add(question); 
+                    int index = int.Parse(parts[1]) - 1;  // Zero-based index
+
+                    if (index >= 0 && index < question.Options.Count)
+                    {
+                        question.CorrectAnswer = question.Options[index];
+                        Console.WriteLine(question.CorrectAnswer);
+                    }
+                    else
+                    {
+                        Console.WriteLine("Invalid index for correct answer.");
+                    }
                 }
+                else
+                {
+                    Console.WriteLine("CorrectAnswer format is invalid.");
+                }
+
+                Console.WriteLine($"CorrectAnswer for Question: {question.CorrectAnswer}");
+
+                _context.Questions.Add(question);
+            }
 
             try
             {
-             await _context.SaveChangesAsync();
+                await _context.SaveChangesAsync();
             }
-            catch
+            catch (Exception e)
             {
-
+                Console.WriteLine(e.Message);
             }
 
-                return RedirectToAction(nameof(Index));
-            
+            return RedirectToAction(nameof(Index));
         }
+
 
         [HttpGet]
         public async Task<IActionResult> TakeTest(int id)
         {
             var test = await _context.Tests
-                                     .Include(t => t.Questions)  // Ensure the Questions are loaded
+                                     .Include(t => t.Questions)  
                                      .FirstOrDefaultAsync(t => t.Id == id);
 
             if (test == null)
@@ -73,8 +94,6 @@ namespace ElectroLab.Controllers
                 return NotFound();
             }
 
-            // You no longer need to manually add questions since they are already loaded with Include.
-            // Just output the number of questions for debugging
             await Console.Out.WriteLineAsync(test.Questions.Count.ToString());
 
             return View(test);
@@ -84,36 +103,28 @@ namespace ElectroLab.Controllers
         [HttpPost]
         public async Task<IActionResult> SubmitTest(int testId, List<SubmissionAnswer> submissionAnswers)
         {
-            // Debugging: Check if the submissionAnswers count is correct
-            await Console.Out.WriteLineAsync(submissionAnswers.Count.ToString());
+            await Console.Out.WriteLineAsync($"Received {submissionAnswers.Count} answers.");
 
-            // Fetch the test by id
-            var test = await _context.Tests
-                                     .FirstOrDefaultAsync(t => t.Id == testId);
-
+            var test = await _context.Tests.FirstOrDefaultAsync(t => t.Id == testId);
             if (test == null)
             {
                 return NotFound();
             }
 
-            // Get the user
             var user = await _userManager.GetUserAsync(User);
             if (user == null)
             {
                 return NotFound();
             }
 
-            // Fetch the related questions manually
             var questions = await _context.Questions
                                           .Where(q => q.TestId == testId)
                                           .ToListAsync();
-
             if (questions == null || questions.Count == 0)
             {
-                return NotFound(); // Handle the case where no questions are found
+                return NotFound();
             }
 
-            // Create a new submission entry
             var submission = new Submission
             {
                 TestId = test.Id,
@@ -121,12 +132,11 @@ namespace ElectroLab.Controllers
                 DateSubmitted = DateTime.Now
             };
 
-            // Add the submission first
             _context.Submissions.Add(submission);
-            await _context.SaveChangesAsync();  // Save first to get the Submission Id
+            await _context.SaveChangesAsync();
 
-            // Calculate score and populate SubmissionAnswers
             int score = 0;
+            var submissionAnswerList = new List<SubmissionAnswer>();
 
             foreach (var answer in submissionAnswers)
             {
@@ -134,29 +144,39 @@ namespace ElectroLab.Controllers
 
                 if (question != null)
                 {
-                    // Check if the answer is correct
-                    answer.IsCorrect = question.CorrectAnswer == answer.Answer;
-                    score += answer.IsCorrect ? 1 : 0;
+                    // Extract the actual correct answer from the options list
+                    string[] parts = question.CorrectAnswer.Split(' ');
+                    string actualCorrectAnswer = "";
 
-                    // Set the foreign key
-                    answer.SubmissionId = submission.Id;
+                    if (parts.Length > 1 && int.TryParse(parts[1], out int index))
+                    {
+                        index -= 1; // Convert from 1-based index to 0-based
+                        if (index >= 0 && index < question.Options.Count)
+                        {
+                            actualCorrectAnswer = question.Options[index];
+                        }
+                    }
 
-                    // Add the SubmissionAnswer to the context
-                    _context.SubmissionAnswers.Add(answer);
+                    var submissionAnswer = new SubmissionAnswer
+                    {
+                        QuestionId = question.Id,
+                        SubmissionId = submission.Id,
+                        Answer = answer.Answer,
+                        IsCorrect = actualCorrectAnswer == answer.Answer
+                    };
+
+                    score += submissionAnswer.IsCorrect ? 1 : 0;
+                    submissionAnswerList.Add(submissionAnswer);
                 }
             }
 
-            // After processing all answers, save everything together
-            submission.Score = score;
-            await _context.SaveChangesAsync();  // Save both the Submission and SubmissionAnswers in one batch
+            _context.SubmissionAnswers.AddRange(submissionAnswerList);
 
-            // Redirect to result page with the submissionId
+            submission.Score = score;
+            await _context.SaveChangesAsync();
+
             return RedirectToAction(nameof(ViewResult), new { submissionId = submission.Id });
         }
-
-
-
-
 
         public async Task<IActionResult> ViewResult(int submissionId)
         {
@@ -170,28 +190,46 @@ namespace ElectroLab.Controllers
                 return NotFound();
             }
 
-            // Ensure SubmissionAnswers are loaded
             submission.SubmissionAnswers = await _context.SubmissionAnswers
-                .Where(sa => sa.SubmissionId == submissionId)
                 .Include(sa => sa.Question)
+                .Where(sa => sa.SubmissionId == submissionId)
                 .ToListAsync();
 
             Console.WriteLine($"📌 Submission ID: {submission.Id}, Answers Count: {submission.SubmissionAnswers.Count}");
+
             foreach (var answer in submission.SubmissionAnswers)
             {
-                Console.WriteLine($"➡ Answer: {answer.Answer}, QuestionId: {answer.QuestionId}, IsCorrect: {answer.IsCorrect}, Question: {(answer.Question != null ? answer.Question.Text : "NULL")}");
+                if (answer.Question != null)
+                {
+                    string[] parts = answer.Question.CorrectAnswer.Split(' ');
+                    if (parts.Length > 1 && int.TryParse(parts[1], out int index))
+                    {
+                        index -= 1; 
+                        if (index >= 0 && index < answer.Question.Options.Count)
+                        {
+                            answer.Question.CorrectAnswer = answer.Question.Options[index];
+                        }
+                    }
+
+                    Console.WriteLine($"➡ Answer: {answer.Answer}, QuestionId: {answer.QuestionId}, IsCorrect: {answer.IsCorrect}, " +
+                                      $"Correct Answer: {answer.Question.CorrectAnswer}, Question: {answer.Question.Text}");
+                }
             }
 
             return View(submission);
         }
 
+        public IActionResult Index(string searchTerm)
+        {
+            var courses = string.IsNullOrEmpty(searchTerm)
+                ? _context.Tests.ToList() 
+                : _context.Tests
+                    .Where(c => c.Title.Contains(searchTerm))
+                    .ToList(); 
 
+            ViewData["SearchTerm"] = searchTerm;
 
-
-
-
-
-
-
+            return View(courses);
+        }
     }
 }
