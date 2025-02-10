@@ -1,13 +1,13 @@
 ﻿@model IEnumerable<ElectroLab.Models.Test>
 
-<h2 class="text-center my-4">Courses</h2>
+<h2 class="text-center my-4">Tests</h2>
 
 <div class="container">
     <div class="row justify-content-center mb-4">
         <div class="col-md-6">
             <form method="get" asp-action="Index">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search courses..." name="searchTerm" value="@ViewData["SearchTerm"]" />
+                    <input type="text" class="form-control" placeholder="Search tests..." name="searchTerm" value="@ViewData["SearchTerm"]" />
                     <button class="btn btn-primary" type="submit">
                         <i class="fas fa-search"></i> Search
                     </button>

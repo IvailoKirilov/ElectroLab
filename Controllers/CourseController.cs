@@ -4,6 +4,7 @@ using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Identity;
 using System.Security.Claims;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+using Microsoft.AspNetCore.Authorization;
 
 
 namespace ElectroLab.Controllers
@@ -30,8 +31,7 @@ namespace ElectroLab.Controllers
             return View(courses);
         }
 
-
-
+        [Authorize]
         public IActionResult Create()
         {
             return View();
