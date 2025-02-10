@@ -38,6 +38,8 @@ namespace ElectroLab.Controllers
         public async Task<IActionResult> Create(Test test)
         {
             _context.Tests.Add(test);
+            await _context.SaveChangesAsync();
+
 
             foreach (var question in test.Questions)
             {
@@ -144,13 +146,12 @@ namespace ElectroLab.Controllers
 
                 if (question != null)
                 {
-                    // Extract the actual correct answer from the options list
                     string[] parts = question.CorrectAnswer.Split(' ');
                     string actualCorrectAnswer = "";
 
                     if (parts.Length > 1 && int.TryParse(parts[1], out int index))
                     {
-                        index -= 1; // Convert from 1-based index to 0-based
+                        index -= 1; 
                         if (index >= 0 && index < question.Options.Count)
                         {
                             actualCorrectAnswer = question.Options[index];

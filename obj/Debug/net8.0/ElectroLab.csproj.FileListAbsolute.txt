@@ -899,3 +899,14 @@ C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Vie
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Details.bg-BG.resources
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Index.resources
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Index.bg-BG.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\bin\Debug\net8.0\bg-BG\ElectroLab.resources.dll
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Create.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Details.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Index.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Home.Index.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Create.bg-BG.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Details.bg-BG.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Course.Index.bg-BG.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Home.Index.bg-BG.resources
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.csproj.GenerateResource.cache
+C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\bg-BG\ElectroLab.resources.dll
