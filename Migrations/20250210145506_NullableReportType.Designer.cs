@@ -4,6 +4,7 @@ using ElectroLab.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -11,9 +12,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ElectroLab.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    partial class ApplicationDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250210145506_NullableReportType")]
+    partial class NullableReportType
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -156,9 +159,6 @@ namespace ElectroLab.Migrations
 
                     SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
 
-                    b.Property<string>("ApplicationUserId")
-                        .HasColumnType("nvarchar(450)");
-
                     b.Property<int>("CourseId")
                         .HasColumnType("int");
 
@@ -173,11 +173,15 @@ namespace ElectroLab.Migrations
                     b.Property<string>("ReportType")
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("UserReportedId")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(450)");
+
                     b.HasKey("Id");
 
-                    b.HasIndex("ApplicationUserId");
-
                     b.HasIndex("CourseId");
+
+                    b.HasIndex("UserReportedId");
 
                     b.ToTable("Reports");
                 });
@@ -439,17 +443,21 @@ namespace ElectroLab.Migrations
 
             modelBuilder.Entity("ElectroLab.Models.Report", b =>
                 {
-                    b.HasOne("ElectroLab.Models.ApplicationUser", null)
-                        .WithMany("Reports")
-                        .HasForeignKey("ApplicationUserId");
-
                     b.HasOne("ElectroLab.Models.Course", "Course")
                         .WithMany()
                         .HasForeignKey("CourseId")
                         .OnDelete(DeleteBehavior.NoAction)
                         .IsRequired();
 
+                    b.HasOne("ElectroLab.Models.ApplicationUser", "UserReported")
+                        .WithMany("Reports")
+                        .HasForeignKey("UserReportedId")
+                        .OnDelete(DeleteBehavior.NoAction)
+                        .IsRequired();
+
                     b.Navigation("Course");
+
+                    b.Navigation("UserReported");
                 });
 
             modelBuilder.Entity("ElectroLab.Models.Submission", b =>

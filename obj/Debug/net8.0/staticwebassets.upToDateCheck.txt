@@ -1,5 +1,6 @@
 wwwroot\css\site.css
 wwwroot\favicon.ico
+wwwroot\js\qr.js
 wwwroot\js\site.js
 wwwroot\lib\bootstrap\dist\css\bootstrap.css
 wwwroot\lib\bootstrap\dist\css\bootstrap.css.map
@@ -58,3 +59,13 @@ wwwroot\lib\jquery-validation\LICENSE.md
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.js
 wwwroot\lib\jquery-validation-unobtrusive\jquery.validate.unobtrusive.min.js
 wwwroot\lib\jquery-validation-unobtrusive\LICENSE.txt
+wwwroot\lib\qrcode\.gitignore
+wwwroot\lib\qrcode\bower.json
+wwwroot\lib\qrcode\index.html
+wwwroot\lib\qrcode\index.svg
+wwwroot\lib\qrcode\index-svg.html
+wwwroot\lib\qrcode\jquery.min.js
+wwwroot\lib\qrcode\LICENSE
+wwwroot\lib\qrcode\qrcode.js
+wwwroot\lib\qrcode\qrcode.min.js
+wwwroot\lib\qrcode\README.md

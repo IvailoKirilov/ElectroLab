@@ -49,7 +49,7 @@ namespace ElectroLab.Controllers
                 string[] parts = question.CorrectAnswer.Split(' ');
                 if (parts.Length > 1)
                 {
-                    int index = int.Parse(parts[1]) - 1;  // Zero-based index
+                    int index = int.Parse(parts[1]) - 1;  
 
                     if (index >= 0 && index < question.Options.Count)
                     {
@@ -85,20 +85,35 @@ namespace ElectroLab.Controllers
 
 
         [HttpGet]
-        public async Task<IActionResult> TakeTest(int id)
+        public async Task<IActionResult> TakeTest(int id, bool isFromCourse = false)
+
         {
-            var test = await _context.Tests
-                                     .Include(t => t.Questions)  
-                                     .FirstOrDefaultAsync(t => t.Id == id);
-
-            if (test == null)
+            if (!isFromCourse)
             {
-                return NotFound();
+                var test = await _context.Tests
+                                         .Include(t => t.Questions)
+                                         .FirstOrDefaultAsync(t => t.Id == id);
+
+                if (test == null)
+                {
+                    return NotFound();
+                }
+
+                return View(test);
             }
+            else
+            {
+                var test = await _context.Tests
+                                         .Include(t => t.Questions)
+                                         .FirstOrDefaultAsync(t => t.CourseId == id);
 
-            await Console.Out.WriteLineAsync(test.Questions.Count.ToString());
+                if (test == null)
+                {
+                    return NotFound();
+                }
 
-            return View(test);
+                return View(test);
+            }
         }
 
 

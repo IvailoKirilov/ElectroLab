@@ -27,7 +27,7 @@
     </div>
     <div class="card-body">
         <div class="d-flex justify-content-start">
-            <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">@Localizer["DoTest"]</a>
+            <a asp-action="TakeTest" asp-controller="Test" asp-route-testId="@Model.Id" class="btn btn-success mx-2">@Localizer["DoTest"]</a>
             <a asp-action="Create" asp-controller="Test" asp-route-courseId="@Model.Id" class="btn btn-success mx-2">@Localizer["Like"]</a>
             <a asp-action="Create" asp-controller="Report" asp-route-courseId="@Model.Id" class="btn btn-danger mx-2">@Localizer["ReportCourse"]</a>
         </div>

@@ -15,23 +15,30 @@ namespace ElectroLab.Controllers
         }
 
         [HttpGet]
-        public async Task<IActionResult> Create()
+        public IActionResult Create(int? courseId)
         {
-            ViewBag.Courses = await _context.Courses.ToListAsync();
-            ViewBag.Users = await _context.Users.ToListAsync();
-            return View();
-        }
+            if (!courseId.HasValue)
+            {
+                return RedirectToAction("Index", "Home"); 
+            }
 
+            var report = new Report();
+
+            report.CourseId = courseId.Value;
+            report.ReportType = "Course"; 
+
+            ViewBag.Courses = _context.Courses.ToList();
+            ViewBag.Users = _context.Users.ToList();
+
+            return View(report);
+        }
         [HttpPost]
         public async Task<IActionResult> Create(Report report)
         {
-           
-                report.ReportStatus = "Pending"; // Default status
-                _context.Reports.Add(report);
-                await _context.SaveChangesAsync();
-                return RedirectToAction("Index", "Home"); // Redirect after submission
-            
+            report.ReportStatus = "Pending";
+            _context.Reports.Add(report);
+            await _context.SaveChangesAsync();
+            return RedirectToAction("Index", "Home");
         }
-
     }
 }

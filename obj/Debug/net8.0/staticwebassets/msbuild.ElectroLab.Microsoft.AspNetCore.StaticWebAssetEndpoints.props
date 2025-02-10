@@ -36,6 +36,18 @@
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"5430"},{"Name":"Content-Type","Value":"image/x-icon"},{"Name":"ETag","Value":"\u0022Jtxf9L\u002B5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 16:18:38 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/js/qr.at67e3d06i.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\qr.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"at67e3d06i"},{"Name":"integrity","Value":"sha256-wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s="},{"Name":"label","Value":"_content/ElectroLab/js/qr.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"277"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/js/qr.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\qr.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"277"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wlcSTXxSRL7/tf5L1AgMPzoF4pkPbtsvvs0GYKMVY8s=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
     <StaticWebAssetEndpoint Include="_content/ElectroLab/js/site.763pjeqlr8.js">
       <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\js\site.js'))</AssetFile>
       <Selectors><![CDATA[[]]]></Selectors>
@@ -731,6 +743,126 @@
       <Selectors><![CDATA[[]]]></Selectors>
       <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk="}]]]></EndpointProperties>
       <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1117"},{"Name":"Content-Type","Value":"text/plain"},{"Name":"ETag","Value":"\u0022hjIBkvmgxQXbNXK3B9YQ3t06RwLuQSQzC/dpvuB/lMk=\u0022"},{"Name":"Last-Modified","Value":"Fri, 31 Jan 2025 16:18:38 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/.7reg4ggakz.gitignore">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\.gitignore'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"7reg4ggakz"},{"Name":"integrity","Value":"sha256-TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/.gitignore"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"30"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/.gitignore">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\.gitignore'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"30"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022TQ1087y12xzn6Xp3YMgQf2tpkPznsD7a1/mGVKn/iVU=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/bower.alif1c7jvy.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\bower.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"alif1c7jvy"},{"Name":"integrity","Value":"sha256-InOMrHKNtlSGRlofU49R1wXidtqZsXQq3\u002BomNZzwtEo="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/bower.json"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"448"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022InOMrHKNtlSGRlofU49R1wXidtqZsXQq3\u002BomNZzwtEo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/bower.json">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\bower.json'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-InOMrHKNtlSGRlofU49R1wXidtqZsXQq3\u002BomNZzwtEo="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"448"},{"Name":"Content-Type","Value":"application/json"},{"Name":"ETag","Value":"\u0022InOMrHKNtlSGRlofU49R1wXidtqZsXQq3\u002BomNZzwtEo=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/index-svg.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\index-svg.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-OWQJz8G43vmLS\u002BPI/nFP7ozjvia5pnbaUHxqYQ/u5Gk="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1468"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022OWQJz8G43vmLS\u002BPI/nFP7ozjvia5pnbaUHxqYQ/u5Gk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/index-svg.rz0flhdgl0.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\index-svg.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"rz0flhdgl0"},{"Name":"integrity","Value":"sha256-OWQJz8G43vmLS\u002BPI/nFP7ozjvia5pnbaUHxqYQ/u5Gk="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/index-svg.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1468"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022OWQJz8G43vmLS\u002BPI/nFP7ozjvia5pnbaUHxqYQ/u5Gk=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/index.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-RubIvoIk1gB7\u002Bg\u002BT6r0o/Cu4/jni2Um\u002Bd992kZQFI9w="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1247"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RubIvoIk1gB7\u002Bg\u002BT6r0o/Cu4/jni2Um\u002Bd992kZQFI9w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/index.o0gxop2uah.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\index.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"o0gxop2uah"},{"Name":"integrity","Value":"sha256-qHS/NRuWuR\u002BsnpIIWC7AweVrzw77ZOQOEBVtkN0Id7c="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/index.svg"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1143"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022qHS/NRuWuR\u002BsnpIIWC7AweVrzw77ZOQOEBVtkN0Id7c=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/index.q7by55ul0f.html">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\index.html'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"q7by55ul0f"},{"Name":"integrity","Value":"sha256-RubIvoIk1gB7\u002Bg\u002BT6r0o/Cu4/jni2Um\u002Bd992kZQFI9w="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/index.html"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1247"},{"Name":"Content-Type","Value":"text/html"},{"Name":"ETag","Value":"\u0022RubIvoIk1gB7\u002Bg\u002BT6r0o/Cu4/jni2Um\u002Bd992kZQFI9w=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/index.svg">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\index.svg'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qHS/NRuWuR\u002BsnpIIWC7AweVrzw77ZOQOEBVtkN0Id7c="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=3600, must-revalidate"},{"Name":"Content-Length","Value":"1143"},{"Name":"Content-Type","Value":"image/svg\u002Bxml"},{"Name":"ETag","Value":"\u0022qHS/NRuWuR\u002BsnpIIWC7AweVrzw77ZOQOEBVtkN0Id7c=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/jquery.min.9cm4jftk4z.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\jquery.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9cm4jftk4z"},{"Name":"integrity","Value":"sha256-51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/jquery.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"93638"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002251ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/jquery.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\jquery.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-51ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"93638"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u002251ZECcH6UKCd3jqSJMlRWt5yrzezyzc2wIvDYd0GmWE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/LICENSE">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\LICENSE'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1111"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/LICENSE.hvhegso7u5">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\LICENSE'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"hvhegso7u5"},{"Name":"integrity","Value":"sha256-A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/LICENSE"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1111"},{"Name":"Content-Type","Value":"application/octet-stream"},{"Name":"ETag","Value":"\u0022A26yujDMsUDZmprKtuB3p2u8SS3cIcBBqFED6mdp/IM=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/qrcode.9x5ly5g5yf.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\qrcode.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"9x5ly5g5yf"},{"Name":"integrity","Value":"sha256-wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/qrcode.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"33782"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/qrcode.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\qrcode.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"33782"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022wxgOEutoVESrQREChQ/xGo2/MOVzNI4K2Kgs77SRMvE=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/qrcode.min.h5gslb8p3n.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\qrcode.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"h5gslb8p3n"},{"Name":"integrity","Value":"sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/qrcode.min.js"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"19927"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/qrcode.min.js">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\qrcode.min.js'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"19927"},{"Name":"Content-Type","Value":"text/javascript"},{"Name":"ETag","Value":"\u0022xUHvBjJ4hahBW8qN9gceFBibSFUzbe9PNttUvehITzY=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/README.fmjsywd4em.md">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\README.md'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"fingerprint","Value":"fmjsywd4em"},{"Name":"integrity","Value":"sha256-qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI="},{"Name":"label","Value":"_content/ElectroLab/lib/qrcode/README.md"}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"max-age=31536000, immutable"},{"Name":"Content-Length","Value":"1142"},{"Name":"Content-Type","Value":"text/markdown"},{"Name":"ETag","Value":"\u0022qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
+    </StaticWebAssetEndpoint>
+    <StaticWebAssetEndpoint Include="_content/ElectroLab/lib/qrcode/README.md">
+      <AssetFile>$([System.IO.Path]::GetFullPath('$(MSBuildThisFileDirectory)..\staticwebassets\lib\qrcode\README.md'))</AssetFile>
+      <Selectors><![CDATA[[]]]></Selectors>
+      <EndpointProperties><![CDATA[[{"Name":"integrity","Value":"sha256-qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI="}]]]></EndpointProperties>
+      <ResponseHeaders><![CDATA[[{"Name":"Accept-Ranges","Value":"bytes"},{"Name":"Cache-Control","Value":"no-cache"},{"Name":"Content-Length","Value":"1142"},{"Name":"Content-Type","Value":"text/markdown"},{"Name":"ETag","Value":"\u0022qfucXj7UghSS0K4MpRQGxEChH1GIJs82mKqFu5EqBsI=\u0022"},{"Name":"Last-Modified","Value":"Mon, 10 Feb 2025 14:19:32 GMT"}]]]></ResponseHeaders>
     </StaticWebAssetEndpoint>
   </ItemGroup>
 </Project>

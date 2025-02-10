@@ -54,15 +54,6 @@ namespace ElectroLab.Data
                 .WithMany()  
                 .HasForeignKey(r => r.CourseId)  
                 .OnDelete(DeleteBehavior.NoAction);
-
-            modelBuilder.Entity<Report>()
-                .HasOne(r => r.UserReported)
-                .WithMany(u => u.Reports)
-                .HasForeignKey(r => r.UserReportedId)
-                .OnDelete(DeleteBehavior.NoAction);
-
-
-
         }
 
 
