@@ -14,5 +14,6 @@
         public string ReportStatus { get; set; }
 
         public Course Course { get; set; }
+           
     }
 }

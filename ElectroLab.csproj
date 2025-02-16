@@ -18,6 +18,7 @@
   </ItemGroup>
 
   <ItemGroup>
+    <Folder Include="Areas\Admin\" />
     <Folder Include="Data\Migrations\" />
   </ItemGroup>
 
