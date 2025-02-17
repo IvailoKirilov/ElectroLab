@@ -46,6 +46,7 @@ var app = builder.Build();
 
 app.UseRequestLocalization();
 
+
 using (var scope = app.Services.CreateScope())
 {
     var roleManager = scope.ServiceProvider.GetRequiredService<RoleManager<IdentityRole>>();
