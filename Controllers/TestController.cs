@@ -120,7 +120,11 @@ namespace ElectroLab.Controllers
         [HttpPost]
         public async Task<IActionResult> SubmitTest(int testId, List<SubmissionAnswer> submissionAnswers)
         {
-            await Console.Out.WriteLineAsync($"Received {submissionAnswers.Count} answers.");
+            if (submissionAnswers.Any(sa => string.IsNullOrEmpty(sa.Answer)))
+            {
+                ModelState.AddModelError("", "Please answer all questions.");
+                return View("TakeTest", await _context.Tests.Include(t => t.Questions).FirstOrDefaultAsync(t => t.Id == testId));
+            }
 
             var test = await _context.Tests.FirstOrDefaultAsync(t => t.Id == testId);
             if (test == null)
@@ -196,6 +200,10 @@ namespace ElectroLab.Controllers
 
         public async Task<IActionResult> ViewResult(int submissionId)
         {
+            var userId = _userManager.GetUserId(User);
+            var applicationUser = await _userManager.FindByIdAsync(userId);
+
+            // Fetch the submission
             var submission = await _context.Submissions
                 .Include(s => s.Test)
                 .Include(s => s.User)
@@ -204,6 +212,14 @@ namespace ElectroLab.Controllers
             if (submission == null)
             {
                 return NotFound();
+            }
+
+            // Check if the logged-in user is either the owner of the submission or an admin
+            var isAdmin = await _userManager.IsInRoleAsync(applicationUser, "Admin");
+
+            if (submission.UserId != userId && !isAdmin)
+            {
+                return Forbid();  // Return 403 Forbidden if the user tries to access someone else's submission
             }
 
             submission.SubmissionAnswers = await _context.SubmissionAnswers
@@ -220,20 +236,18 @@ namespace ElectroLab.Controllers
                     string[] parts = answer.Question.CorrectAnswer.Split(' ');
                     if (parts.Length > 1 && int.TryParse(parts[1], out int index))
                     {
-                        index -= 1; 
+                        index -= 1;  
                         if (index >= 0 && index < answer.Question.Options.Count)
                         {
                             answer.Question.CorrectAnswer = answer.Question.Options[index];
                         }
                     }
-
-                    Console.WriteLine($"➡ Answer: {answer.Answer}, QuestionId: {answer.QuestionId}, IsCorrect: {answer.IsCorrect}, " +
-                                      $"Correct Answer: {answer.Question.CorrectAnswer}, Question: {answer.Question.Text}");
                 }
             }
 
             return View(submission);
         }
+
 
         public IActionResult Index(string searchTerm)
         {

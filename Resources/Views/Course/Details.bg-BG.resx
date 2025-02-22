@@ -132,8 +132,11 @@
   <data name="Content" xml:space="preserve">
     <value>Съдържание</value>
   </data>
-  <data name="DeleteTest" xml:space="preserve">
+  <data name="DeleteCourse" xml:space="preserve">
     <value>Изтрии Курс</value>
+  </data>
+  <data name="DeleteTest" xml:space="preserve">
+    <value>Изтрии Тест</value>
   </data>
   <data name="DoTest" xml:space="preserve">
     <value>Направи Тест</value>

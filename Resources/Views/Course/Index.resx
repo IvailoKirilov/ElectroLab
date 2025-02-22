@@ -135,6 +135,12 @@
   <data name="OurCourses" xml:space="preserve">
     <value>Our Courses</value>
   </data>
+  <data name="Search" xml:space="preserve">
+    <value>Search</value>
+  </data>
+  <data name="SearchCourse" xml:space="preserve">
+    <value>Search courses...</value>
+  </data>
   <data name="Unknown" xml:space="preserve">
     <value>Unknown</value>
   </data>

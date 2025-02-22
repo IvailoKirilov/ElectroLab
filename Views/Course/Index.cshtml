@@ -27,15 +27,30 @@
     </style>
 </head>
 
-<h2 class="text-center my-4">Courses</h2>
+
 
 <section id="courses" class="container my-5">
     <h2 class="text-center mb-4">@Localizer["OurCourses"]</h2>
+
+    <div class="row justify-content-center mb-4">
+        <div class="col-md-6">
+            <form method="get" asp-action="Index">
+                <div class="input-group">
+                    <input type="text" class="form-control" placeholder="@Localizer["SearchCourse"]" name="searchTerm" value="@ViewData["SearchTerm"]" />
+                    <button class="btn btn-primary" type="submit">
+                        <i class="fas fa-search"></i> @Localizer["Потърси"]
+                    </button>
+                </div>
+            </form>
+        </div>
+    </div>
 
     <div class="d-flex justify-content-between align-items-center mb-3">
         <h3>@Localizer["ExploreCourses"]</h3>
         <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> @Localizer["CreateNewCourse"]</a>
     </div>
+
+
 
     <div class="row">
         @foreach (var course in Model)

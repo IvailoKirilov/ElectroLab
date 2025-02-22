@@ -910,3 +910,5 @@ C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Res
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Home.Index.bg-BG.resources
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.csproj.GenerateResource.cache
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\bg-BG\ElectroLab.resources.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Castle.Core.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Moq.dll

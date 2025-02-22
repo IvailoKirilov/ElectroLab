@@ -132,6 +132,9 @@
   <data name="Content" xml:space="preserve">
     <value>Contents</value>
   </data>
+  <data name="DeleteCourse" xml:space="preserve">
+    <value>Delete Course</value>
+  </data>
   <data name="DeleteTest" xml:space="preserve">
     <value>Delete Test</value>
   </data>

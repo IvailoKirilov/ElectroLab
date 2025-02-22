@@ -5,7 +5,7 @@
 }
 
 <h2>@Model.Title</h2>
-<form asp-action="SubmitTest" method="post">
+<form asp-action="SubmitTest" method="post" id="testForm">
     <input type="hidden" name="testId" value="@Model.Id" />
 
     @for (int qIndex = 0; qIndex < Model.Questions.Count(); qIndex++)
@@ -21,11 +21,12 @@
                     <div class="form-check">
                         <input class="form-check-input"
                                type="radio"
-                               name="submissionAnswers[@qIndex].Answer"  
+                               name="submissionAnswers[@qIndex].Answer"
                                value="@question.Options.ElementAt(i)"
-                               id="option@question.Id-@i" />
+                               id="option@question.Id-@qIndex-@i"
+                               required />
                         <label class="form-check-label"
-                               for="option@question.Id-@i">
+                               for="option@question.Id-@qIndex-@i">
                             @question.Options.ElementAt(i)
                         </label>
                     </div>

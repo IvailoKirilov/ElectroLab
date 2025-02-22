@@ -18,9 +18,15 @@ namespace ElectroLab.Controllers
             _context = context;
             _userManager = userManager;
         }
-        async public Task<IActionResult> Index()
+        async public Task<IActionResult> Index(string searchTerm)
         {
-            var courses = _context.Courses.ToList();
+            var courses = string.IsNullOrEmpty(searchTerm)
+                ? _context.Courses.ToList()
+                : _context.Courses
+                    .Where(c => c.Title.Contains(searchTerm))
+                    .ToList();
+
+            ViewData["SearchTerm"] = searchTerm;
 
             foreach (var course in courses)
             {
@@ -43,10 +49,10 @@ namespace ElectroLab.Controllers
 
             if (string.IsNullOrEmpty(userId))
             {
-                return Unauthorized(); 
+                return Unauthorized();
             }
 
-            course.UserId = userId; 
+            course.UserId = userId;
 
             _context.Courses.Add(course);
             _context.SaveChanges();
@@ -60,6 +66,17 @@ namespace ElectroLab.Controllers
             var course = _context.Courses
                 .Where(c => c.Id == id)
                 .FirstOrDefault();
+
+            course.Tests = [];
+
+            foreach (var test in _context.Tests)
+            {
+                if (test.CourseId == id)
+                {
+                    course.Tests.Add(test);
+                }
+            }
+
             if (course == null) return NotFound();
             return View(course);
         }
