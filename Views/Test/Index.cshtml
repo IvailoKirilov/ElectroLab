@@ -16,26 +16,30 @@
         </div>
     </div>
 
-    @if(User.Identity.IsAuthenticated){
-    <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
-        @foreach (var course in Model)
-        {
-            <div class="col">
-                <div class="card shadow-sm border-light rounded-3 h-100">
-                    <div class="card-body">
-                        <h5 class="card-title text-center">@course.Title</h5>
-                        <div class="d-flex justify-content-center">
-                            <a asp-action="TakeTest" asp-route-id="@course.Id" class="btn btn-info btn-sm px-4">Take Test</a>
+    @if (User.Identity.IsAuthenticated)
+    {
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+            @foreach (var test in Model)
+            {
+                <div class="col">
+                    <div class="card shadow-sm border-light rounded-3 h-100">
+                        <div class="card-body">
+                            <h5 class="card-title text-center">@test.Title</h5>
+                            <div class="d-flex justify-content-center">
+                                <a asp-action="TakeTest" asp-route-id="@test.Id" class="btn btn-info btn-sm px-4">Take Test</a>
+                                <a asp-action="Details" asp-route-id="@test.CourseId" asp-controller="Course" class="btn btn-secondary btn-sm px-4 ml-2">View Course</a>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </div>
-        }
-    </div>
-    }else{
-    <div class="alert alert-info text-center" role="alert">
-        <h4 class="alert-heading">You are not logged in!</h4>
-        <p>Please login to take a test.</p>
-    </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="alert alert-info text-center" role="alert">
+            <h4 class="alert-heading">You are not logged in!</h4>
+            <p>Please login to take a test.</p>
+        </div>
     }
 </div>

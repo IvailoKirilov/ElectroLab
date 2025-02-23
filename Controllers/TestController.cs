@@ -16,40 +16,46 @@ namespace ElectroLab.Controllers
             _context = context;
             _userManager = userManager;
         }
-      //  async public Task<IActionResult> Index()
-     //   {
-      //      var tests = _context.Tests.ToList();
 
-          //  foreach (var course in courses)
-          //  {
-          //  course.User = await _userManager.FindByIdAsync(course.UserId.ToString());
-          //  }
+        // [HTTP GET] /Test/Index
+        // Route: Index (Default page for Test)
+        // Action to list tests (optional search term)
+        public IActionResult Index(string searchTerm)
+        {
+            var courses = string.IsNullOrEmpty(searchTerm)
+                ? _context.Tests.ToList()
+                : _context.Tests
+                    .Where(c => c.Title.Contains(searchTerm))
+                    .ToList();
 
-       //     return View(tests);
-      //  }
+            ViewData["SearchTerm"] = searchTerm;
 
+            return View(courses);
+        }
+        // [HTTP GET] /Test/Create/{courseId}
+        // Route: Create (Used to render the form to create a new test)
         public IActionResult Create(int courseId)
         {
             ViewBag.CourseId = courseId;
             return View();
         }
 
+        // [HTTP POST] /Test/Create
+        // Route: Create (Used to save a new test into the database)
         [HttpPost]
         public async Task<IActionResult> Create(Test test)
         {
             _context.Tests.Add(test);
             await _context.SaveChangesAsync();
 
-
             foreach (var question in test.Questions)
             {
                 question.TestId = test.Id;
 
-
                 string[] parts = question.CorrectAnswer.Split(' ');
                 if (parts.Length > 1)
                 {
-                    int index = int.Parse(parts[1]) - 1;  
+                    int index = int.Parse(parts[1]) - 1;
 
                     if (index >= 0 && index < question.Options.Count)
                     {
@@ -83,10 +89,10 @@ namespace ElectroLab.Controllers
             return RedirectToAction(nameof(Index));
         }
 
-
+        // [HTTP GET] /Test/TakeTest/{id}?isFromCourse={isFromCourse}
+        // Route: TakeTest (To show the test to take, with or without course context)
         [HttpGet]
         public async Task<IActionResult> TakeTest(int id, bool isFromCourse = false)
-
         {
             if (!isFromCourse)
             {
@@ -116,7 +122,8 @@ namespace ElectroLab.Controllers
             }
         }
 
-
+        // [HTTP POST] /Test/SubmitTest
+        // Route: SubmitTest (Used to submit the test answers and calculate the score)
         [HttpPost]
         public async Task<IActionResult> SubmitTest(int testId, List<SubmissionAnswer> submissionAnswers)
         {
@@ -170,7 +177,7 @@ namespace ElectroLab.Controllers
 
                     if (parts.Length > 1 && int.TryParse(parts[1], out int index))
                     {
-                        index -= 1; 
+                        index -= 1;
                         if (index >= 0 && index < question.Options.Count)
                         {
                             actualCorrectAnswer = question.Options[index];
@@ -198,6 +205,8 @@ namespace ElectroLab.Controllers
             return RedirectToAction(nameof(ViewResult), new { submissionId = submission.Id });
         }
 
+        // [HTTP GET] /Test/ViewResult/{submissionId}
+        // Route: ViewResult (To show the result of a submitted test)
         public async Task<IActionResult> ViewResult(int submissionId)
         {
             var userId = _userManager.GetUserId(User);
@@ -214,12 +223,11 @@ namespace ElectroLab.Controllers
                 return NotFound();
             }
 
-            // Check if the logged-in user is either the owner of the submission or an admin
             var isAdmin = await _userManager.IsInRoleAsync(applicationUser, "Admin");
 
             if (submission.UserId != userId && !isAdmin)
             {
-                return Forbid();  // Return 403 Forbidden if the user tries to access someone else's submission
+                return Forbid();  
             }
 
             submission.SubmissionAnswers = await _context.SubmissionAnswers
@@ -227,7 +235,6 @@ namespace ElectroLab.Controllers
                 .Where(sa => sa.SubmissionId == submissionId)
                 .ToListAsync();
 
-            Console.WriteLine($"📌 Submission ID: {submission.Id}, Answers Count: {submission.SubmissionAnswers.Count}");
 
             foreach (var answer in submission.SubmissionAnswers)
             {
@@ -236,7 +243,7 @@ namespace ElectroLab.Controllers
                     string[] parts = answer.Question.CorrectAnswer.Split(' ');
                     if (parts.Length > 1 && int.TryParse(parts[1], out int index))
                     {
-                        index -= 1;  
+                        index -= 1;
                         if (index >= 0 && index < answer.Question.Options.Count)
                         {
                             answer.Question.CorrectAnswer = answer.Question.Options[index];
@@ -246,20 +253,6 @@ namespace ElectroLab.Controllers
             }
 
             return View(submission);
-        }
-
-
-        public IActionResult Index(string searchTerm)
-        {
-            var courses = string.IsNullOrEmpty(searchTerm)
-                ? _context.Tests.ToList() 
-                : _context.Tests
-                    .Where(c => c.Title.Contains(searchTerm))
-                    .ToList(); 
-
-            ViewData["SearchTerm"] = searchTerm;
-
-            return View(courses);
         }
     }
 }
