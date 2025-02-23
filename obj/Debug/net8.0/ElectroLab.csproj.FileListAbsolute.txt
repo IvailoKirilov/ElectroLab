@@ -912,3 +912,9 @@ C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.csp
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\bg-BG\ElectroLab.resources.dll
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Castle.Core.dll
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Moq.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Test.Index.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Test.Index.bg-BG.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Shared._Layout.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Shared._Layout.bg-BG.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Shared._LoginPartial.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Shared._LoginPartial.bg-BG.resources

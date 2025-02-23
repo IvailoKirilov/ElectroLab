@@ -1,15 +1,17 @@
 ﻿@model IEnumerable<ElectroLab.Models.Test>
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
-<h2 class="text-center my-4">Tests</h2>
+<h2 class="text-center my-4">@Localizer["Test"]</h2>
 
 <div class="container">
     <div class="row justify-content-center mb-4">
         <div class="col-md-6">
             <form method="get" asp-action="Index">
                 <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Search tests..." name="searchTerm" value="@ViewData["SearchTerm"]" />
+                    <input type="text" class="form-control" placeholder="@Localizer["SearchBar"]" name="searchTerm" value="@ViewData["SearchTerm"]" />
                     <button class="btn btn-primary" type="submit">
-                        <i class="fas fa-search"></i> Search
+                        <i class="fas fa-search"></i> @Localizer["Search"]
                     </button>
                 </div>
             </form>
@@ -26,8 +28,8 @@
                         <div class="card-body">
                             <h5 class="card-title text-center">@test.Title</h5>
                             <div class="d-flex justify-content-center">
-                                <a asp-action="TakeTest" asp-route-id="@test.Id" class="btn btn-info btn-sm px-4">Take Test</a>
-                                <a asp-action="Details" asp-route-id="@test.CourseId" asp-controller="Course" class="btn btn-secondary btn-sm px-4 ml-2">View Course</a>
+                                <a asp-action="TakeTest" asp-route-id="@test.Id" class="btn btn-info btn-sm px-4">@Localizer["TakeTest"]</a>
+                                <a asp-action="Details" asp-route-id="@test.CourseId" asp-controller="Course" class="btn btn-secondary btn-sm px-4 ml-2">@Localizer["ViewCourse"]</a>
                             </div>
                         </div>
                     </div>
@@ -38,8 +40,8 @@
     else
     {
         <div class="alert alert-info text-center" role="alert">
-            <h4 class="alert-heading">You are not logged in!</h4>
-            <p>Please login to take a test.</p>
+            <h4 class="alert-heading">@Localizer["WarningLoginMainText"]</h4>
+            <p>@Localizer["WarningLoginSubText"]</p>
         </div>
     }
 </div>

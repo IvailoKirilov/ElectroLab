@@ -16,7 +16,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("ElectroLab")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+bb906e8f977b62530cbdfee521104f6849e14175")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+47a3ea9891a8cdd813843a3d7c855d1f69f083c6")]
 [assembly: System.Reflection.AssemblyProductAttribute("ElectroLab")]
 [assembly: System.Reflection.AssemblyTitleAttribute("ElectroLab")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -96,4 +96,3 @@ app.UseEndpoints(endpoints =>
 app.MapRazorPages();
 
 app.Run();
-
