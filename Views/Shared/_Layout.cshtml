@@ -57,6 +57,12 @@
                         <li class="nav-item">
                             <a class="nav-link" asp-controller="Test" asp-action="Index">@Localizer["Tests"]</a>
                         </li>
+                        @if (User.IsInRole("Owner") || User.IsInRole("Admin"))
+                        {
+                            <li class="nav-item">
+                                <a class="nav-link" asp-controller="Admin" asp-action="Index">Admin Panel</a>
+                            </li>
+                        }
                     </ul>
 
                     <form asp-controller="Home" asp-action="SetLanguage" method="post" class="d-flex align-items-center me-3">
@@ -69,7 +75,6 @@
                             </option>
                         </select>
                     </form>
-
 
                     <partial name="_LoginPartial" />
                 </div>
