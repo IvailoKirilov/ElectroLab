@@ -2,6 +2,7 @@
 using ElectroLab.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Security.Claims;
 
 namespace ElectroLab.Controllers
 {
@@ -35,10 +36,23 @@ namespace ElectroLab.Controllers
         [HttpPost]
         public async Task<IActionResult> Create(Report report)
         {
+            report.UserId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+
             report.ReportStatus = "Pending";
+
+            var courseExists = await _context.Courses.AnyAsync(c => c.Id == report.CourseId);
+
+            if (!courseExists)
+            {
+                ModelState.AddModelError("CourseId", "The specified course does not exist.");
+                return View(report);
+            }
+
             _context.Reports.Add(report);
             await _context.SaveChangesAsync();
+
             return RedirectToAction("Index", "Home");
         }
+
     }
 }

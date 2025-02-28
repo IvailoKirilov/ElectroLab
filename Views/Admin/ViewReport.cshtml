@@ -1,0 +1,30 @@
+﻿@model ReportViewModel
+@{
+    ViewData["Title"] = "Report Details";
+}
+
+<h1>Report Details</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h3>Reported Content</h3>
+        <p>@Model.ReportContent</p>
+
+        <h4>Additional Information</h4>
+        <p><strong>Reported by:</strong> @Model.ReporterUserName</p>
+        <p><strong>Report Type:</strong> @Model.ReportType</p>
+
+        <h4>Actions</h4>
+        <form method="post" action="@Url.Action("HandleReport", new { id = Model.ReportId })">
+            <div class="form-group">
+                <label for="action">Choose Action:</label>
+                <select name="action" id="action" class="form-control">
+                    <option value="delete">Delete Content</option>
+                    <option value="ban">Ban User</option>
+                    <option value="ignore">Ignore Report</option>
+                </select>
+            </div>
+            <button type="submit" class="btn btn-danger">Apply Action</button>
+        </form>
+    </div>
+</div>

@@ -20,3 +20,8 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+.jumbotron {
+    background-image: url("../img/Arduino_close-up.jpg");
+    background-size: cover;
+}

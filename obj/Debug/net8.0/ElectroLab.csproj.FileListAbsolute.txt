@@ -936,3 +936,13 @@ C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspN
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Identity.Account.Register.resources
 C:\Users\gogo\Desktop\softuni-c#\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Identity.Account.Register.bg-BG.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Authorization.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Components.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Forms.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Components.QuickGrid.EntityFrameworkAdapter.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Components.Web.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Metadata.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.JSInterop.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Identity.Account.Register.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Identity.Account.Register.bg-BG.resources

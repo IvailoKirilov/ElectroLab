@@ -14,6 +14,10 @@ namespace ElectroLab.Data
             public DbSet<SubmissionAnswer> SubmissionAnswers { get; set; }
             public DbSet<Report> Reports { get; set; }
 
+            public DbSet<Log> Logs { get; set; }
+
+            public DbSet<Ban> Bans { get; set; }
+
 
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)

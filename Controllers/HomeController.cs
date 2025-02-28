@@ -59,5 +59,27 @@ namespace ElectroLab.Controllers
             return Redirect(Request.Headers["Referer"].ToString());
         }
 
+        public async Task<IActionResult> Profile(string id)
+        {
+            var user = _context.Users.FirstOrDefault(f => f.Id == id);
+
+            ApplicationUser newUser = (ApplicationUser)user;
+
+
+            if (user == null)
+            {
+                return NotFound();
+            }
+
+            foreach (var course in _context.Courses)
+            {
+                if (course.UserId == id)
+                {
+                    newUser.Courses.Add(course);
+                }
+            }
+
+            return View(newUser);
+        }
     }
 }
