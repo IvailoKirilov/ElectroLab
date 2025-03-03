@@ -493,7 +493,7 @@ namespace ElectroLab.Migrations
                     b.HasOne("ElectroLab.Models.Test", "Test")
                         .WithMany("Questions")
                         .HasForeignKey("TestId")
-                        .OnDelete(DeleteBehavior.Cascade);
+                        .OnDelete(DeleteBehavior.NoAction);
 
                     b.Navigation("Test");
                 });

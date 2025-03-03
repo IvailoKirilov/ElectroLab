@@ -38,6 +38,9 @@ namespace ElectroLab.Controllers
                 .Include(r => r.Course)
                 .FirstOrDefaultAsync(r => r.Id == id);
 
+            var course = await _context.Courses
+                .FirstOrDefaultAsync( x => x.Id == report.CourseId);
+
             if (report == null)
             {
                 return NotFound();
@@ -47,15 +50,17 @@ namespace ElectroLab.Controllers
             {
                 ReportId = report.Id,
                 ReportContent = report.ReportContent,
-                ReporterUserName = report.UserId, // Assuming the UserId is a string
-                ReportType = report.ReportType
+                ReporterUserName = report.UserId,
+                ReportType = report.ReportType,
+                ReportedId = report.CourseId,
+                CourseContent = course.ContentHtml
             };
 
             return View(viewModel);
         }
 
         [HttpPost]
-        public async Task<IActionResult> HandleReport(int id, string action)
+        public async Task<IActionResult> HandleReport(int id, string action, int? banDuration)
         {
             var report = await _context.Reports.FirstOrDefaultAsync(r => r.Id == id);
 
@@ -67,13 +72,14 @@ namespace ElectroLab.Controllers
             switch (action)
             {
                 case "delete":
-                    // Delete the content (course or test)
+                    // Handle the deletion of content based on the report type (Course or Test)
                     if (report.ReportType == "Course")
                     {
                         var course = await _context.Courses.FindAsync(report.CourseId);
                         if (course != null)
                         {
                             _context.Courses.Remove(course);
+                            TempData["Message"] = "Course has been deleted successfully.";
                         }
                     }
                     else if (report.ReportType == "Test")
@@ -82,28 +88,33 @@ namespace ElectroLab.Controllers
                         if (test != null)
                         {
                             _context.Tests.Remove(test);
+                            TempData["Message"] = "Test has been deleted successfully.";
                         }
                     }
                     break;
 
                 case "ban":
-                    var user = await _userManager.FindByIdAsync(report.UserId);
-                    if (user != null)
+                    // Ensure that the banDuration parameter is provided when the action is 'ban'
+                    if (banDuration.HasValue)
                     {
-                        user.LockoutEnd = DateTimeOffset.UtcNow.AddDays(7); 
-                        user.LockoutEnabled = true;
-                        await _userManager.UpdateAsync(user);
-
-                        _context.Logs.Add(new Log
+                        var user = await _userManager.FindByIdAsync(report.UserId);
+                        if (user != null)
                         {
-                            Action = "User Banned",
-                            UserName = user.UserName,
-                            Time = DateTime.Now
-                        });
-                    }
-                    break;
+                            user.LockoutEnd = DateTimeOffset.UtcNow.AddDays(banDuration.Value);
+                            user.LockoutEnabled = true;
+                            await _userManager.UpdateAsync(user);
 
-                case "ignore":
+                            // Log the action in the logs table
+                            _context.Logs.Add(new Log
+                            {
+                                Action = "User Banned",
+                                UserName = user.UserName,
+                                Time = DateTime.Now
+                            });
+
+                        }
+                    }
+
                     break;
 
                 default:
@@ -111,10 +122,12 @@ namespace ElectroLab.Controllers
             }
 
             report.ReportStatus = "Handled";
+            _context.Reports.Update(report);
             await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }
+
 
         public async Task<IActionResult> Bans()
         {

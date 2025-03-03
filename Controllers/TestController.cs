@@ -1,5 +1,6 @@
 ﻿using ElectroLab.Data;
 using ElectroLab.Models;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
@@ -253,6 +254,79 @@ namespace ElectroLab.Controllers
             }
 
             return View(submission);
+        }
+
+        [Authorize]
+        public async Task<IActionResult> Delete(int testId)
+        {
+            var userId = User.Identity?.Name;
+
+            if (string.IsNullOrEmpty(userId))
+            {
+                return RedirectToAction("Login", "Account");
+            }
+
+            var user = await _userManager.FindByNameAsync(userId);
+
+            if (user == null)
+            {
+                return Unauthorized(); 
+            }
+
+            var test = await _context.Tests
+                .FirstOrDefaultAsync(t => t.CourseId == testId);
+
+            if (test == null)
+            {
+                return NotFound(); 
+            }
+
+            var submissions = await _context.Submissions
+                .Where(s => s.TestId == testId)
+                .Include(s => s.SubmissionAnswers) 
+                .ToListAsync();
+
+            var questions = await _context.Questions
+                .Where(q => q.TestId == testId)
+                .ToListAsync();
+
+            var course = await _context.Courses
+                .FirstOrDefaultAsync(c => c.Id == test.CourseId);
+
+            if (course == null)
+            {
+                return NotFound("Course not found.");
+            }
+
+            var isAdminOrOwner = await _userManager.IsInRoleAsync(user, "Admin") ||
+                                 await _userManager.IsInRoleAsync(user, "Owner");
+
+            var isCourseOwner = course.UserId == user.Id;
+
+            if (!isAdminOrOwner && !isCourseOwner)
+            {
+                return Forbid(); 
+            }
+
+            foreach (var submission in submissions)
+            {
+                foreach (var submissionAnswer in submission.SubmissionAnswers)
+                {
+                    _context.SubmissionAnswers.Remove(submissionAnswer);
+                }
+                _context.Submissions.Remove(submission); 
+            }
+
+            foreach (var question in questions)
+            {
+                _context.Questions.Remove(question); 
+            }
+
+            _context.Tests.Remove(test);
+
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction(nameof(Index));
         }
     }
 }

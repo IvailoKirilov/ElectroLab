@@ -6,6 +6,8 @@
         public string ReportContent { get; set; }       
         public string ReporterUserName { get; set; }    
         public string ReportType { get; set; }          
+        public int ReportedId { get; set; }       
+        public string CourseContent { get; set; }
     }
 }
 
