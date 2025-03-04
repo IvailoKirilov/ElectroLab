@@ -123,9 +123,16 @@ namespace ElectroLab.Controllers
 
                 var submissions = await _context.Submissions
                     .Where(s => s.TestId == testId)
-                    .Include(s => s.SubmissionAnswers)
                     .ToListAsync();
 
+                foreach (var submission in submissions)
+                {
+                    submission.SubmissionAnswers = await _context.SubmissionAnswers
+                        .Where(sa => sa.SubmissionId == submission.Id)
+                        .ToListAsync();
+                }
+
+                // Fetch the questions related to the test manually
                 var questions = await _context.Questions
                     .Where(q => q.TestId == testId)
                     .ToListAsync();

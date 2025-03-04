@@ -25,4 +25,8 @@
     <Folder Include="Migrations\" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Include="wwwroot\img\ElectroLabIconMedium.png" />
+  </ItemGroup>
+
 </Project>

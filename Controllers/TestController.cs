@@ -228,7 +228,7 @@ namespace ElectroLab.Controllers
 
             if (submission.UserId != userId && !isAdmin)
             {
-                return Forbid();  
+                return Forbid();
             }
 
             submission.SubmissionAnswers = await _context.SubmissionAnswers
@@ -270,7 +270,7 @@ namespace ElectroLab.Controllers
 
             if (user == null)
             {
-                return Unauthorized(); 
+                return Unauthorized();
             }
 
             var test = await _context.Tests
@@ -278,20 +278,29 @@ namespace ElectroLab.Controllers
 
             if (test == null)
             {
-                return NotFound(); 
+                return NotFound();
             }
 
-            var submissions = await _context.Submissions
-                .Where(s => s.TestId == testId)
-                .Include(s => s.SubmissionAnswers) 
-                .ToListAsync();
 
-            var questions = await _context.Questions
-                .Where(q => q.TestId == testId)
-                .ToListAsync();
 
             var course = await _context.Courses
                 .FirstOrDefaultAsync(c => c.Id == test.CourseId);
+
+            var submissions = await _context.Submissions
+       .Where(s => s.TestId == testId)
+       .ToListAsync();
+
+            foreach (var submission in submissions)
+            {
+                submission.SubmissionAnswers = await _context.SubmissionAnswers
+                    .Where(sa => sa.SubmissionId == submission.Id)
+                    .ToListAsync();
+            }
+
+            // Fetch the questions related to the test manually
+            var questions = await _context.Questions
+                .Where(q => q.TestId == testId)
+                .ToListAsync();
 
             if (course == null)
             {
@@ -305,7 +314,7 @@ namespace ElectroLab.Controllers
 
             if (!isAdminOrOwner && !isCourseOwner)
             {
-                return Forbid(); 
+                return Forbid();
             }
 
             foreach (var submission in submissions)
@@ -314,12 +323,12 @@ namespace ElectroLab.Controllers
                 {
                     _context.SubmissionAnswers.Remove(submissionAnswer);
                 }
-                _context.Submissions.Remove(submission); 
+                _context.Submissions.Remove(submission);
             }
 
             foreach (var question in questions)
             {
-                _context.Questions.Remove(question); 
+                _context.Questions.Remove(question);
             }
 
             _context.Tests.Remove(test);

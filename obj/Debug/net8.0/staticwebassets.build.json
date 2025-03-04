@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "TbMIUrAutQFXjEXL03F7f+xYKnHjsU9fys/iPZu8fUI=",
+  "Hash": "R28OTl/tLfaZaiGkUje7gnkpyk2/e/U10MmMSgqt9vw=",
   "Source": "ElectroLab",
   "BasePath": "_content/ElectroLab",
   "Mode": "Default",
@@ -1422,6 +1422,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\img\\Arduino_close-up.jpg"
+    },
+    {
+      "Identity": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
+      "SourceId": "ElectroLab",
+      "SourceType": "Discovered",
+      "ContentRoot": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\",
+      "BasePath": "_content/ElectroLab",
+      "RelativePath": "img/ElectroLabIconMedium#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "fmz38sqze8",
+      "Integrity": "Fy8iNIpWLJ8+zgzMj4iRnTrV4a7vxXtVnS6vnFpUYlQ=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\img\\ElectroLabIconMedium.png"
     },
     {
       "Identity": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\js\\qr.js",
@@ -5583,6 +5604,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-yKWs0HpebRFriQYmIluiJByWzxOfb/Q9POivbQF84/E="
+        }
+      ]
+    },
+    {
+      "Route": "img/ElectroLabIconMedium.fmz38sqze8.png",
+      "AssetFile": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fy8iNIpWLJ8+zgzMj4iRnTrV4a7vxXtVnS6vnFpUYlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:03:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "fmz38sqze8"
+        },
+        {
+          "Name": "label",
+          "Value": "img/ElectroLabIconMedium.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fy8iNIpWLJ8+zgzMj4iRnTrV4a7vxXtVnS6vnFpUYlQ="
+        }
+      ]
+    },
+    {
+      "Route": "img/ElectroLabIconMedium.png",
+      "AssetFile": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "22665"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Fy8iNIpWLJ8+zgzMj4iRnTrV4a7vxXtVnS6vnFpUYlQ=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Tue, 25 Feb 2025 19:03:16 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Fy8iNIpWLJ8+zgzMj4iRnTrV4a7vxXtVnS6vnFpUYlQ="
         }
       ]
     },

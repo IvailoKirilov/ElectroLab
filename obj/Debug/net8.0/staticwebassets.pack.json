@@ -17,6 +17,10 @@
       "PackagePath": "staticwebassets\\img\\Arduino_close-up.jpg"
     },
     {
+      "Id": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
+      "PackagePath": "staticwebassets\\img\\ElectroLabIconMedium.png"
+    },
+    {
       "Id": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\js\\qr.js",
       "PackagePath": "staticwebassets\\js\\qr.js"
     },
