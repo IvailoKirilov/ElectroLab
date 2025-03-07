@@ -5,6 +5,8 @@
 @{
     ViewData["Title"] = "Profile";
 }
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
 
 <!-- Add Bootstrap Icons -->
 <head>
@@ -118,66 +120,102 @@
 </style>
 
 <div class="container">
-    <h1>User Profile</h1>
+    <h1>@Localizer["UserProfile"]</h1>
 
     <div class="card">
         <div class="card-body">
-            <h4 class="card-title">@Model.UserName</h4>
-            <p class="card-text"><strong>Email:</strong> @Model.Email</p>
-            <p class="card-text"><strong>User-Id:</strong> @Model.Id</p>
-            <h4>Roles</h4>
-            @foreach (var role in await UserManager.GetRolesAsync(Model))
+            @if (Model != null)
             {
-                @if (role == "Owner")
+                <h4 class="card-title">@Model.UserName</h4>
+                <p class="card-text"><strong>@Localizer["Email"] </strong> @Model.Email</p>
+                <p class="card-text"><strong>@Localizer["UserId"] </strong> @Model.Id</p>
+                <h4>@Localizer["Roles"]</h4>
+
+                @if (await UserManager.GetRolesAsync(Model) != null)
                 {
-                    <span class="badge bg-danger">Owner</span>
+                    var roles = await UserManager.GetRolesAsync(Model);
+                    if (roles != null && roles.Any())
+                    {
+                        foreach (var role in roles)
+                        {
+                            @if (role == "Owner")
+                            {
+                                <span class="badge bg-danger">@Localizer["Owner"]</span>
+                            }
+                            else if (role == "Admin")
+                            {
+                                <span class="badge bg-info">@Localizer["Admin"]</span>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <p>@Localizer["NoRolesAssigned"]</p>
+                    }
                 }
-                else if (role == "Admin")
+                else
                 {
-                    <span class="badge bg-info">Admin</span>
+                    <p>@Localizer["NoRolesFound"]</p>
                 }
+            }
+            else
+            {
+                <p>@Localizer["UserDataNotFound"]</p>
             }
         </div>
     </div>
 
     <div class="hr-line"></div>
 
-    <h2>Your Activity</h2>
+    <h2>@Localizer["Activity"]</h2>
     <div>
-        <p><strong>Total courses made:</strong> @Model.Courses.Count</p>
+        @if (Model?.Courses != null && Model.Courses.Any())
+        {
+            <p><strong>@Localizer["CoursesMade"]</strong> @Model.Courses.Count</p>
+        }
+        else
+        {
+            <p>@Localizer["NoCourses"]</p>
+        }
     </div>
 
-    <h3>Courses published by @Model.UserName.</h3>
+    <h3>@Localizer["Published"] @Model.UserName.</h3>
 
-    <table class="table table-striped">
-        <thead>
-            <tr>
-                <th>Name</th>
-                <th>Description</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var file in Model.Courses)
-            {
+    @if (Model?.Courses != null && Model.Courses.Any())
+    {
+        <table class="table table-striped">
+            <thead>
                 <tr>
-                    <td>@file.Title</td>
-                    <td>@file.Description</td>
-                    <td>
-                        <a asp-controller="Course" asp-action="Details" asp-route-id="@file.Id" class="btn btn-info btn-sm" title="View">
-                            <i class="bi bi-eye"></i> View
-                        </a>
-
-                        @if (User.IsInRole("Admin") || User.IsInRole("Owner"))
-                        {
-                            <a asp-controller="Course" asp-action="AdminDelete" asp-route-id="@file.Id" class="btn btn-danger btn-sm" title="Remove as Administrator">
-                                <i class="bi bi-x-circle"></i> Remove
-                            </a>
-                        }
-                    </td>
+                    <th>@Localizer["Name"]</th>
+                    <th>@Localizer["Description"]</th>
+                    <th>@Localizer["Action"]</th>
                 </tr>
-            }
-        </tbody>
-    </table>
-</div>
+            </thead>
+            <tbody>
+                @foreach (var file in Model.Courses)
+                {
+                    <tr>
+                        <td>@file.Title</td>
+                        <td>@file.Description</td>
+                        <td>
+                            <a asp-controller="Course" asp-action="Details" asp-route-id="@file.Id" class="btn btn-info btn-sm" title="View">
+                                <i class="bi bi-eye"></i> @Localizer["View"]
+                            </a>
 
+                            @if (User.IsInRole("Admin") || User.IsInRole("Owner"))
+                            {
+                                <a asp-controller="Course" asp-action="Delete" asp-route-id="@file.Id" class="btn btn-danger btn-sm" title="Remove as Administrator">
+                                    <i class="bi bi-x-circle"></i> @Localizer["Remove"]
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No courses available to display.</p>
+    }
+</div>

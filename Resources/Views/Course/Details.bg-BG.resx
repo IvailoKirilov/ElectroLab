@@ -120,6 +120,9 @@
   <data name="Actions" xml:space="preserve">
     <value>Действия</value>
   </data>
+  <data name="AddComment" xml:space="preserve">
+    <value>Добави Коментар</value>
+  </data>
   <data name="AddTest" xml:space="preserve">
     <value>Добави Тест</value>
   </data>
@@ -144,10 +147,22 @@
   <data name="Like" xml:space="preserve">
     <value>Харесай</value>
   </data>
+  <data name="LoginComment" xml:space="preserve">
+    <value>Влезнете за да добавите кометар.</value>
+  </data>
+  <data name="NoComments" xml:space="preserve">
+    <value>Няма коментари. Бъдете първия да коментира!</value>
+  </data>
   <data name="OwnerActions" xml:space="preserve">
     <value>Действия като Собственик</value>
   </data>
   <data name="ReportCourse" xml:space="preserve">
     <value>Докладвай Курс</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Потребителски Профил</value>
+  </data>
+  <data name="WriteComment" xml:space="preserve">
+    <value>Напиши коментар...</value>
   </data>
 </root>

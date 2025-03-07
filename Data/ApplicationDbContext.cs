@@ -13,10 +13,9 @@ namespace ElectroLab.Data
             public DbSet<Submission> Submissions { get; set; }  
             public DbSet<SubmissionAnswer> SubmissionAnswers { get; set; }
             public DbSet<Report> Reports { get; set; }
-
             public DbSet<Log> Logs { get; set; }
-
             public DbSet<Ban> Bans { get; set; }
+            public DbSet<Comment> Comments { get; set; }
 
 
 
@@ -57,7 +56,19 @@ namespace ElectroLab.Data
                 .HasOne(r => r.Course)
                 .WithMany()
                 .HasForeignKey(r => r.CourseId)
-                .OnDelete(DeleteBehavior.NoAction);  
+                .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Comment>()
+    .HasOne(c => c.Course)
+    .WithMany(d => d.Comments)
+    .HasForeignKey(c => c.CourseId)
+    .OnDelete(DeleteBehavior.NoAction);
+
+            modelBuilder.Entity<Comment>()
+                .HasOne(c => c.User)
+                .WithMany(u => u.Comments)
+                .HasForeignKey(c => c.UserId)
+                .OnDelete(DeleteBehavior.NoAction);
         }
 
 

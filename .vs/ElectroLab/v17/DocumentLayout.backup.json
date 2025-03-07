@@ -3,16 +3,247 @@
   "WorkspaceRootPath": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\shared\\_layout.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\shared\\_layout.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\electrolab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:electrolab.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\login.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\lockout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\forgotpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\services\\emailsenders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:services\\emailsenders.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gogo1\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ElectroLab-0115555e-ece2-4725-9f41-5b8a808f1bd4\\secrets.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\services\\authmessagesenderoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:services\\authmessagesenderoptions.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\registerconfirmation.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\registerconfirmation.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\course\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\course\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\admin\\viewreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\admin\\viewreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\shared\\error.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\_viewimports.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\confirmemailchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\confirmemailchange.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\confirmemail.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\logout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\shared\\_layout.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\shared\\_loginpartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\admin\\bans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\admin\\bans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\shared\\_validationscriptspartial.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:.gitignore||{3B902123-F8A7-4915-9F01-361F908088D0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\course\\details.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\course\\details.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\course\\index.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\course\\index.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\comment.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\submissionanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\submissionanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\shared\\_layout.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\shared\\_layout.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\shared\\_loginpartial.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\shared\\_loginpartial.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\course\\create.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\course\\create.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250307172114_Comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250307172114_Comments.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:scaffoldingreadme.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\electrolab.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:electrolab.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\manage\\changepassword.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\resetpassword.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\materials\\electrolabiconsmall.png||{58961B49-13E0-48C0-9258-13CBC4D40279}",
@@ -31,30 +262,6 @@
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:materials\\electrolabiconsmall.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\coursecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\testcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\course\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\course\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\course\\details.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\admincontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\OldMigrations\\20250303083333_Patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\OldMigrations\\20250303083333_Patch.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -63,32 +270,8 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Migrations\\20250302183222_AddedCascadeDelete.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\admindashboardviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\applicationuser.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\ban.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\reportcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\banviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\banviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\course.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\course\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -111,56 +294,12 @@
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\test.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\question.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\submission.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\submissionanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\submissionanswer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\test\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\test\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\course\\index.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\course\\index.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\admin\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\log.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\coursedetailsviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\admin\\viewreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\admin\\viewreport.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\admin\\bans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\admin\\bans.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\shared\\_loginpartial.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\shared\\_loginpartial.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\controllers\\testsubmissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:controllers\\testsubmissionscontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\errorviewmodel.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\home\\index.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
@@ -175,22 +314,6 @@
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:models\\report.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\home\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\home\\profile.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\home\\privacy.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:wwwroot\\css\\site.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -199,20 +322,8 @@
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\test\\taketest.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\_viewstart.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:wwwroot\\favicon.ico||{177559E0-D141-11D0-92DF-00A0C9138C45}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\course\\details.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\course\\details.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\resources\\views\\course\\create.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:resources\\views\\course\\create.resx||{81828910-B8B3-4D2B-99A3-067027C180C1}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\manage\\downloadpersonaldata.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -225,18 +336,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\views\\question\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:views\\question\\create.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:areas\\identity\\pages\\account\\register.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}",
-      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:readme.md||{EFC0BB08-EA7D-40C6-A696-C870411A895B}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\wwwroot\\js\\site.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -282,6 +381,10 @@
     {
       "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\migrations\\20250303084052_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:migrations\\20250303084052_initialmigration.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|c:\\users\\gogo1\\desktop\\noit\\electrolab\\db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame",
+      "RelativeMoniker": "D:0:0:{66006AD9-BFCF-41E9-A568-57ACEF26285A}|ElectroLab.csproj|solutionrelative:db.sql||{CC5D8DF0-88F4-4BB2-9DBB-B48CEE65C30A}|CodeFrame"
     }
   ],
   "DocumentGroupContainers": [
@@ -306,147 +409,201 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
-              "Title": "_Layout.resx",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Shared\\_Layout.resx",
-              "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_Layout.resx",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Shared\\_Layout.resx",
-              "RelativeToolTip": "Resources\\Views\\Shared\\_Layout.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-02-28T17:11:19.757Z",
+              "Title": "ElectroLab",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\ElectroLab.csproj",
+              "RelativeDocumentMoniker": "ElectroLab.csproj",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\ElectroLab.csproj",
+              "RelativeToolTip": "ElectroLab.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-07T15:27:47.06Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "ForgotPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ForgotPassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T20:08:16.774Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "EmailSenders.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Services\\EmailSenders.cs",
+              "RelativeDocumentMoniker": "Services\\EmailSenders.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Services\\EmailSenders.cs",
+              "RelativeToolTip": "Services\\EmailSenders.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T17:12:48.98Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 3,
-              "Title": "ElectroLabIconSmall.png",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.png",
-              "RelativeDocumentMoniker": "Materials\\ElectroLabIconSmall.png",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.png",
-              "RelativeToolTip": "Materials\\ElectroLabIconSmall.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-03-04T18:38:38.958Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "ElectroLabIconMedium.png",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconMedium.png",
-              "RelativeDocumentMoniker": "Materials\\ElectroLabIconMedium.png",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconMedium.png",
-              "RelativeToolTip": "Materials\\ElectroLabIconMedium.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-03-04T18:38:42.997Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "_LoginPartial.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_LoginPartial.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAA0AAAA+AAAAAAAAAA==",
+              "Title": "Register.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
+              "ViewState": "AgIAABgAAAAAAAAAAAAAACgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T19:39:19.363Z"
+              "WhenOpened": "2025-02-17T16:50:42.554Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ElectroLabIconMedium.png",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
-              "RelativeDocumentMoniker": "wwwroot\\img\\ElectroLabIconMedium.png",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
-              "RelativeToolTip": "wwwroot\\img\\ElectroLabIconMedium.png",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
-              "WhenOpened": "2025-03-04T18:39:19.027Z"
+              "DocumentIndex": 9,
+              "Title": "AuthMessageSenderOptions.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Services\\AuthMessageSenderOptions.cs",
+              "RelativeDocumentMoniker": "Services\\AuthMessageSenderOptions.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Services\\AuthMessageSenderOptions.cs",
+              "RelativeToolTip": "Services\\AuthMessageSenderOptions.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAEAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:56:43.568Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 6,
-              "Title": "ElectroLabIconSmall.ico - Icon [256x256, 32 bit, PNG]",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.ico",
-              "RelativeDocumentMoniker": "Materials\\ElectroLabIconSmall.ico",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.ico - Icon [256x256, 32 bit, PNG]",
-              "RelativeToolTip": "Materials\\ElectroLabIconSmall.ico - Icon [256x256, 32 bit, PNG]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-03-04T18:38:37.255Z",
-              "EditorCaption": " - Icon [256x256, 32 bit, PNG]"
+              "Title": "appsettings.json",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAAWAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-02-02T17:48:01.888Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "_Layout.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_Layout.cshtml",
-              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_Layout.cshtml",
-              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
-              "ViewState": "AgIAACsAAAAAAAAAAAAAAEEAAAB2AAAAAAAAAA==",
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAowCwAAAACAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.863Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Lockout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Lockout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T17:48:01.868Z"
+              "WhenOpened": "2025-03-07T19:19:53.253Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "RegisterConfirmation.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T17:14:22.712Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Login.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Login.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAACcAAAAUAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T19:18:07.002Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "RegisterConfirmation.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\RegisterConfirmation.cshtml.cs",
+              "ViewState": "AgIAACoAAAAAAAAAAAAowD8AAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T17:14:28.76Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 12,
+              "Title": "Profile.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Profile.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Profile.cshtml",
+              "RelativeToolTip": "Views\\Home\\Profile.cshtml",
+              "ViewState": "AgIAALMAAAAAAAAAAAAcwM4AAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T19:35:53.078Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "secrets.json",
+              "DocumentMoniker": "C:\\Users\\gogo1\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ElectroLab-0115555e-ece2-4725-9f41-5b8a808f1bd4\\secrets.json",
+              "RelativeDocumentMoniker": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ElectroLab-0115555e-ece2-4725-9f41-5b8a808f1bd4\\secrets.json",
+              "ToolTip": "C:\\Users\\gogo1\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ElectroLab-0115555e-ece2-4725-9f41-5b8a808f1bd4\\secrets.json",
+              "RelativeToolTip": "..\\..\\..\\AppData\\Roaming\\Microsoft\\UserSecrets\\aspnet-ElectroLab-0115555e-ece2-4725-9f41-5b8a808f1bd4\\secrets.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAEAAABXAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-07T20:05:04.32Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 16,
               "Title": "AdminController.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\AdminController.cs",
               "RelativeDocumentMoniker": "Controllers\\AdminController.cs",
               "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\AdminController.cs",
               "RelativeToolTip": "Controllers\\AdminController.cs",
-              "ViewState": "AgIAAHQAAAAAAAAAAADwv3UAAAAaAAAAAAAAAA==",
+              "ViewState": "AgIAADMAAAAAAAAAAAAgwEAAAAAMAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T15:59:03.49Z"
+              "WhenOpened": "2025-02-28T15:59:03.49Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "ApplicationDbContext.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Data\\ApplicationDbContext.cs",
-              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Data\\ApplicationDbContext.cs",
-              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADsAAAAyAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.866Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "CourseController.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\CourseController.cs",
-              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\CourseController.cs",
-              "RelativeToolTip": "Controllers\\CourseController.cs",
-              "ViewState": "AgIAAFcAAAAAAAAAAAApwEQAAAAiAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.849Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "Details.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Details.cshtml",
-              "RelativeDocumentMoniker": "Views\\Course\\Details.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Details.cshtml",
-              "RelativeToolTip": "Views\\Course\\Details.cshtml",
-              "ViewState": "AgIAADAAAAAAAAAAAAAAAD8AAAAAAAAAAAAAAA==",
+              "DocumentIndex": 13,
+              "Title": "_LoginPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_LoginPartial.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_LoginPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_LoginPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAMAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T17:48:01.886Z"
+              "WhenOpened": "2025-02-25T19:39:19.363Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "TestController.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TestController.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestController.cs",
-              "RelativeToolTip": "Controllers\\TestController.cs",
-              "ViewState": "AgIAABgBAAAAAAAAAAAAAFUBAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-20T12:09:56.202Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 15,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Course\\Create.cshtml",
@@ -454,215 +611,207 @@
               "RelativeToolTip": "Views\\Course\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T12:11:18.927Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "20250302183222_AddedCascadeDelete.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250302183222_AddedCascadeDelete.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250302183222_AddedCascadeDelete.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250302183222_AddedCascadeDelete.cs",
-              "RelativeToolTip": "Migrations\\20250302183222_AddedCascadeDelete.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T18:32:22.243Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "20250303083333_Patch.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\OldMigrations\\20250303083333_Patch.cs",
-              "RelativeDocumentMoniker": "Migrations\\OldMigrations\\20250303083333_Patch.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\OldMigrations\\20250303083333_Patch.cs",
-              "RelativeToolTip": "Migrations\\OldMigrations\\20250303083333_Patch.cs",
-              "ViewState": "AgIAACgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T08:33:33.187Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 70,
-              "Title": "20250303084052_InitialMigration.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250303084052_InitialMigration.cs",
-              "RelativeDocumentMoniker": "Migrations\\20250303084052_InitialMigration.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250303084052_InitialMigration.cs",
-              "RelativeToolTip": "Migrations\\20250303084052_InitialMigration.cs",
-              "ViewState": "AgIAAEIBAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-03T08:40:52.199Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 18,
-              "Title": "ReportController.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\ReportController.cs",
-              "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\ReportController.cs",
-              "RelativeToolTip": "Controllers\\ReportController.cs",
-              "ViewState": "AgIAACIAAAAAAAAAAAAqwCoAAAAMAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T17:05:39.722Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "AdminDashboardViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\AdminDashboardViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\AdminDashboardViewModel.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\AdminDashboardViewModel.cs",
-              "RelativeToolTip": "Models\\AdminDashboardViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:07:27.885Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 17,
-              "Title": "Ban.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Ban.cs",
-              "RelativeDocumentMoniker": "Models\\Ban.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Ban.cs",
-              "RelativeToolTip": "Models\\Ban.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAowAUAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:09:02.54Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "ApplicationUser.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ApplicationUser.cs",
-              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ApplicationUser.cs",
-              "RelativeToolTip": "Models\\ApplicationUser.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.857Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "BanViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\BanViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\BanViewModel.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\BanViewModel.cs",
-              "RelativeToolTip": "Models\\BanViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:08:12.247Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
-              "Title": "Course.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Course.cs",
-              "RelativeDocumentMoniker": "Models\\Course.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Course.cs",
-              "RelativeToolTip": "Models\\Course.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.856Z"
+              "WhenOpened": "2025-02-09T12:11:18.927Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 21,
-              "Title": "Program.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Program.cs",
-              "RelativeDocumentMoniker": "Program.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Program.cs",
-              "RelativeToolTip": "Program.cs",
-              "ViewState": "AgIAAFUAAAAAAAAAAAAtwGMAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.863Z"
+              "Title": "ConfirmEmailChange.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ConfirmEmailChange.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T19:20:37.84Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Report\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Report\\Create.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Report\\Create.cshtml",
-              "RelativeToolTip": "Views\\Report\\Create.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "DocumentIndex": 14,
+              "Title": "CourseController.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\CourseController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CourseController.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\CourseController.cs",
+              "RelativeToolTip": "Controllers\\CourseController.cs",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAcwBgAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.849Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 18,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Index.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
+              "ViewState": "AgIAAAEAAAAAAAAAAAAswBoAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T17:10:11.321Z"
+              "WhenOpened": "2025-02-28T16:04:54.163Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 17,
+              "Title": "ViewReport.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\ViewReport.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\ViewReport.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\ViewReport.cshtml",
+              "RelativeToolTip": "Views\\Admin\\ViewReport.cshtml",
+              "ViewState": "AgIAACoAAAAAAAAAAAAAACQAAABhAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T16:05:19.622Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 19,
+              "Title": "Error.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\Error.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\Error.cshtml",
+              "RelativeToolTip": "Views\\Shared\\Error.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T14:46:56.521Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 20,
+              "Title": "_ViewImports.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\_ViewImports.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewImports.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\_ViewImports.cshtml",
+              "RelativeToolTip": "Views\\_ViewImports.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T18:44:34.618Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 24,
-              "Title": "ViewResult.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\ViewResult.cshtml",
-              "RelativeDocumentMoniker": "Views\\Test\\ViewResult.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\ViewResult.cshtml",
-              "RelativeToolTip": "Views\\Test\\ViewResult.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAA1AAAAAAAAAA==",
+              "Title": "ResetPassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T17:48:01.843Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Test\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Index.cshtml",
-              "RelativeToolTip": "Views\\Test\\Index.cshtml",
-              "ViewState": "AgIAABIAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T17:48:01.723Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 29,
-              "Title": "SubmissionAnswer.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\SubmissionAnswer.cs",
-              "RelativeDocumentMoniker": "Models\\SubmissionAnswer.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\SubmissionAnswer.cs",
-              "RelativeToolTip": "Models\\SubmissionAnswer.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.833Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Course\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Index.cshtml",
-              "RelativeToolTip": "Views\\Course\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAABIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-20T12:09:40.961Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 30,
-              "Title": "Create.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Create.cshtml",
-              "RelativeDocumentMoniker": "Views\\Test\\Create.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Create.cshtml",
-              "RelativeToolTip": "Views\\Test\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAAD0AAABVAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-02T17:48:01.845Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Submission.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Submission.cs",
-              "RelativeDocumentMoniker": "Models\\Submission.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Submission.cs",
-              "RelativeToolTip": "Models\\Submission.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.836Z"
+              "WhenOpened": "2025-03-06T16:54:45.512Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 27,
+              "Title": "HomeController.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\HomeController.cs",
+              "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\HomeController.cs",
+              "RelativeToolTip": "Controllers\\HomeController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:54:38.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 30,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Index.cshtml",
+              "RelativeToolTip": "Views\\Home\\Index.cshtml",
+              "ViewState": "AgIAADcAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T12:20:41.949Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 22,
+              "Title": "ConfirmEmail.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ConfirmEmail.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T19:20:36.979Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 25,
+              "Title": "Logout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Logout.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T19:18:57.042Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 28,
+              "Title": "_Layout.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_Layout.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_Layout.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAAGAAAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T17:48:01.868Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 23,
+              "Title": "Register.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
+              "ViewState": "AgIAAG0AAAAAAAAAAAAAwLoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-17T16:50:43.221Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 29,
+              "Title": "Privacy.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Privacy.cshtml",
+              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Privacy.cshtml",
+              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T19:36:37.576Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 31,
+              "Title": "Bans.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Bans.cshtml",
+              "RelativeDocumentMoniker": "Views\\Admin\\Bans.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Bans.cshtml",
+              "RelativeToolTip": "Views\\Admin\\Bans.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-28T16:05:45.415Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 38,
               "Title": "Question.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Question.cs",
               "RelativeDocumentMoniker": "Models\\Question.cs",
@@ -670,23 +819,64 @@
               "RelativeToolTip": "Models\\Question.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.834Z"
+              "WhenOpened": "2025-02-02T17:48:01.834Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 32,
+              "Title": "_ValidationScriptsPartial.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-07T18:45:11.257Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 26,
-              "Title": "Test.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Test.cs",
-              "RelativeDocumentMoniker": "Models\\Test.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Test.cs",
-              "RelativeToolTip": "Models\\Test.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Title": "TestController.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestController.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestController.cs",
+              "RelativeToolTip": "Controllers\\TestController.cs",
+              "ViewState": "AgIAABgBAAAAAAAAAAAAAFUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.847Z"
+              "WhenOpened": "2025-02-20T12:09:56.202Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 33,
+              "Title": ".gitignore",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\.gitignore",
+              "RelativeDocumentMoniker": ".gitignore",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\.gitignore",
+              "RelativeToolTip": ".gitignore",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
+              "WhenOpened": "2025-03-06T18:29:48.486Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 34,
+              "Title": "ErrorViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ErrorViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ErrorViewModel.cs",
+              "RelativeToolTip": "Models\\ErrorViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.865Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 36,
               "Title": "Index.resx",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Course\\Index.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Course\\Index.resx",
@@ -698,19 +888,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Index.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Index.cshtml",
-              "ViewState": "AgIAAAMAAAAAAAAAAAAAAAsAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T16:04:54.163Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 39,
               "Title": "Log.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Log.cs",
               "RelativeDocumentMoniker": "Models\\Log.cs",
@@ -718,11 +896,24 @@
               "RelativeToolTip": "Models\\Log.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:08:49.268Z"
+              "WhenOpened": "2025-02-28T16:08:49.268Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
+              "Title": "Details.resx",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Course\\Details.resx",
+              "RelativeDocumentMoniker": "Resources\\Views\\Course\\Details.resx",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Course\\Details.resx",
+              "RelativeToolTip": "Resources\\Views\\Course\\Details.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-03-07T18:50:13.682Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 40,
               "Title": "CourseDetailsViewModel.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\CourseDetailsViewModel.cs",
               "RelativeDocumentMoniker": "Models\\CourseDetailsViewModel.cs",
@@ -730,35 +921,115 @@
               "RelativeToolTip": "Models\\CourseDetailsViewModel.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAsAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-03-02T17:44:37.574Z"
+              "WhenOpened": "2025-03-02T17:44:37.574Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
-              "Title": "ViewReport.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\ViewReport.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\ViewReport.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\ViewReport.cshtml",
-              "RelativeToolTip": "Views\\Admin\\ViewReport.cshtml",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAABYAAAAnAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T16:05:19.622Z"
+              "DocumentIndex": 41,
+              "Title": "Comment.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Comment.cs",
+              "RelativeDocumentMoniker": "Models\\Comment.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Comment.cs",
+              "RelativeToolTip": "Models\\Comment.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:16:45.749Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
-              "Title": "Bans.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Bans.cshtml",
-              "RelativeDocumentMoniker": "Views\\Admin\\Bans.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Admin\\Bans.cshtml",
-              "RelativeToolTip": "Views\\Admin\\Bans.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAbAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-28T16:05:45.415Z"
+              "DocumentIndex": 42,
+              "Title": "Ban.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Ban.cs",
+              "RelativeDocumentMoniker": "Models\\Ban.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Ban.cs",
+              "RelativeToolTip": "Models\\Ban.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAA5wAUAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T16:09:02.54Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 43,
+              "Title": "ApplicationUser.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ApplicationUser.cs",
+              "RelativeDocumentMoniker": "Models\\ApplicationUser.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ApplicationUser.cs",
+              "RelativeToolTip": "Models\\ApplicationUser.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.857Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
               "DocumentIndex": 37,
+              "Title": "_ViewStart.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\_ViewStart.cshtml",
+              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\_ViewStart.cshtml",
+              "RelativeToolTip": "Views\\_ViewStart.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-25T19:46:14.745Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 44,
+              "Title": "AdminDashboardViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\AdminDashboardViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\AdminDashboardViewModel.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\AdminDashboardViewModel.cs",
+              "RelativeToolTip": "Models\\AdminDashboardViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAAbAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T16:07:27.885Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 45,
+              "Title": "Submission.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Submission.cs",
+              "RelativeDocumentMoniker": "Models\\Submission.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Submission.cs",
+              "RelativeToolTip": "Models\\Submission.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.836Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 46,
+              "Title": "SubmissionAnswer.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\SubmissionAnswer.cs",
+              "RelativeDocumentMoniker": "Models\\SubmissionAnswer.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\SubmissionAnswer.cs",
+              "RelativeToolTip": "Models\\SubmissionAnswer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.833Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 47,
+              "Title": "_Layout.resx",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Shared\\_Layout.resx",
+              "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_Layout.resx",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Shared\\_Layout.resx",
+              "RelativeToolTip": "Resources\\Views\\Shared\\_Layout.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-02-28T17:11:19.757Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 48,
               "Title": "_LoginPartial.resx",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Shared\\_LoginPartial.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Shared\\_LoginPartial.resx",
@@ -770,150 +1041,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
-              "Title": "TestSubmissionsController.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestSubmissionsController.cs",
-              "RelativeDocumentMoniker": "Controllers\\TestSubmissionsController.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestSubmissionsController.cs",
-              "RelativeToolTip": "Controllers\\TestSubmissionsController.cs",
-              "ViewState": "AgIAABgAAAAAAAAAAAAowA8AAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.839Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 39,
-              "Title": "ErrorViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ErrorViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ErrorViewModel.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ErrorViewModel.cs",
-              "RelativeToolTip": "Models\\ErrorViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-02T17:48:01.865Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 41,
-              "Title": "ReportViewModel.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ReportViewModel.cs",
-              "RelativeDocumentMoniker": "Models\\ReportViewModel.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ReportViewModel.cs",
-              "RelativeToolTip": "Models\\ReportViewModel.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-28T16:07:45.106Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 40,
-              "Title": "Index.resx",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Home\\Index.resx",
-              "RelativeDocumentMoniker": "Resources\\Views\\Home\\Index.resx",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Home\\Index.resx",
-              "RelativeToolTip": "Resources\\Views\\Home\\Index.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-02-25T19:46:29.889Z",
+              "DocumentIndex": 49,
+              "Title": "Details.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Details.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Details.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Details.cshtml",
+              "RelativeToolTip": "Views\\Course\\Details.cshtml",
+              "ViewState": "AgIAAFsAAAAAAAAAAAAqwGsAAAA+AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T17:48:01.886Z",
               "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 42,
-              "Title": "Report.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Report.cs",
-              "RelativeDocumentMoniker": "Models\\Report.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Report.cs",
-              "RelativeToolTip": "Models\\Report.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-09T16:39:19.867Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 43,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\appsettings.json",
-              "RelativeDocumentMoniker": "appsettings.json",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\appsettings.json",
-              "RelativeToolTip": "appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAABoAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2025-02-02T17:48:01.888Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 44,
-              "Title": "Index.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Index.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Index.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Index.cshtml",
-              "RelativeToolTip": "Views\\Home\\Index.cshtml",
-              "ViewState": "AgIAADcAAAAAAAAAAAAAAAoAAAAPAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-09T12:20:41.949Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 47,
-              "Title": "site.css",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\css\\site.css",
-              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\css\\site.css",
-              "RelativeToolTip": "wwwroot\\css\\site.css",
-              "ViewState": "AgIAABUAAAAAAAAAAAAuwBsAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-02-22T10:23:30.327Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 45,
-              "Title": "Profile.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Profile.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Profile.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Profile.cshtml",
-              "RelativeToolTip": "Views\\Home\\Profile.cshtml",
-              "ViewState": "AgIAAJYAAAAAAAAAAAAAAKwAAAA1AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T19:35:53.078Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 46,
-              "Title": "Privacy.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Privacy.cshtml",
-              "RelativeDocumentMoniker": "Views\\Home\\Privacy.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Home\\Privacy.cshtml",
-              "RelativeToolTip": "Views\\Home\\Privacy.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T19:36:37.576Z"
             },
             {
               "$type": "Document",
               "DocumentIndex": 50,
-              "Title": "favicon.ico",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\favicon.ico",
-              "RelativeDocumentMoniker": "wwwroot\\favicon.ico",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\favicon.ico",
-              "RelativeToolTip": "wwwroot\\favicon.ico",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
-              "WhenOpened": "2025-02-25T19:12:01.691Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 51,
-              "Title": "Details.resx",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Course\\Details.resx",
-              "RelativeDocumentMoniker": "Resources\\Views\\Course\\Details.resx",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Course\\Details.resx",
-              "RelativeToolTip": "Resources\\Views\\Course\\Details.resx",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
-              "WhenOpened": "2025-02-20T12:47:32.774Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 52,
               "Title": "Create.resx",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Course\\Create.resx",
               "RelativeDocumentMoniker": "Resources\\Views\\Course\\Create.resx",
@@ -925,7 +1066,373 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 52,
+              "Title": "20250307172114_Comments.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250307172114_Comments.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250307172114_Comments.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250307172114_Comments.cs",
+              "RelativeToolTip": "Migrations\\20250307172114_Comments.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-07T17:21:14.748Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 55,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAC0AAAAAAAAAAAAkwEYAAAAxAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.866Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 51,
+              "Title": "ReportController.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\ReportController.cs",
+              "RelativeDocumentMoniker": "Controllers\\ReportController.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\ReportController.cs",
+              "RelativeToolTip": "Controllers\\ReportController.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACoAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T17:05:39.722Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 53,
+              "Title": "Course.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Course.cs",
+              "RelativeDocumentMoniker": "Models\\Course.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Course.cs",
+              "RelativeToolTip": "Models\\Course.cs",
+              "ViewState": "AgIAAAQAAAAAAAAAAIA1wA0AAAA4AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.856Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 54,
+              "Title": "db.sql ",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\db.sql",
+              "RelativeDocumentMoniker": "db.sql",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\db.sql",
+              "RelativeToolTip": "db.sql",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000826|",
+              "WhenOpened": "2025-03-06T17:16:32.578Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 56,
+              "Title": "README.md",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\README.md",
+              "RelativeDocumentMoniker": "README.md",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\README.md",
+              "RelativeToolTip": "README.md",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
+              "WhenOpened": "2025-02-17T16:47:47.819Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 57,
+              "Title": "ScaffoldingReadMe.txt",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\ScaffoldingReadMe.txt",
+              "RelativeDocumentMoniker": "ScaffoldingReadMe.txt",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\ScaffoldingReadMe.txt",
+              "RelativeToolTip": "ScaffoldingReadMe.txt",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
+              "WhenOpened": "2025-03-06T18:29:49.392Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 58,
+              "Title": "ElectroLab",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\ElectroLab.csproj",
+              "RelativeDocumentMoniker": "ElectroLab.csproj",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\ElectroLab.csproj",
+              "RelativeToolTip": "ElectroLab.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-03-06T18:22:06.597Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 59,
+              "Title": "ChangePassword.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Manage\\ChangePassword.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-03-06T16:55:06.981Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 60,
+              "Title": "ResetPassword.cshtml.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\ResetPassword.cshtml.cs",
+              "ViewState": "AgIAACwAAAAAAAAAAAAwwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-06T16:54:49.448Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 62,
+              "Title": "ElectroLabIconMedium.png",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconMedium.png",
+              "RelativeDocumentMoniker": "Materials\\ElectroLabIconMedium.png",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconMedium.png",
+              "RelativeToolTip": "Materials\\ElectroLabIconMedium.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-03-04T18:38:42.997Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 63,
+              "Title": "ElectroLabIconMedium.png",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
+              "RelativeDocumentMoniker": "wwwroot\\img\\ElectroLabIconMedium.png",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\img\\ElectroLabIconMedium.png",
+              "RelativeToolTip": "wwwroot\\img\\ElectroLabIconMedium.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-03-04T18:39:19.027Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 64,
+              "Title": "ElectroLabIconSmall.ico - Icon [256x256, 32 bit, PNG]",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.ico",
+              "RelativeDocumentMoniker": "Materials\\ElectroLabIconSmall.ico",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.ico - Icon [256x256, 32 bit, PNG]",
+              "RelativeToolTip": "Materials\\ElectroLabIconSmall.ico - Icon [256x256, 32 bit, PNG]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-03-04T18:38:37.255Z",
+              "EditorCaption": " - Icon [256x256, 32 bit, PNG]"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 61,
+              "Title": "ElectroLabIconSmall.png",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.png",
+              "RelativeDocumentMoniker": "Materials\\ElectroLabIconSmall.png",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Materials\\ElectroLabIconSmall.png",
+              "RelativeToolTip": "Materials\\ElectroLabIconSmall.png",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001533|",
+              "WhenOpened": "2025-03-04T18:38:38.958Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 66,
+              "Title": "20250302183222_AddedCascadeDelete.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250302183222_AddedCascadeDelete.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250302183222_AddedCascadeDelete.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250302183222_AddedCascadeDelete.cs",
+              "RelativeToolTip": "Migrations\\20250302183222_AddedCascadeDelete.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-02T18:32:22.243Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 65,
+              "Title": "20250303083333_Patch.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\OldMigrations\\20250303083333_Patch.cs",
+              "RelativeDocumentMoniker": "Migrations\\OldMigrations\\20250303083333_Patch.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\OldMigrations\\20250303083333_Patch.cs",
+              "RelativeToolTip": "Migrations\\OldMigrations\\20250303083333_Patch.cs",
+              "ViewState": "AgIAACgAAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T08:33:33.187Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 95,
+              "Title": "20250303084052_InitialMigration.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250303084052_InitialMigration.cs",
+              "RelativeDocumentMoniker": "Migrations\\20250303084052_InitialMigration.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250303084052_InitialMigration.cs",
+              "RelativeToolTip": "Migrations\\20250303084052_InitialMigration.cs",
+              "ViewState": "AgIAAEIBAAAAAAAAAAAgwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-03T08:40:52.199Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 67,
+              "Title": "BanViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\BanViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\BanViewModel.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\BanViewModel.cs",
+              "RelativeToolTip": "Models\\BanViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAzAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T16:08:12.247Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 69,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Report\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Report\\Create.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Report\\Create.cshtml",
+              "RelativeToolTip": "Views\\Report\\Create.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-09T17:10:11.321Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 70,
+              "Title": "ViewResult.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\ViewResult.cshtml",
+              "RelativeDocumentMoniker": "Views\\Test\\ViewResult.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\ViewResult.cshtml",
+              "RelativeToolTip": "Views\\Test\\ViewResult.cshtml",
+              "ViewState": "AgIAAA8AAAAAAAAAAAAAACMAAAA1AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T17:48:01.843Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 71,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Test\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Index.cshtml",
+              "RelativeToolTip": "Views\\Test\\Index.cshtml",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAAQAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T17:48:01.723Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 68,
+              "Title": "Index.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Index.cshtml",
+              "RelativeDocumentMoniker": "Views\\Course\\Index.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Course\\Index.cshtml",
+              "RelativeToolTip": "Views\\Course\\Index.cshtml",
+              "ViewState": "AgIAABUAAAAAAAAAAAAAACgAAABIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-20T12:09:40.961Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 73,
+              "Title": "Create.cshtml",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Create.cshtml",
+              "RelativeDocumentMoniker": "Views\\Test\\Create.cshtml",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\Create.cshtml",
+              "RelativeToolTip": "Views\\Test\\Create.cshtml",
+              "ViewState": "AgIAAAwAAAAAAAAAAAAAAD0AAABVAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-02-02T17:48:01.845Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 72,
+              "Title": "Test.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Test.cs",
+              "RelativeDocumentMoniker": "Models\\Test.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Test.cs",
+              "RelativeToolTip": "Models\\Test.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAsAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 74,
+              "Title": "TestSubmissionsController.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestSubmissionsController.cs",
+              "RelativeDocumentMoniker": "Controllers\\TestSubmissionsController.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Controllers\\TestSubmissionsController.cs",
+              "RelativeToolTip": "Controllers\\TestSubmissionsController.cs",
+              "ViewState": "AgIAABgAAAAAAAAAAAAowA8AAAAfAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-02T17:48:01.839Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 76,
+              "Title": "ReportViewModel.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ReportViewModel.cs",
+              "RelativeDocumentMoniker": "Models\\ReportViewModel.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\ReportViewModel.cs",
+              "RelativeToolTip": "Models\\ReportViewModel.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAFAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-28T16:07:45.106Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 75,
+              "Title": "Index.resx",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Home\\Index.resx",
+              "RelativeDocumentMoniker": "Resources\\Views\\Home\\Index.resx",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Resources\\Views\\Home\\Index.resx",
+              "RelativeToolTip": "Resources\\Views\\Home\\Index.resx",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001005|",
+              "WhenOpened": "2025-02-25T19:46:29.889Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 77,
+              "Title": "Report.cs",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Report.cs",
+              "RelativeDocumentMoniker": "Models\\Report.cs",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Models\\Report.cs",
+              "RelativeToolTip": "Models\\Report.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAABAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-02-09T16:39:19.867Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 78,
+              "Title": "site.css",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\css\\site.css",
+              "RelativeDocumentMoniker": "wwwroot\\css\\site.css",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\css\\site.css",
+              "RelativeToolTip": "wwwroot\\css\\site.css",
+              "ViewState": "AgIAABUAAAAAAAAAAAAuwBsAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
+              "WhenOpened": "2025-02-22T10:23:30.327Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 80,
+              "Title": "favicon.ico",
+              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\favicon.ico",
+              "RelativeDocumentMoniker": "wwwroot\\favicon.ico",
+              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\favicon.ico",
+              "RelativeToolTip": "wwwroot\\favicon.ico",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001525|",
+              "WhenOpened": "2025-02-25T19:12:01.691Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 81,
               "Title": "DownloadPersonalData.cshtml.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml.cs",
@@ -937,7 +1444,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 54,
+              "DocumentIndex": 82,
               "Title": "DownloadPersonalData.cshtml",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
               "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Manage\\DownloadPersonalData.cshtml",
@@ -949,31 +1456,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 58,
-              "Title": "README.md",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\README.md",
-              "RelativeDocumentMoniker": "README.md",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\README.md",
-              "RelativeToolTip": "README.md",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001818|",
-              "WhenOpened": "2025-02-17T16:47:47.819Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 57,
-              "Title": "Register.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml",
-              "ViewState": "AgIAAB4AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-17T16:50:42.554Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 55,
+              "DocumentIndex": 83,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Question\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Question\\Create.cshtml",
@@ -985,19 +1468,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 56,
-              "Title": "Register.cshtml.cs",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeDocumentMoniker": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "RelativeToolTip": "Areas\\Identity\\Pages\\Account\\Register.cshtml.cs",
-              "ViewState": "AgIAALUAAAAAAAAAAAAswLoAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-02-17T16:50:43.221Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 59,
+              "DocumentIndex": 84,
               "Title": "site.js",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\js\\site.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\site.js",
@@ -1009,7 +1480,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 60,
+              "DocumentIndex": 85,
               "Title": "qr.js",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\wwwroot\\js\\qr.js",
               "RelativeDocumentMoniker": "wwwroot\\js\\qr.js",
@@ -1021,7 +1492,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 61,
+              "DocumentIndex": 86,
               "Title": "20250209165708_Releation.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250209165708_Releation.cs",
               "RelativeDocumentMoniker": "Migrations\\20250209165708_Releation.cs",
@@ -1032,7 +1503,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 62,
+              "DocumentIndex": 87,
               "Title": "20250209165602_AddedReleationToReports55.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250209165602_AddedReleationToReports55.cs",
               "RelativeDocumentMoniker": "Migrations\\20250209165602_AddedReleationToReports55.cs",
@@ -1043,7 +1514,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 63,
+              "DocumentIndex": 88,
               "Title": "20250209165531_AddedReleationToReports4.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250209165531_AddedReleationToReports4.cs",
               "RelativeDocumentMoniker": "Migrations\\20250209165531_AddedReleationToReports4.cs",
@@ -1054,7 +1525,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 64,
+              "DocumentIndex": 89,
               "Title": "20250209165336_AddedReleationToReports3.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250209165336_AddedReleationToReports3.cs",
               "RelativeDocumentMoniker": "Migrations\\20250209165336_AddedReleationToReports3.cs",
@@ -1065,7 +1536,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 65,
+              "DocumentIndex": 90,
               "Title": "20250209164752_AddedReleationToReports.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250209164752_AddedReleationToReports.cs",
               "RelativeDocumentMoniker": "Migrations\\20250209164752_AddedReleationToReports.cs",
@@ -1076,7 +1547,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 66,
+              "DocumentIndex": 91,
               "Title": "20250209164828_AddedReleationToReports1.cs",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Migrations\\20250209164828_AddedReleationToReports1.cs",
               "RelativeDocumentMoniker": "Migrations\\20250209164828_AddedReleationToReports1.cs",
@@ -1087,7 +1558,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 67,
+              "DocumentIndex": 92,
               "Title": "20250202100817_CascadeChange.cs",
               "DocumentMoniker": "C:\\Users\\gogo\\Desktop\\softuni-c#\\NOIT\\ElectroLab\\Migrations\\20250202100817_CascadeChange.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\gogo\\Desktop\\softuni-c#\\NOIT\\ElectroLab\\Migrations\\20250202100817_CascadeChange.cs",
@@ -1098,7 +1569,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 68,
+              "DocumentIndex": 93,
               "Title": "20250202094304_ActualSubmissions.cs",
               "DocumentMoniker": "C:\\Users\\gogo\\Desktop\\softuni-c#\\NOIT\\ElectroLab\\Migrations\\20250202094304_ActualSubmissions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\gogo\\Desktop\\softuni-c#\\NOIT\\ElectroLab\\Migrations\\20250202094304_ActualSubmissions.cs",
@@ -1109,7 +1580,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 69,
+              "DocumentIndex": 94,
               "Title": "20250202094134_Submissions.cs",
               "DocumentMoniker": "C:\\Users\\gogo\\Desktop\\softuni-c#\\NOIT\\ElectroLab\\Migrations\\20250202094134_Submissions.cs",
               "RelativeDocumentMoniker": "..\\..\\..\\..\\gogo\\Desktop\\softuni-c#\\NOIT\\ElectroLab\\Migrations\\20250202094134_Submissions.cs",
@@ -1120,19 +1591,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "_ViewStart.cshtml",
-              "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\_ViewStart.cshtml",
-              "RelativeDocumentMoniker": "Views\\_ViewStart.cshtml",
-              "ToolTip": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\_ViewStart.cshtml",
-              "RelativeToolTip": "Views\\_ViewStart.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-02-25T19:46:14.745Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 48,
+              "DocumentIndex": 79,
               "Title": "TakeTest.cshtml",
               "DocumentMoniker": "C:\\Users\\gogo1\\Desktop\\NOIT\\ElectroLab\\Views\\Test\\TakeTest.cshtml",
               "RelativeDocumentMoniker": "Views\\Test\\TakeTest.cshtml",
@@ -1141,14 +1600,6 @@
               "ViewState": "AgIAAAkAAAAAAAAAAAAuwCkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-02-02T17:48:01.841Z"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{cce594b6-0c39-4442-ba28-10c64ac7e89f}"
-            },
-            {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{e5c86464-96be-4d7c-9a8b-abcb3bbf5f92}"
             }
           ]
         }

@@ -72,58 +72,147 @@ namespace ElectroLab.Controllers
             switch (action)
             {
                 case "delete":
-                    // Handle the deletion of content based on the report type (Course or Test)
-                    if (report.ReportType == "Course")
-                    {
-                        var course = await _context.Courses.FindAsync(report.CourseId);
-                        if (course != null)
+
+                        var course = _context.Courses
+                    .Where(c => c.Id == report.CourseId)
+                    .FirstOrDefault();
+
+                        var testId = 1;
+
+                        if (course == null) return NotFound();
+
+
+                        var reports = _context.Reports.Where(x => x.CourseId == report.CourseId);
+
+
+                        foreach (var report_ in reports)
                         {
-                            _context.Courses.Remove(course);
-                            TempData["Message"] = "Course has been deleted successfully.";
+                            _context.Reports.Remove(report_);
                         }
-                    }
-                    else if (report.ReportType == "Test")
-                    {
-                        var test = await _context.Tests.FindAsync(report.CourseId);
+
+                        var comments = _context.Comments.Where(x => x.CourseId == report.CourseId);
+
+                        foreach (var comment in comments)
+                        {
+                            _context.Comments.Remove(comment);
+                        }
+
+                        var test = _context.Tests.FirstOrDefault(x => x.CourseId == course.Id);
                         if (test != null)
                         {
-                            _context.Tests.Remove(test);
-                            TempData["Message"] = "Test has been deleted successfully.";
+                            testId = test.Id;
                         }
+                        else
+                        {
+                            testId = -1;
+                        }
+
+                        var userId = User.Identity?.Name;
+
+                        if (string.IsNullOrEmpty(userId))
+                        {
+                            return RedirectToAction("Login", "Account");
+                        }
+
+                        var user = await _userManager.FindByNameAsync(userId);
+
+                        if (user == null)
+                        {
+                            return Unauthorized();
+                        }
+
+
+                    if (test != null)
+                    {
+
+                        var submissions = await _context.Submissions
+                            .Where(s => s.TestId == testId)
+                            .ToListAsync();
+
+                        foreach (var submission in submissions)
+                        {
+                            submission.SubmissionAnswers = await _context.SubmissionAnswers
+                                .Where(sa => sa.SubmissionId == submission.Id)
+                                .ToListAsync();
+                        }
+
+                        var questions = await _context.Questions
+                            .Where(q => q.TestId == testId)
+                            .ToListAsync();
+
+                        if (course == null)
+                        {
+                            return NotFound("Course not found.");
+                        }
+
+                        var isAdminOrOwner = await _userManager.IsInRoleAsync(user, "Admin") ||
+                                             await _userManager.IsInRoleAsync(user, "Owner");
+
+                        var isCourseOwner = course.UserId == user.Id;
+
+                        if (!isAdminOrOwner && !isCourseOwner)
+                        {
+                            return Forbid();
+                        }
+
+                        foreach (var submission in submissions)
+                        {
+                            foreach (var submissionAnswer in submission.SubmissionAnswers)
+                            {
+                                _context.SubmissionAnswers.Remove(submissionAnswer);
+                            }
+                            _context.Submissions.Remove(submission);
+                        }
+
+                        foreach (var question in questions)
+                        {
+                            _context.Questions.Remove(question);
+                        }
+
+                        _context.Tests.Remove(test);
+                        await _context.SaveChangesAsync();
                     }
+
+                    _context.Courses.Remove(course);
+                    await _context.SaveChangesAsync();
                     break;
 
+
                 case "ban":
-                    // Ensure that the banDuration parameter is provided when the action is 'ban'
                     if (banDuration.HasValue)
                     {
-                        var user = await _userManager.FindByIdAsync(report.UserId);
-                        if (user != null)
+                        var user_ = await _userManager.FindByIdAsync(report.UserId);
+                        if (user_ != null)
                         {
-                            user.LockoutEnd = DateTimeOffset.UtcNow.AddDays(banDuration.Value);
-                            user.LockoutEnabled = true;
-                            await _userManager.UpdateAsync(user);
+                            user_.LockoutEnd = DateTimeOffset.UtcNow.AddDays(banDuration.Value);
+                            user_.LockoutEnabled = true;
+                            await _userManager.UpdateAsync(user_);
 
-                            // Log the action in the logs table
                             _context.Logs.Add(new Log
                             {
                                 Action = "User Banned",
-                                UserName = user.UserName,
+                                UserName = user_.UserName,
                                 Time = DateTime.Now
                             });
+
+                            report.ReportStatus = "Handled";
+                            _context.Reports.Update(report);
+                            await _context.SaveChangesAsync();
 
                         }
                     }
 
                     break;
 
+
+                case "ignore":
+                    report.ReportStatus = "Handled";
+                    _context.Reports.Update(report);
+                    await _context.SaveChangesAsync();
+                    break;
                 default:
                     return BadRequest();
             }
-
-            report.ReportStatus = "Handled";
-            _context.Reports.Update(report);
-            await _context.SaveChangesAsync();
 
             return RedirectToAction("Index");
         }

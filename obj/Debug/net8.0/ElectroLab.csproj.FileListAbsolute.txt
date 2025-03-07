@@ -881,7 +881,6 @@ C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\staticwebassets\msbuild.
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\staticwebassets\msbuild.buildMultiTargeting.ElectroLab.props
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\staticwebassets\msbuild.buildTransitive.ElectroLab.props
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\staticwebassets.pack.json
-C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.csproj.Up2Date
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.dll
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\refint\ElectroLab.dll
@@ -946,3 +945,8 @@ C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.AspNetCore.Met
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\Microsoft.JSInterop.dll
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Identity.Account.Register.resources
 C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Identity.Account.Register.bg-BG.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\SendGrid.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\bin\Debug\net8.0\StarkbankEcdsa.dll
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Home.Profile.resources
+C:\Users\gogo1\Desktop\NOIT\ElectroLab\obj\Debug\net8.0\ElectroLab.Resources.Views.Home.Profile.bg-BG.resources

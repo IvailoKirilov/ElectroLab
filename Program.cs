@@ -5,12 +5,26 @@ using Microsoft.AspNetCore.Mvc.Razor;
 using System.Globalization;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Identity;
+using WebPWrecover.Services;
+using Microsoft.AspNetCore.Identity.UI.Services;
+using ElectroLab.Services;
 
 var builder = WebApplication.CreateBuilder(args);
 
 var connectionString = builder.Configuration.GetConnectionString("DefaultConnection") ?? throw new InvalidOperationException("Connection string 'DefaultConnection' not found.");
+var connection = String.Empty;
+if (builder.Environment.IsDevelopment())
+{
+    builder.Configuration.AddEnvironmentVariables().AddJsonFile("appsettings.json");
+    connection = builder.Configuration.GetConnectionString("AZURE_SQL_CONNECTIONSTRING");
+}
+else
+{
+    connection = Environment.GetEnvironmentVariable("AZURE_SQL_CONNECTIONSTRING");
+}
+
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
-    options.UseSqlServer(connectionString));
+    options.UseSqlServer(connection));
 builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
 
@@ -25,7 +39,11 @@ builder.Services.AddLocalization(options =>
 {
     options.ResourcesPath = "Resources";
 });
-builder.Services.AddRazorPages();  
+builder.Services.AddRazorPages();
+
+//builder.Services.AddTransient<IEmailSender, EmailSender>();
+//builder.Services.Configure<AuthMessageSenderOptions>(builder.Configuration);
+
 
 builder.Services.Configure<RequestLocalizationOptions>(options =>
 {

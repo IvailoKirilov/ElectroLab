@@ -11,5 +11,6 @@ namespace ElectroLab.Models
         public string UserId { get; set; }  
         public ApplicationUser User { get; set; }  
         public ICollection<Test> Tests { get; set; }  
+        public ICollection<Comment> Comments { get; set; }
     }
 }

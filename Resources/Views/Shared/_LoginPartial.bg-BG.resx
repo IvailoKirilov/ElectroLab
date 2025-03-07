@@ -126,6 +126,9 @@
   <data name="Logout" xml:space="preserve">
     <value>Излезни</value>
   </data>
+  <data name="Profile" xml:space="preserve">
+    <value>Профил</value>
+  </data>
   <data name="Register" xml:space="preserve">
     <value>Регистрация</value>
   </data>

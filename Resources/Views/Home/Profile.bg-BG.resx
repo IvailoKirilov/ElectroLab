@@ -117,19 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
-  <data name="Hello" xml:space="preserve">
-    <value>Hello</value>
+  <data name="Action" xml:space="preserve">
+    <value>Действия</value>
   </data>
-  <data name="Login" xml:space="preserve">
-    <value>Login</value>
+  <data name="Activity" xml:space="preserve">
+    <value>Твоя активност</value>
   </data>
-  <data name="Logout" xml:space="preserve">
-    <value>Logout</value>
+  <data name="Admin" xml:space="preserve">
+    <value>Администратор</value>
   </data>
-  <data name="Profile" xml:space="preserve">
-    <value>Profile</value>
+  <data name="CoursesMade" xml:space="preserve">
+    <value>Брой курсове направени:</value>
   </data>
-  <data name="Register" xml:space="preserve">
-    <value>Register</value>
+  <data name="Description" xml:space="preserve">
+    <value>Описание</value>
+  </data>
+  <data name="Email" xml:space="preserve">
+    <value>Имейл:</value>
+  </data>
+  <data name="Name" xml:space="preserve">
+    <value>Име</value>
+  </data>
+  <data name="NoCourses" xml:space="preserve">
+    <value>Няма намерени курсове.</value>
+  </data>
+  <data name="NoRolesAssigned" xml:space="preserve">
+    <value>Няма роли към потребителя.</value>
+  </data>
+  <data name="NoRolesFound" xml:space="preserve">
+    <value>Няма роли намерени.</value>
+  </data>
+  <data name="Owner" xml:space="preserve">
+    <value>Собственик</value>
+  </data>
+  <data name="Published" xml:space="preserve">
+    <value>Курсове публикувани от</value>
+  </data>
+  <data name="Remove" xml:space="preserve">
+    <value>Изтрии</value>
+  </data>
+  <data name="Roles" xml:space="preserve">
+    <value>Роли</value>
+  </data>
+  <data name="UserDataNotFound" xml:space="preserve">
+    <value>Няма потребителски данни намерени.</value>
+  </data>
+  <data name="UserId" xml:space="preserve">
+    <value>Потребителски номер:</value>
+  </data>
+  <data name="UserProfile" xml:space="preserve">
+    <value>Потребителски Профил</value>
+  </data>
+  <data name="View" xml:space="preserve">
+    <value>Прегледай</value>
   </data>
 </root>

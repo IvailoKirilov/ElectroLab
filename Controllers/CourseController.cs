@@ -22,7 +22,7 @@ namespace ElectroLab.Controllers
         async public Task<IActionResult> Index(string searchTerm)
         {
             var courses = string.IsNullOrEmpty(searchTerm)
-                ? _context.Courses.ToList()
+                ? _context.Courses.Take(12).ToList()
                 : _context.Courses
                     .Where(c => c.Title.Contains(searchTerm))
                     .ToList();
@@ -78,6 +78,16 @@ namespace ElectroLab.Controllers
                 }
             }
 
+            course.Comments = [];
+
+            foreach (var comment in _context.Comments)
+            {
+                if (comment.CourseId == id)
+                {
+                    course.Comments.Add(comment);
+                }
+            }
+
             if (course == null) return NotFound();
             return View(course);
         }
@@ -92,6 +102,21 @@ namespace ElectroLab.Controllers
 
             if (course == null) return NotFound();
 
+
+            var reports = _context.Reports.Where(x => x.CourseId == courseId);
+            
+
+            foreach(var report in reports)
+            {
+                _context.Reports.Remove(report);
+            }
+
+            var comments = _context.Comments.Where(x => x.CourseId == courseId);
+
+            foreach(var comment in comments)
+            {
+                _context.Comments.Remove(comment);
+            }
 
             var test = _context.Tests.FirstOrDefault(x => x.CourseId == course.Id);
             if (test != null)
@@ -174,6 +199,36 @@ namespace ElectroLab.Controllers
             _context.Courses.Remove(course);
             _context.SaveChanges();
             return RedirectToAction(nameof(Index));
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> AddComment(int courseId, string commentText)
+        {
+            var userId = User.FindFirstValue(ClaimTypes.NameIdentifier);
+            if (string.IsNullOrEmpty(userId))
+            {
+                return Unauthorized();
+            }
+
+            var course = await _context.Courses.FindAsync(courseId);
+            if (course == null)
+            {
+                return NotFound();
+            }
+
+            var comment = new Comment
+            {
+                UserId = userId,
+                CourseId = courseId,
+                CommentText = commentText,
+                CreatedAt = DateTime.Now
+            };
+
+            _context.Comments.Add(comment);
+            await _context.SaveChangesAsync();
+
+            return RedirectToAction("Details", new { id = courseId });
         }
     }
 }

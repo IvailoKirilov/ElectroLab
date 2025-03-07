@@ -3,11 +3,11 @@
     ViewData["Title"] = "Admin Dashboard";
 }
 
-<h1>Admin Dashboard</h1>
+<h1>Администраторски панел</h1>
 
 <div class="card">
     <div class="card-body">
-        <h2 class="card-title">New Reports</h2>
+        <h2 class="card-title">Нови жалби</h2>
 
         @if (Model.Reports != null) 
         {
@@ -17,14 +17,14 @@
                     <li class="list-group-item d-flex justify-content-between align-items-center">
                         <strong>@report.ReportContent</strong>
                         <span class="badge badge-primary">@report.ReportType</span>
-                        <a href="@Url.Action("ViewReport", new { id = report.Id })" class="btn btn-info btn-sm">View Report</a>
+                        <a href="@Url.Action("ViewReport", new { id = report.Id })" class="btn btn-info btn-sm">Прегледайте жалба</a>
                     </li>
                 }
             </ul>
         }
         else
         {
-            <p>No new reports at the moment.</p>
+            <p>Няма жалби в дадения момент.</p>
         }
     </div>
 </div>
@@ -33,13 +33,13 @@
 
 <div class="card">
     <div class="card-body">
-        <h2 class="card-title">Recent Logs</h2>
+        <h2 class="card-title">Логове</h2>
         <table class="table table-striped">
             <thead>
                 <tr>
-                    <th>Action</th>
-                    <th>Performed By</th>
-                    <th>Time</th>
+                    <th>Действие</th>
+                    <th>Направено от</th>
+                    <th>Дата</th>
                 </tr>
             </thead>
             <tbody>

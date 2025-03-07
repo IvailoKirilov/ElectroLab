@@ -10,5 +10,6 @@ namespace ElectroLab.Models
 
         public ICollection<Report> Reports { get; set; }
 
+        public ICollection<Comment> Comments { get; set; }
     }
 }
