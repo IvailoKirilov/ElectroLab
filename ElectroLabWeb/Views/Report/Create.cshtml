@@ -1,0 +1,26 @@
+﻿@model ElectroLabModels.Models.Report
+@{
+    ViewData["Title"] = "Report Content";
+}
+
+<h2>Report Content</h2>
+
+<form asp-action="Create" method="post">
+    <div class="mb-3">
+        <label asp-for="ReportType" class="form-label">Report Type</label>
+        <input type="text" class="form-control" value="@Model.ReportType" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="CourseId" class="form-label">Course (if applicable)</label>
+        <input type="hidden" asp-for="CourseId" value="@Model.CourseId" />
+        <input type="text" class="form-control" value="@Model.CourseId" readonly />
+    </div>
+
+    <div class="mb-3">
+        <label asp-for="ReportContent" class="form-label">Report Details</label>
+        <textarea asp-for="ReportContent" class="form-control" rows="4" required></textarea>
+    </div>
+
+    <button type="submit" class="btn btn-danger">Submit Report</button>
+</form>

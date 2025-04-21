@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ElectroLabModels.ViewModels.BanViewModel>
+@{
+    ViewData["Title"] = "Banned Users";
+}
+
+<h1>Banned Users</h1>
+
+<div class="card">
+    <div class="card-body">
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>User</th>
+                    <th>Ban Date</th>
+                    <th>Expires On</th>
+                    <th>Reason</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var ban in Model)
+                {
+                    <tr>
+                        <td>@ban.UserName</td>
+                        <td>@ban.BanDate.ToString("yyyy-MM-dd")</td>
+                        <td>@ban.ExpiryDate?.ToString("yyyy-MM-dd")</td>
+                        <td>@ban.Reason</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>

@@ -1,0 +1,221 @@
+﻿@using Microsoft.AspNetCore.Identity
+@using ElectroLabModels.Models
+@inject SignInManager<ApplicationUser> SignInManager
+@inject UserManager<ApplicationUser> UserManager
+@model ApplicationUser
+@{
+    ViewData["Title"] = "Profile";
+}
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<head>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-icons/1.8.1/font/bootstrap-icons.min.css" rel="stylesheet">
+</head>
+
+<style>
+    body {
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+    }
+
+    .container {
+        width: 80%;
+        margin: 0 auto;
+        padding-top: 20px;
+        flex-grow: 1;
+    }
+
+    .card {
+        border: none;
+        border-radius: 10px;
+        background-color: #ffffff;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+        margin-bottom: 30px;
+    }
+
+    .card-body {
+        padding: 25px;
+    }
+
+    .card-title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #333;
+    }
+
+    .card-text {
+        font-size: 16px;
+        color: #555;
+    }
+
+    .badge {
+        font-size: 14px;
+        margin-right: 10px;
+    }
+
+        .badge.bg-danger {
+            background-color: #e74c3c;
+        }
+
+        .badge.bg-info {
+            background-color: #3498db;
+        }
+
+    .table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+    }
+
+        .table th,
+        .table td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+
+        .table th {
+            background-color: #3498db;
+            color: white;
+            font-weight: bold;
+        }
+
+    .table-striped tr:nth-child(even) {
+        background-color: #f2f2f2;
+    }
+
+    .btn-sm {
+        font-size: 14px;
+        padding: 8px 15px;
+        border-radius: 5px;
+    }
+
+    .btn-info {
+        background-color: #3498db;
+        color: white;
+    }
+
+    .btn-danger {
+        background-color: #e74c3c;
+        color: white;
+    }
+
+        .btn-info:hover, .btn-danger:hover {
+            opacity: 0.8;
+        }
+
+    h2, h3 {
+        color: #333;
+    }
+
+    .hr-line {
+        border-top: 2px solid #3498db;
+        margin-top: 30px;
+        margin-bottom: 30px;
+    }
+</style>
+
+<div class="container">
+    <h1>@Localizer["UserProfile"]</h1>
+
+    <div class="card">
+        <div class="card-body">
+            @if (Model != null)
+            {
+                <h4 class="card-title">@Model.UserName</h4>
+                <p class="card-text"><strong>@Localizer["Email"] </strong> @Model.Email</p>
+                <p class="card-text"><strong>@Localizer["UserId"] </strong> @Model.Id</p>
+                <h4>@Localizer["Roles"]</h4>
+
+                @if (await UserManager.GetRolesAsync(Model) != null)
+                {
+                    var roles = await UserManager.GetRolesAsync(Model);
+                    if (roles != null && roles.Any())
+                    {
+                        foreach (var role in roles)
+                        {
+                            @if (role == "Owner")
+                            {
+                                <span class="badge bg-danger">@Localizer["Owner"]</span>
+                            }
+                            else if (role == "Admin")
+                            {
+                                <span class="badge bg-info">@Localizer["Admin"]</span>
+                            }
+                        }
+                    }
+                    else
+                    {
+                        <p>@Localizer["NoRolesAssigned"]</p>
+                    }
+                }
+                else
+                {
+                    <p>@Localizer["NoRolesFound"]</p>
+                }
+            }
+            else
+            {
+                <p>@Localizer["UserDataNotFound"]</p>
+            }
+        </div>
+    </div>
+
+    <div class="hr-line"></div>
+
+    <h2>@Localizer["Activity"]</h2>
+    <div>
+        @if (Model?.Courses != null && Model.Courses.Any())
+        {
+            <p><strong>@Localizer["CoursesMade"]</strong> @Model.Courses.Count</p>
+        }
+        else
+        {
+            <p>@Localizer["NoCourses"]</p>
+        }
+    </div>
+
+    <h3>@Localizer["Published"] @Model.UserName.</h3>
+
+    @if (Model?.Courses != null && Model.Courses.Any())
+    {
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>@Localizer["Name"]</th>
+                    <th>@Localizer["Description"]</th>
+                    <th>@Localizer["Action"]</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var file in Model.Courses)
+                {
+                    <tr>
+                        <td>@file.Title</td>
+                        <td>@file.Description</td>
+                        <td>
+                            <a asp-controller="Course" asp-action="Details" asp-route-id="@file.Id" class="btn btn-info btn-sm" title="View">
+                                <i class="bi bi-eye"></i> @Localizer["View"]
+                            </a>
+
+                            @if (User.IsInRole("Admin") || User.IsInRole("Owner"))
+                            {
+                                <a asp-controller="Course" asp-action="Delete" asp-route-id="@file.Id" class="btn btn-danger btn-sm" title="Remove as Administrator">
+                                    <i class="bi bi-x-circle"></i> @Localizer["Remove"]
+                                </a>
+                            }
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    }
+    else
+    {
+        <p>No courses available to display.</p>
+    }
+</div>

@@ -1,0 +1,97 @@
+﻿@model IEnumerable<ElectroLabModels.Models.Course>
+
+@{
+    ViewData["Title"] = "Home";
+}
+
+@using Microsoft.AspNetCore.Mvc.Localization;
+@inject IViewLocalizer Localizer
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewData["Title"] - ElectroLab</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
+    <style>
+        .card:hover {
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
+        }
+
+        .card-body {
+            min-height: 200px;
+        }
+
+        .card-footer {
+            font-size: 0.9rem;
+        }
+
+        .text-primary {
+            color: #007bff !important;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron jumbotron-fluid bg-primary text-white text-center py-5">
+        <div class="container">
+            <h1 class="display-4">@Localizer["Welcome"]</h1>
+            <p class="lead">@Localizer["LeadText"]</p>
+            <a class="btn btn-light btn-lg" asp-controller="Course" asp-action="Index">@Localizer["BrowseCourses"]</a>
+        </div>
+    </div>
+
+    <section id="courses" class="container my-5">
+        <h2 class="text-center mb-4">@Localizer["OurCourses"]</h2>
+
+        <div class="d-flex justify-content-between align-items-center mb-3">
+            <h3>@Localizer["ExploreCourses"]</h3>
+            <a asp-controller="Course" asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> @Localizer["CreateNewCourse"]</a>
+        </div>
+
+        <div class="row">
+            @if (Model != null)
+            {
+                foreach (var course in Model)
+                {
+                    <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
+                        <div class="card shadow-sm border-light rounded">
+                            <div class="card-body">
+                                <h5 class="card-title">@course.Title</h5>
+                                <p class="card-text text-truncate" style="max-width: 100%;">@course.Description</p>
+                                <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id" class="btn btn-info btn-sm">
+                                    <i class="bi bi-eye"></i> @Localizer["View"]
+                                </a>
+                            </div>
+                            <div class="card-footer text-muted d-flex justify-content-between align-items-center">
+                                <span>
+                                    @if (course.User != null)
+                                    {
+                                        @course.User.UserName
+                                    }
+                                    else
+                                    {
+                                        <span>@Localizer["Unknown"]</span>
+                                    }
+                                </span>
+                                <span class="text-muted small">@Localizer["CourseID"] @course.Id</span>
+                            </div>
+                        </div>
+                    </div>
+                }
+            }
+            else
+            {
+                <div class="alert alert-warning text-center">
+                    @Localizer["NoCoursesAvailable"]
+                </div>
+            }
+
+        </div>
+    </section>
+
+</body>
+</html>

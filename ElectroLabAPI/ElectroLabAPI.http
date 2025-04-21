@@ -1,0 +1,6 @@
+@ElectroLabAPI_HostAddress = http://localhost:5204
+
+GET {{ElectroLabAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

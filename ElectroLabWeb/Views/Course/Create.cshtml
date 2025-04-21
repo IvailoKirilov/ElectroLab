@@ -1,0 +1,23 @@
+﻿@model ElectroLabModels.Models.Course
+@using Microsoft.AspNetCore.Mvc.Localization
+@inject IViewLocalizer Localizer
+
+<h2>@Localizer["CreateCourse"]</h2>
+<form asp-action="Create" method="post">
+    @Html.AntiForgeryToken()
+
+    <label>@Localizer["Title"]</label>
+    <input asp-for="Title" class="form-control" />
+
+    <label>@Localizer["Description"]</label>
+    <textarea asp-for="Description" class="form-control"></textarea>
+
+    <label>@Localizer["Content"]</label>
+    <textarea asp-for="ContentHtml" id="tiny"></textarea>
+    <span asp-validation-for="ContentHtml" class="text-danger"></span>
+
+
+    <button type="submit" class="btn btn-success">@Localizer["Save"]</button>
+</form>
+
+

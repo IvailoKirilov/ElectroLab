@@ -1,0 +1,73 @@
+﻿@model ElectroLabModels.ViewModels.ReportViewModel
+@{
+    ViewData["Title"] = "Report Details";
+}
+
+<h1>Report Details</h1>
+
+<div class="container">
+    <div class="row">
+        <!-- Left side: Report Content -->
+        <div class="col-md-8">
+            <div class="card">
+                <div class="card-body">
+                    <h3>Reported Content</h3>
+                    <p>@Model.ReportContent</p>
+
+                    <h4>Additional Information</h4>
+                    <p><strong>Reported by:</strong> @Model.ReporterUserName</p>
+                    <p><strong>Report Type:</strong> @Model.ReportType</p>
+                </div>
+            </div>
+            <div class="card">
+                <div class="card-body">
+                    @Html.Raw(Model.CourseContent)
+                </div>
+            </div>
+        </div>
+
+        <!-- Right side: Actions -->
+        <div class="col-md-4">
+            <div class="card">
+                <div class="card-body">
+                    <h4>Actions</h4>
+                    <form method="post" action="@Url.Action("HandleReport", new { id = Model.ReportId })">
+                        <div class="form-group">
+                            <label for="action">Choose Action:</label>
+                            <select name="action" id="action" class="form-control" onchange="showBanDurationOption()">
+                                <option value="delete">Delete Content</option>
+                                <option value="ban">Ban User</option>
+                                <option value="ignore">Ignore Report</option>
+                            </select>
+                        </div>
+
+                        <!-- Ban Duration (Initially hidden) -->
+                        <div class="form-group" id="banDurationDiv" style="display:none;">
+                            <label for="banDuration">Select Ban Duration:</label>
+                            <select name="banDuration" id="banDuration" class="form-control">
+                                <option value="1">1 Day</option>
+                                <option value="7">1 Week</option>
+                                <option value="30">1 Month</option>
+                                <option value="365">1 Year</option>
+                            </select>
+                        </div>
+
+                        <button type="submit" class="btn btn-danger">Apply Action</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+    function showBanDurationOption() {
+        var action = document.getElementById("action").value;
+        var banDurationDiv = document.getElementById("banDurationDiv");
+        if (action === "ban") {
+            banDurationDiv.style.display = "block";
+        } else {
+            banDurationDiv.style.display = "none";
+        }
+    }
+</script>

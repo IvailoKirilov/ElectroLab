@@ -1,0 +1,57 @@
+﻿@using System.Linq
+@{
+    ViewData["Title"] = "Admin Dashboard";
+}
+
+<h1>Администраторски панел</h1>
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">Нови жалби</h2>
+
+        @if (Model.Reports != null) 
+        {
+            <ul class="list-group">
+                @foreach (var report in Model.Reports)
+                {
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        <strong>@report.ReportContent</strong>
+                        <span class="badge badge-primary">@report.ReportType</span>
+                        <a href="@Url.Action("ViewReport", new { id = report.Id })" class="btn btn-info btn-sm">Прегледайте жалба</a>
+                    </li>
+                }
+            </ul>
+        }
+        else
+        {
+            <p>Няма жалби в дадения момент.</p>
+        }
+    </div>
+</div>
+
+<hr />
+
+<div class="card">
+    <div class="card-body">
+        <h2 class="card-title">Логове</h2>
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Действие</th>
+                    <th>Направено от</th>
+                    <th>Дата</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var log in Model.Logs)
+                {
+                    <tr>
+                        <td>@log.Action</td>
+                        <td>@log.UserName</td>
+                        <td>@log.Time</td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
