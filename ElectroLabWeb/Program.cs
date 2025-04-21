@@ -19,7 +19,6 @@ public class Program
         builder.Services.AddDbContext<ApplicationDbContext>(options =>
             options.UseSqlServer(connectionString));
 
-        builder.Services.AddDefaultIdentity<IdentityUser>(options => options.SignIn.RequireConfirmedAccount = true).AddEntityFrameworkStores<ApplicationDbContext>();
         builder.Services.AddDatabaseDeveloperPageExceptionFilter();
 
         builder.Services.AddIdentity<ApplicationUser, IdentityRole>(options => options.SignIn.RequireConfirmedAccount = false)
@@ -54,7 +53,6 @@ public class Program
         builder.Services.AddScoped<ReportService>();
         builder.Services.AddScoped<TestService>();
         builder.Services.AddScoped<TestSubmissionService>();
-
 
 
         var app = builder.Build();

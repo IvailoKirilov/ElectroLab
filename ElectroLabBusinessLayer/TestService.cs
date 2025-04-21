@@ -1,7 +1,7 @@
 ﻿using ElectroLabModels.Models;
 using ElectroLabDB;
 using Microsoft.AspNetCore.Identity;
-using System.Data.Entity;
+using Microsoft.EntityFrameworkCore;
 
 namespace ElectroLabBusinessLayer
 {
@@ -28,7 +28,6 @@ namespace ElectroLabBusinessLayer
         public async Task CreateTestAsync(Test test)
         {
             _context.Tests.Add(test);
-            await _context.SaveChangesAsync();
 
             foreach (var question in test.Questions)
             {
