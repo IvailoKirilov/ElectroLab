@@ -120,8 +120,14 @@
   <data name="BrowseCourses" xml:space="preserve">
     <value>Browse Courses</value>
   </data>
+  <data name="ChooseUsDescription" xml:space="preserve">
+    <value>Discover hands-on Arduino and electronics courses, created daily by passionate makers like you.</value>
+  </data>
   <data name="CourseID" xml:space="preserve">
     <value>Course ID:</value>
+  </data>
+  <data name="CoursesAvailable" xml:space="preserve">
+    <value>Courses Available</value>
   </data>
   <data name="CreateNewCourse" xml:space="preserve">
     <value>Create New Course</value>
@@ -129,19 +135,43 @@
   <data name="ExploreCourses" xml:space="preserve">
     <value>Explore Our Courses</value>
   </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>Get Started</value>
+  </data>
   <data name="LeadText" xml:space="preserve">
     <value>Your journey to mastering electronics starts here. Welcome to the sharespace of electronic systems learning!</value>
   </data>
   <data name="OurCourses" xml:space="preserve">
     <value>Our Courses</value>
   </data>
+  <data name="ReadyToStart" xml:space="preserve">
+    <value>Ready to start?</value>
+  </data>
+  <data name="ReadyToStartDescription" xml:space="preserve">
+    <value>Ready to start? Join a growing community of electronics and Arduino enthusiasts today.</value>
+  </data>
+  <data name="SignUpNow" xml:space="preserve">
+    <value>Sign up now!</value>
+  </data>
   <data name="Unknown" xml:space="preserve">
     <value>Unknown</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Users</value>
   </data>
   <data name="View" xml:space="preserve">
     <value>View</value>
   </data>
+  <data name="ViewAllCourses" xml:space="preserve">
+    <value>View all courses</value>
+  </data>
+  <data name="ViewDetails" xml:space="preserve">
+    <value>View Details</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Welcome to ElectroLab!</value>
+  </data>
+  <data name="WhyChooseUs" xml:space="preserve">
+    <value>Why choose us?</value>
   </data>
 </root>

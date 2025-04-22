@@ -120,14 +120,23 @@
   <data name="BrowseCourses" xml:space="preserve">
     <value>Разгледайте курсовете</value>
   </data>
+  <data name="ChooseUsDescription" xml:space="preserve">
+    <value>Открийте практически курсове по Arduino и електроника, създавани всеки ден от вдъхновени създатели като вас.</value>
+  </data>
   <data name="CourseID" xml:space="preserve">
     <value>Идентификационен номер на курса:</value>
+  </data>
+  <data name="CoursesAvailable" xml:space="preserve">
+    <value>Курсове достъпни</value>
   </data>
   <data name="CreateNewCourse" xml:space="preserve">
     <value>Създайте нов курс</value>
   </data>
   <data name="ExploreCourses" xml:space="preserve">
     <value>Разгледайте курсове</value>
+  </data>
+  <data name="GetStarted" xml:space="preserve">
+    <value>Започни</value>
   </data>
   <data name="LeadText" xml:space="preserve">
     <value>Вашето пътешествие към овладяването на електрониката започва тук. 
@@ -136,14 +145,35 @@
   <data name="OurCourses" xml:space="preserve">
     <value>Нашите курсове</value>
   </data>
+  <data name="ReadyToStart" xml:space="preserve">
+    <value>Готови ли сте да започнете?</value>
+  </data>
+  <data name="ReadyToStartDescription" xml:space="preserve">
+    <value>Готови ли сте да започнете? Присъединете се към развиваща се общност от ентусиасти по електроника и Arduino още днес.</value>
+  </data>
+  <data name="SignUpNow" xml:space="preserve">
+    <value>Регистрирайте се сега!</value>
+  </data>
   <data name="Unknown" xml:space="preserve">
     <value>Неизвестен</value>
+  </data>
+  <data name="Users" xml:space="preserve">
+    <value>Потребители</value>
   </data>
   <data name="View" xml:space="preserve">
     <value>Преглед</value>
   </data>
+  <data name="ViewAllCourses" xml:space="preserve">
+    <value>Виж всички курсове</value>
+  </data>
+  <data name="ViewDetails" xml:space="preserve">
+    <value>Виж детайли</value>
+  </data>
   <data name="Welcome" xml:space="preserve">
     <value>Добре дошли в ElectroLab
 </value>
+  </data>
+  <data name="WhyChooseUs" xml:space="preserve">
+    <value />
   </data>
 </root>

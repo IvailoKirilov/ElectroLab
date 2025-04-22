@@ -21,9 +21,6 @@
                     </a>
                 </div>
             </div>
-            <div class="col-lg-6 d-none d-lg-block">
-                <img src="/api/placeholder/600/400" alt="ElectroLab Learning" class="img-fluid rounded shadow-lg">
-            </div>
         </div>
     </div>
     <div class="wave-shape position-absolute bottom-0 start-0 w-100">
@@ -39,22 +36,22 @@
             <div class="col-md-4">
                 <div class="p-4 bg-white rounded shadow-sm">
                     <i class="bi bi-mortarboard text-primary display-4"></i>
-                    <h3 class="mt-4 fw-bold">50+</h3>
+                    <h3 class="mt-4 fw-bold">~10</h3>
                     <p class="text-muted">@Localizer["CoursesAvailable"]</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 bg-white rounded shadow-sm">
                     <i class="bi bi-people text-primary display-4"></i>
-                    <h3 class="mt-4 fw-bold">10,000+</h3>
-                    <p class="text-muted">@Localizer["Students"]</p>
+                    <h3 class="mt-4 fw-bold">~10</h3>
+                    <p class="text-muted">@Localizer["Users"]</p>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="p-4 bg-white rounded shadow-sm">
                     <i class="bi bi-trophy text-primary display-4"></i>
-                    <h3 class="mt-4 fw-bold">98%</h3>
-                    <p class="text-muted">@Localizer["SatisfactionRate"]</p>
+                    <h3 class="mt-4 fw-bold">~10</h3>
+                    <p class="text-muted">@Localizer["TestsMade"]</p>
                 </div>
             </div>
         </div>
@@ -70,16 +67,6 @@
             </div>
             <div class="col-md-6 text-md-end">
                 <div class="d-flex justify-content-md-end align-items-center gap-3">
-                    <div class="dropdown">
-                        <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                            <i class="bi bi-funnel me-1"></i>@Localizer["Filter"]
-                        </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">@Localizer["MostPopular"]</a></li>
-                            <li><a class="dropdown-item" href="#">@Localizer["NewestFirst"]</a></li>
-                            <li><a class="dropdown-item" href="#">@Localizer["HighestRated"]</a></li>
-                        </ul>
-                    </div>
                     <a asp-controller="Course" asp-action="Create" class="btn btn-primary">
                         <i class="bi bi-plus-circle me-1"></i>@Localizer["CreateNewCourse"]
                     </a>
@@ -95,12 +82,14 @@
                     <div class="col-lg-4 col-md-6">
                         <div class="card h-100 border-0 shadow-sm hover-card">
                             <div class="position-relative">
-                                <img src="/api/placeholder/400/200" class="card-img-top" alt="@course.Title">
+                                <!--
                                 <div class="position-absolute top-0 end-0 p-2">
                                     <span class="badge bg-primary">@Localizer["Popular"]</span>
                                 </div>
+                                -->
                             </div>
                             <div class="card-body">
+                                <!--
                                 <div class="d-flex justify-content-between mb-2">
                                     <span class="badge bg-light text-dark">@Localizer["Electronics"]</span>
                                     <div>
@@ -111,10 +100,11 @@
                                         <i class="bi bi-star-half text-warning"></i>
                                     </div>
                                 </div>
+                                -->
                                 <h5 class="card-title fw-bold">@course.Title</h5>
                                 <p class="card-text text-muted">@(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)</p>
                             </div>
-                            <div class="card-footer bg-white border-0">
+                            <div class="card-footer text-muted bg-white border-0">
                                 <div class="d-flex justify-content-between align-items-center">
                                     <div class="d-flex align-items-center">
                                         <small class="text-muted">
@@ -189,7 +179,7 @@
                 </div>
             </div>
             <div class="col-lg-6">
-                <img src="/api/placeholder/600/400" alt="Why choose ElectroLab" class="img-fluid rounded shadow">
+                <img src="~/img/Arduino_close-up.jpg" alt="Why choose ElectroLab" class="img-fluid rounded shadow">
             </div>
         </div>
     </div>

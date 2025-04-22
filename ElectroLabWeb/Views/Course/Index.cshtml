@@ -55,6 +55,57 @@
     <div class="row">
         @foreach (var course in Model)
         {
+            <div class="col-lg-4 col-md-6">
+                <div class="card h-100 border-0 shadow-sm hover-card">
+                    <div class="position-relative">
+                        <!--
+                        <div class="position-absolute top-0 end-0 p-2">
+                            <span class="badge bg-primary">@Localizer["Popular"]</span>
+                        </div>
+                        -->
+                    </div>
+                    <div class="card-body">
+                        <!--
+                        <div class="d-flex justify-content-between mb-2">
+                            <span class="badge bg-light text-dark">@Localizer["Electronics"]</span>
+                            <div>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-fill text-warning"></i>
+                                <i class="bi bi-star-half text-warning"></i>
+                            </div>
+                        </div>
+                        -->
+                        <h5 class="card-title fw-bold">@course.Title</h5>
+                        <p class="card-text text-muted">@(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)</p>
+                    </div>
+                    <div class="card-footer text-muted bg-white border-0">
+                        <div class="d-flex justify-content-between align-items-center">
+                            <div class="d-flex align-items-center">
+                                <small class="text-muted">
+                                    @if (course.User != null)
+                                    {
+                                        @course.User.UserName
+                                    }
+                                    else
+                                    {
+                                        <span>@Localizer["Unknown"]</span>
+                                    }
+                                </small>
+                            </div>
+                            <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id" class="btn btn-outline-primary btn-sm">
+                                <i class="bi bi-arrow-right me-1"></i>@Localizer["ViewDetails"]
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+
+            <!--
+
             <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
                 <div class="card shadow-sm border-light rounded">
                     <div class="card-body">
@@ -77,6 +128,7 @@
                     </div>
                 </div>
             </div>
+            -->
         }
     </div>
 </section>
