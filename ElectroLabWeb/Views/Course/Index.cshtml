@@ -4,131 +4,275 @@
 @using Microsoft.Extensions.Localization
 @inject IViewLocalizer Localizer
 
-<head>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
-    <style>
-        .card:hover {
-            transform: scale(1.05);
-            transition: transform 0.3s ease;
-        }
+<style>
+    /* Hero section */
+    .courses-hero {
+        background: linear-gradient(rgba(0, 123, 255, 0.8), rgba(0, 123, 255, 0.9)), url('/img/courses-bg.jpg');
+        background-size: cover;
+        background-position: center;
+        color: white;
+        padding: 3rem 0;
+        margin-bottom: 2rem;
+        border-radius: 0.5rem;
+    }
+    
+    /* Course cards */
+    .course-card {
+        transition: all 0.3s ease;
+        border: none;
+        height: 100%;
+    }
+    
+    .course-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1) !important;
+    }
+    
+    .course-card .card-body {
+        padding: 1.5rem;
+        min-height: 180px;
+    }
+    
+    .course-card .card-footer {
+        background-color: transparent;
+        padding: 1rem 1.5rem;
+        border-top: 1px solid rgba(0, 0, 0, 0.05);
+    }
+    
+    .author-avatar {
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background-color: #e9ecef;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-right: 0.5rem;
+    }
+    
+    /* Search and filters */
+    .search-container {
+        background-color: #f8f9fa;
+        padding: 1.5rem;
+        border-radius: 0.5rem;
+        margin-bottom: 2rem;
+    }
+    
+    .filter-tag {
+        cursor: pointer;
+        transition: all 0.2s ease;
+    }
+    
+    .filter-tag:hover {
+        background-color: #0d6efd !important;
+        color: white !important;
+    }
+    
+    /* Empty state */
+    .empty-state {
+        padding: 3rem;
+        text-align: center;
+        background-color: #f8f9fa;
+        border-radius: 0.5rem;
+    }
+    
+    /* Animation for page load */
+    .fade-in {
+        animation: fadeIn 0.6s ease-in-out;
+    }
+    
+    @@ keyframes fadeIn {
+        from { opacity: 0; transform: translateY(20px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+</style>
 
-        .card-body {
-            min-height: 200px;
-        }
+<!-- Hero Section -->
+<div class="courses-hero mb-4 fade-in">
+    <div class="container">
+        <div class="row align-items-center">
+            <div class="col-lg-8">
+                <h1 class="display-4 fw-bold mb-3">@Localizer["OurCourses"]</h1>
+                <p class="lead mb-4">@Localizer["CoursesHeroSubtitle"]</p>
+            </div>
+            <div class="col-lg-4 text-lg-end">
+                <a asp-action="Create" class="btn btn-light btn-lg">
+                    <i class="bi bi-plus-circle me-2"></i> @Localizer["CreateNewCourse"]
+                </a>
+            </div>
+        </div>
+    </div>
+</div>
 
-        .card-footer {
-            font-size: 0.9rem;
-        }
-
-        .text-primary {
-            color: #007bff !important;
-        }
-    </style>
-</head>
-
-
-
-<section id="courses" class="container my-5">
-    <h2 class="text-center mb-4">@Localizer["OurCourses"]</h2>
-
-    <div class="row justify-content-center mb-4">
-        <div class="col-md-6">
-            <form method="get" asp-action="Index">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="@Localizer["SearchCourse"]" name="searchTerm" value="@ViewData["SearchTerm"]" />
-                    <button class="btn btn-primary" type="submit">
-                        <i class="fas fa-search"></i> @Localizer["Search"]
-                    </button>
+<!-- Main Content -->
+<div class="container fade-in" style="animation-delay: 0.2s;">
+    <!-- Search and Filters -->
+    <div class="search-container shadow-sm">
+        <div class="row g-3">
+            <div class="col-md-8">
+                <form method="get" asp-action="Index" class="d-flex">
+                    <div class="input-group">
+                        <span class="input-group-text bg-white border-end-0">
+                            <i class="bi bi-search"></i>
+                        </span>
+                        <input type="text" class="form-control border-start-0 ps-0" 
+                               placeholder="@Localizer["SearchCoursePlaceholder"]" 
+                               name="searchTerm" 
+                               value="@ViewData["SearchTerm"]" />
+                        <button class="btn btn-primary" type="submit">
+                            @Localizer["Search"]
+                        </button>
+                    </div>
+                </form>
+            </div>
+            <div class="col-md-4">
+                <div class="d-flex flex-wrap gap-2 justify-content-md-end align-items-center">
+                    <span class="text-muted me-2">@Localizer["QuickFilters"]:</span>
+                    <span class="badge bg-light text-dark filter-tag px-3 py-2">@Localizer["Popular"]</span>
+                    <span class="badge bg-light text-dark filter-tag px-3 py-2">@Localizer["Recent"]</span>
+                    <span class="badge bg-light text-dark filter-tag px-3 py-2">@Localizer["TopRated"]</span>
                 </div>
-            </form>
+            </div>
         </div>
     </div>
 
-    <div class="d-flex justify-content-between align-items-center mb-3">
-        <h3>@Localizer["ExploreCourses"]</h3>
-        <a asp-action="Create" class="btn btn-primary"><i class="bi bi-plus-circle"></i> @Localizer["CreateNewCourse"]</a>
+    <!-- Results Summary -->
+    <div class="d-flex justify-content-between align-items-center mb-4">
+        <div>
+            <h2 class="h4 mb-0">@Localizer["ExploreCourses"]</h2>
+            <p class="text-muted mb-0">@Model.Count() @Localizer["CoursesFound"]</p>
+        </div>
+        <div class="dropdown">
+            <button class="btn btn-outline-secondary dropdown-toggle" type="button" id="sortDropdown" data-bs-toggle="dropdown" aria-expanded="false">
+                <i class="bi bi-sort-down me-1"></i> @Localizer["SortBy"]
+            </button>
+            <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="sortDropdown">
+                <li><a class="dropdown-item" href="#">@Localizer["Newest"]</a></li>
+                <li><a class="dropdown-item" href="#">@Localizer["MostPopular"]</a></li>
+                <li><a class="dropdown-item" href="#">@Localizer["TopRated"]</a></li>
+                <li><a class="dropdown-item" href="#">@Localizer["AZ"]</a></li>
+            </ul>
+        </div>
     </div>
 
-
-
-    <div class="row">
-        @foreach (var course in Model)
-        {
-            <div class="col-lg-4 col-md-6">
-                <div class="card h-100 border-0 shadow-sm hover-card">
-                    <div class="position-relative">
-                        <!--
-                        <div class="position-absolute top-0 end-0 p-2">
-                            <span class="badge bg-primary">@Localizer["Popular"]</span>
+    <!-- Course Grid -->
+    @if (Model.Any())
+    {
+        <div class="row g-4 mb-5">
+            @foreach (var course in Model)
+            {
+                <div class="col-xl-4 col-md-6 fade-in" style="animation-delay: @(0.1 * (Model.ToList().IndexOf(course) % 6))s">
+                    <div class="card course-card shadow-sm h-100">
+                        <div class="position-absolute top-0 end-0 p-3">
+                            @if (course.Tests != null && course.Tests.Count > 0)
+                            {
+                                <span class="badge bg-success">
+                                    <i class="bi bi-journal-check me-1"></i> @Localizer["TestAvailable"]
+                                </span>
+                            }
                         </div>
-                        -->
-                    </div>
-                    <div class="card-body">
-                        <!--
-                        <div class="d-flex justify-content-between mb-2">
-                            <span class="badge bg-light text-dark">@Localizer["Electronics"]</span>
-                            <div>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-fill text-warning"></i>
-                                <i class="bi bi-star-half text-warning"></i>
+                        <div class="card-body">
+                            <h3 class="card-title h5 fw-bold mb-3">@course.Title</h3>
+                            <p class="card-text text-muted mb-0">
+                                @(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)
+                            </p>
+                        </div>
+                        <div class="card-footer">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div class="d-flex align-items-center">
+                                    <div class="author-avatar">
+                                        <i class="bi bi-person"></i>
+                                    </div>
+                                    <small class="text-muted">
+                                        @if (course.User != null)
+                                        {
+                                            @course.User.UserName
+                                        }
+                                        else
+                                        {
+                                            <span>@Localizer["Unknown"]</span>
+                                        }
+                                    </small>
+                                </div>
+                                <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id" 
+                                   class="btn btn-outline-primary btn-sm">
+                                    @Localizer["ViewDetails"] <i class="bi bi-arrow-right ms-1"></i>
+                                </a>
                             </div>
                         </div>
-                        -->
-                        <h5 class="card-title fw-bold">@course.Title</h5>
-                        <p class="card-text text-muted">@(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)</p>
-                    </div>
-                    <div class="card-footer text-muted bg-white border-0">
-                        <div class="d-flex justify-content-between align-items-center">
-                            <div class="d-flex align-items-center">
-                                <small class="text-muted">
-                                    @if (course.User != null)
-                                    {
-                                        @course.User.UserName
-                                    }
-                                    else
-                                    {
-                                        <span>@Localizer["Unknown"]</span>
-                                    }
-                                </small>
-                            </div>
-                            <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id" class="btn btn-outline-primary btn-sm">
-                                <i class="bi bi-arrow-right me-1"></i>@Localizer["ViewDetails"]
-                            </a>
+                        <div class="position-absolute bottom-0 start-0 p-3">
+                            @if (course.Comments != null)
+                            {
+                                <span class="badge bg-light text-dark">
+                                    <i class="bi bi-chat-left-text me-1"></i> @course.Comments.Count
+                                </span>
+                            }
                         </div>
                     </div>
                 </div>
-            </div>
+            }
+        </div>
+    }
+    else
+    {
+        <div class="empty-state">
+            <i class="bi bi-search fs-1 text-muted"></i>
+            <h3 class="mt-3">@Localizer["NoCoursesFound"]</h3>
+            <p class="text-muted">@Localizer["TryDifferentSearch"]</p>
+            <a asp-action="Index" class="btn btn-outline-primary">@Localizer["ClearFilters"]</a>
+        </div>
+    }
 
+    <!-- Pagination -->
+    @if (Model.Count() > 6)
+    {
+        <nav aria-label="Page navigation" class="my-4">
+            <ul class="pagination justify-content-center">
+                <li class="page-item disabled">
+                    <a class="page-link" href="#" tabindex="-1" aria-disabled="true">
+                        <i class="bi bi-chevron-left"></i>
+                    </a>
+                </li>
+                <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#">
+                        <i class="bi bi-chevron-right"></i>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    }
 
-
-            <!--
-
-            <div class="col-md-4 col-sm-6 col-xs-12 mb-4">
-                <div class="card shadow-sm border-light rounded">
-                    <div class="card-body">
-                        <h5 class="card-title">@course.Title</h5>
-                        <p class="card-text text-truncate" style="max-width: 100%;">@course.Description</p>
-                        <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id" class="btn btn-info btn-sm"><i class="bi bi-eye"></i> @Localizer["View"]</a>
-                    </div>
-                    <div class="card-footer text-muted d-flex justify-content-between align-items-center">
-                        <span>
-                            @if (course.User != null)
-                            {
-                                @course.User.UserName
-                            }
-                            else
-                            {
-                                <span>@Localizer["Unknown"]</span>
-                            }
-                        </span>
-                        <span class="text-muted small">@Localizer["CourseID"] @course.Id</span>
-                    </div>
+    <!-- Call to Action -->
+    <div class="row my-5">
+        <div class="col-12">
+            <div class="card bg-light border-0">
+                <div class="card-body p-4 text-center">
+                    <h3>@Localizer["CreateCourseInvitation"]</h3>
+                    <p class="text-muted mb-4">@Localizer["CreateCourseDescription"]</p>
+                    <a asp-action="Create" class="btn btn-primary">
+                        <i class="bi bi-plus-circle me-2"></i> @Localizer["CreateNewCourse"]
+                    </a>
                 </div>
             </div>
-            -->
-        }
+        </div>
     </div>
-</section>
+</div>
+
+<script>
+    // Simple animation for the filter tags
+    document.addEventListener('DOMContentLoaded', function() {
+        const filterTags = document.querySelectorAll('.filter-tag');
+        filterTags.forEach(tag => {
+            tag.addEventListener('click', function() {
+                // Here you would typically add filter functionality
+                this.classList.toggle('bg-primary');
+                this.classList.toggle('text-white');
+                this.classList.toggle('bg-light');
+                this.classList.toggle('text-dark');
+            });
+        });
+    });
+</script>

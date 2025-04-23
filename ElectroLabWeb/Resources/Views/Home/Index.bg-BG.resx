@@ -142,6 +142,12 @@
     <value>Вашето пътешествие към овладяването на електрониката започва тук. 
 Добре дошли в споделеното пространство за изучаване на електронните системи!</value>
   </data>
+  <data name="NoCoursesAvailable" xml:space="preserve">
+    <value>Няма курсове</value>
+  </data>
+  <data name="NoCoursesMessage" xml:space="preserve">
+    <value>Няма курсове намерени.</value>
+  </data>
   <data name="OurCourses" xml:space="preserve">
     <value>Нашите курсове</value>
   </data>
@@ -174,6 +180,6 @@
 </value>
   </data>
   <data name="WhyChooseUs" xml:space="preserve">
-    <value />
+    <value>Защо да изберете нас?</value>
   </data>
 </root>

@@ -141,6 +141,12 @@
   <data name="LeadText" xml:space="preserve">
     <value>Your journey to mastering electronics starts here. Welcome to the sharespace of electronic systems learning!</value>
   </data>
+  <data name="NoCoursesAvailable" xml:space="preserve">
+    <value>No courses.</value>
+  </data>
+  <data name="NoCoursesMessage" xml:space="preserve">
+    <value>No courses were found.</value>
+  </data>
   <data name="OurCourses" xml:space="preserve">
     <value>Our Courses</value>
   </data>

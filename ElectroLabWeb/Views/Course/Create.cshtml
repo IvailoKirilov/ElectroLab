@@ -2,22 +2,161 @@
 @using Microsoft.AspNetCore.Mvc.Localization
 @inject IViewLocalizer Localizer
 
-<h2>@Localizer["CreateCourse"]</h2>
-<form asp-action="Create" method="post">
-    @Html.AntiForgeryToken()
+<style>
+    .form-section {
+        margin-bottom: 2rem;
+    }
 
-    <label>@Localizer["Title"]</label>
-    <input asp-for="Title" class="form-control" />
+    .form-label {
+        font-weight: 500;
+        margin-bottom: 0.5rem;
+    }
 
-    <label>@Localizer["Description"]</label>
-    <textarea asp-for="Description" class="form-control"></textarea>
+    .help-text {
+        color: #6c757d;
+        font-size: 0.875rem;
+        margin-top: 0.25rem;
+    }
 
-    <label>@Localizer["Content"]</label>
-    <textarea asp-for="ContentHtml" id="tiny"></textarea>
-    <span asp-validation-for="ContentHtml" class="text-danger"></span>
+    .tox-tinymce {
+        border-radius: 0.375rem !important;
+    }
 
+    .form-card {
+        border: none;
+        box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
+    }
 
-    <button type="submit" class="btn btn-success">@Localizer["Save"]</button>
-</form>
+    .page-header {
+        margin-bottom: 2rem;
+        border-bottom: 1px solid #dee2e6;
+        padding-bottom: 1rem;
+    }
+</style>
 
+<div class="container py-4">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <!-- Header -->
+            <div class="page-header d-flex justify-content-between align-items-center">
+                <div>
+                    <h1 class="h2 mb-1">@Localizer["CreateCourse"]</h1>
+                    <p class="text-muted">@Localizer["CreateCourseSubtitle"]</p>
+                </div>
+                <a asp-action="Index" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left me-1"></i> @Localizer["BackToCourses"]
+                </a>
+            </div>
 
+            <!-- Form Card -->
+            <div class="card form-card">
+                <div class="card-body p-4">
+                    <form asp-action="Create" method="post" class="needs-validation" novalidate>
+                        @Html.AntiForgeryToken()
+
+                        <!-- Basic Information Section -->
+                        <div class="form-section">
+                            <h3 class="h5 mb-3">@Localizer["BasicInformation"]</h3>
+
+                            <div class="mb-3">
+                                <label asp-for="Title" class="form-label">@Localizer["Title"] <span class="text-danger">*</span></label>
+                                <input asp-for="Title" class="form-control form-control-lg" required />
+                                <span asp-validation-for="Title" class="text-danger"></span>
+                                <div class="help-text">@Localizer["TitleHelp"]</div>
+                            </div>
+
+                            <div class="mb-3">
+                                <label asp-for="Description" class="form-label">@Localizer["Description"] <span class="text-danger">*</span></label>
+                                <textarea asp-for="Description" class="form-control" rows="3" required></textarea>
+                                <span asp-validation-for="Description" class="text-danger"></span>
+                                <div class="help-text">@Localizer["DescriptionHelp"]</div>
+                            </div>
+                        </div>
+
+                        <!-- Content Section -->
+                        <div class="form-section">
+                            <h3 class="h5 mb-3">@Localizer["CourseContent"]</h3>
+
+                            <div class="mb-3">
+                                <label asp-for="ContentHtml" class="form-label">@Localizer["Content"] <span class="text-danger">*</span></label>
+                                <textarea asp-for="ContentHtml" id="tiny" class="form-control" rows="15" required></textarea>
+                                <span asp-validation-for="ContentHtml" class="text-danger"></span>
+                                <div class="help-text">@Localizer["ContentHelp"]</div>
+                            </div>
+                        </div>
+
+                        <!-- Form Actions -->
+                        <div class="form-section border-top pt-4">
+                            <div class="d-flex justify-content-between">
+                                <button type="button" class="btn btn-outline-secondary" onclick="window.history.back();">
+                                    @Localizer["Cancel"]
+                                </button>
+                                <div>
+                                    <button type="button" class="btn btn-light me-2" id="previewBtn">
+                                        <i class="bi bi-eye me-1"></i> @Localizer["Preview"]
+                                    </button>
+                                    <button type="submit" class="btn btn-primary">
+                                        <i class="bi bi-check-circle me-1"></i> @Localizer["Save"]
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Tips Section -->
+            <div class="card mt-4 bg-light border-0">
+                <div class="card-body p-4">
+                    <h4><i class="bi bi-lightbulb me-2"></i> @Localizer["TipsForCreating"]</h4>
+                    <ul class="mb-0">
+                        <li>@Localizer["CourseTip1"]</li>
+                        <li>@Localizer["CourseTip2"]</li>
+                        <li>@Localizer["CourseTip3"]</li>
+                        <li>@Localizer["CourseTip4"]</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        // Initialize TinyMCE (assuming you're using it based on the original 'tiny' id)
+        document.addEventListener('DOMContentLoaded', function () {
+            if (typeof tinymce !== 'undefined') {
+                tinymce.init({
+                    selector: '#tiny',
+                    height: 500,
+                    plugins: 'anchor autolink charmap codesample emoticons image link lists media searchreplace table visualblocks wordcount',
+                    toolbar: 'undo redo | blocks fontfamily fontsize | bold italic underline strikethrough | link image media table | align lineheight | numlist bullist indent outdent | emoticons charmap | removeformat',
+                    // Add other TinyMCE options as needed
+                });
+            }
+
+            // Form validation
+            const form = document.querySelector('form');
+            form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                    event.preventDefault();
+                    event.stopPropagation();
+                }
+                form.classList.add('was-validated');
+            });
+
+            // Preview functionality - you would need to implement this
+            const previewBtn = document.getElementById('previewBtn');
+            if (previewBtn) {
+                previewBtn.addEventListener('click', function () {
+                    // Preview implementation would go here
+                    alert('@Localizer["PreviewNotImplemented"]');
+                });
+            }
+        });
+    </script>
+
+    @{
+        await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    }
+}
