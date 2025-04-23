@@ -132,8 +132,23 @@
   <data name="AdminDeleteCourse" xml:space="preserve">
     <value>Изтрии Курс като Админ</value>
   </data>
+  <data name="Author" xml:space="preserve">
+    <value>Автор</value>
+  </data>
+  <data name="BackToCourses" xml:space="preserve">
+    <value>Върнете се към Курсове</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Коментари</value>
+  </data>
   <data name="Content" xml:space="preserve">
     <value>Съдържание</value>
+  </data>
+  <data name="CourseInfo" xml:space="preserve">
+    <value>Информация за дадения курс</value>
+  </data>
+  <data name="CourseTestAvailable" xml:space="preserve">
+    <value>Тест за курса е намерен!</value>
   </data>
   <data name="DeleteCourse" xml:space="preserve">
     <value>Изтрии Курс</value>
@@ -144,11 +159,17 @@
   <data name="DoTest" xml:space="preserve">
     <value>Направи Тест</value>
   </data>
+  <data name="EditCourse" xml:space="preserve">
+    <value>Редактирай курс</value>
+  </data>
   <data name="Like" xml:space="preserve">
     <value>Харесай</value>
   </data>
   <data name="LoginComment" xml:space="preserve">
-    <value>Влезнете за да добавите кометар.</value>
+    <value>Влезнете за да добавите коментар.</value>
+  </data>
+  <data name="LoginNow" xml:space="preserve">
+    <value>Влезнете сега!</value>
   </data>
   <data name="NoComments" xml:space="preserve">
     <value>Няма коментари. Бъдете първия да коментира!</value>
@@ -159,10 +180,19 @@
   <data name="ReportCourse" xml:space="preserve">
     <value>Докладвай Курс</value>
   </data>
+  <data name="SubmitComment" xml:space="preserve">
+    <value>Изпрати коментар</value>
+  </data>
+  <data name="TestsAvailable" xml:space="preserve">
+    <value>Тестове съществуващи</value>
+  </data>
   <data name="UserProfile" xml:space="preserve">
     <value>Потребителски Профил</value>
   </data>
-  <data name="WriteComment" xml:space="preserve">
+  <data name="WriteCommentPlaceholder" xml:space="preserve">
     <value>Напиши коментар...</value>
+  </data>
+  <data name="YourComment" xml:space="preserve">
+    <value>Твоя коментар</value>
   </data>
 </root>

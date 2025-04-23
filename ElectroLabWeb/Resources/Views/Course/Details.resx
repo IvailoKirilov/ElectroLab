@@ -132,8 +132,23 @@
   <data name="AdminDeleteCourse" xml:space="preserve">
     <value>Admin Delete Course</value>
   </data>
+  <data name="Author" xml:space="preserve">
+    <value>Author</value>
+  </data>
+  <data name="BackToCourses" xml:space="preserve">
+    <value>Back to Courses</value>
+  </data>
+  <data name="Comments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
   <data name="Content" xml:space="preserve">
     <value>Contents</value>
+  </data>
+  <data name="CourseInfo" xml:space="preserve">
+    <value>Course Info</value>
+  </data>
+  <data name="CourseTestAvailable" xml:space="preserve">
+    <value>Course Test Available!</value>
   </data>
   <data name="DeleteCourse" xml:space="preserve">
     <value>Delete Course</value>
@@ -144,11 +159,17 @@
   <data name="DoTest" xml:space="preserve">
     <value>Do Test</value>
   </data>
+  <data name="EditCourse" xml:space="preserve">
+    <value>Edit Course</value>
+  </data>
   <data name="Like" xml:space="preserve">
     <value>Like Course</value>
   </data>
   <data name="LoginComment" xml:space="preserve">
     <value>Log in to leave a comment.</value>
+  </data>
+  <data name="LoginNow" xml:space="preserve">
+    <value>Login now!</value>
   </data>
   <data name="NoComments" xml:space="preserve">
     <value>No comments yet. Be the first to comment!</value>
@@ -159,10 +180,19 @@
   <data name="ReportCourse" xml:space="preserve">
     <value>Report Course</value>
   </data>
+  <data name="SubmitComment" xml:space="preserve">
+    <value>Submit comment</value>
+  </data>
+  <data name="TestsAvailable" xml:space="preserve">
+    <value>Tests available</value>
+  </data>
   <data name="UserProfile" xml:space="preserve">
     <value>User Profile</value>
   </data>
-  <data name="WriteComment" xml:space="preserve">
+  <data name="WriteCommentPlaceholder" xml:space="preserve">
     <value>Write a comment...</value>
+  </data>
+  <data name="YourComment" xml:space="preserve">
+    <value>Your comment</value>
   </data>
 </root>

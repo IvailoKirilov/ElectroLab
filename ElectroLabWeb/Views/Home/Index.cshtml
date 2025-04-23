@@ -76,57 +76,60 @@
 
         @if (Model != null && Model.Any())
         {
-            <div class="row g-4">
-                @foreach (var course in Model)
-                {
-                    <div class="col-lg-4 col-md-6">
-                        <div class="card h-100 border-0 shadow-sm hover-card">
-                            <div class="position-relative">
-                                <!--
-                                <div class="position-absolute top-0 end-0 p-2">
-                                    <span class="badge bg-primary">@Localizer["Popular"]</span>
-                                </div>
-                                -->
-                            </div>
-                            <div class="card-body">
-                                <!--
-                                <div class="d-flex justify-content-between mb-2">
-                                    <span class="badge bg-light text-dark">@Localizer["Electronics"]</span>
-                                    <div>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-fill text-warning"></i>
-                                        <i class="bi bi-star-half text-warning"></i>
+
+                    <div class="row g-4 mb-5">
+                        @foreach (var course in Model)
+                        {
+                            <div class="col-xl-4 col-md-6 fade-in" style="animation-delay: @(0.1 * (Model.ToList().IndexOf(course) % 6))s">
+                                <div class="card course-card shadow-sm h-100">
+                                    <div class="position-absolute top-0 end-0 p-3">
+                                        @if (course.Tests != null && course.Tests.Count > 0)
+                                        {
+                                            <span class="badge bg-success">
+                                                <i class="bi bi-journal-check me-1"></i> @Localizer["TestAvailable"]
+                                            </span>
+                                        }
+                                    </div>
+                                    <div class="card-body">
+                                        <h3 class="card-title h5 fw-bold mb-3">@course.Title</h3>
+                                        <p class="card-text text-muted mb-0">
+                                            @(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)
+                                        </p>
+                                    </div>
+                                    <div class="card-footer">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div class="d-flex align-items-center">
+                                                <small class="text-muted">
+                                                    @if (course.User != null)
+                                                    {
+                                                        @course.User.UserName
+                                                    }
+                                                    else
+                                                    {
+                                                        <span>@Localizer["Unknown"]</span>
+                                                    }
+                                                </small>
+                                            </div>
+                                            <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id"
+                                               class="btn btn-outline-primary btn-sm">
+                                                @Localizer["View"] <i class="bi bi-arrow-right ms-1"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                    <div class="position-absolute bottom-0 start-0 p-3">
+                                        @if (course.Comments != null)
+                                        {
+                                            <span class="badge bg-light text-dark">
+                                                <i class="bi bi-chat-left-text me-1"></i> @course.Comments.Count
+                                            </span>
+                                        }
                                     </div>
                                 </div>
-                                -->
-                                <h5 class="card-title fw-bold">@course.Title</h5>
-                                <p class="card-text text-muted">@(course.Description.Length > 100 ? course.Description.Substring(0, 100) + "..." : course.Description)</p>
                             </div>
-                            <div class="card-footer text-muted bg-white border-0">
-                                <div class="d-flex justify-content-between align-items-center">
-                                    <div class="d-flex align-items-center">
-                                        <small class="text-muted">
-                                            @if (course.User != null)
-                                            {
-                                                @course.User.UserName
-                                            }
-                                            else
-                                            {
-                                                <span>@Localizer["Unknown"]</span>
-                                            }
-                                        </small>
-                                    </div>
-                                    <a asp-controller="Course" asp-action="Details" asp-route-id="@course.Id" class="btn btn-outline-primary btn-sm">
-                                        <i class="bi bi-arrow-right me-1"></i>@Localizer["ViewDetails"]
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
+                        }
                     </div>
-                }
-            </div>
+                
+            
             <div class="text-center mt-5">
                 <a asp-controller="Course" asp-action="Index" class="btn btn-outline-primary btn-lg">
                     <i class="bi bi-grid me-1"></i>@Localizer["ViewAllCourses"]
