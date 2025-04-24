@@ -117,19 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackToCourses" xml:space="preserve">
+    <value>Обратно към курсове</value>
+  </data>
+  <data name="BasicInformation" xml:space="preserve">
+    <value>Детайли за курса</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Откажи</value>
+  </data>
   <data name="Content" xml:space="preserve">
     <value>Съдържание:</value>
+  </data>
+  <data name="ContentHelp" xml:space="preserve">
+    <value>Добавете основните уроци, теми или модули тук</value>
+  </data>
+  <data name="CourseContent" xml:space="preserve">
+    <value>Уроци / Материали за курса</value>
+  </data>
+  <data name="CourseTip1" xml:space="preserve">
+    <value>Дръжте информацията проста</value>
+  </data>
+  <data name="CourseTip2" xml:space="preserve">
+    <value>Добавяйте илюстрации, когато е възможно</value>
+  </data>
+  <data name="CourseTip3" xml:space="preserve">
+    <value>Винаги обяснявайте защо се случва нещо</value>
+  </data>
+  <data name="CourseTip4" xml:space="preserve">
+    <value>Давайте примери</value>
   </data>
   <data name="CreateCourse" xml:space="preserve">
     <value>Създай Курс</value>
   </data>
+  <data name="CreateCourseSubtitle" xml:space="preserve">
+    <value>Попълнете следните детайли</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Информация:</value>
+  </data>
+  <data name="DescriptionHelp" xml:space="preserve">
+    <value>Кратко опишете какво обхваща курсът (Обобщение на курса / За този курс / Въведение в курса)</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Запази</value>
   </data>
+  <data name="TipsForCreating" xml:space="preserve">
+    <value>Съвети за създаване на курсове</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Име:</value>
+  </data>
+  <data name="TitleHelp" xml:space="preserve">
+    <value>Въведете ясно и описателно име на курса / Как ще се нарича курсът ви?</value>
   </data>
 </root>

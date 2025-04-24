@@ -1,11 +1,6 @@
 ﻿using ElectroLabModels.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 
-namespace ElectroLabModels.ViewModels
+namespace ElectroLabViewModels
 {
     public class AdminDashboardViewModel
     {

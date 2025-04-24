@@ -1,4 +1,4 @@
-﻿using ElectroLabBusinessLayer.Services;
+﻿using ElectroLabBusinessLayer.Interfaces;
 using ElectroLabModels.Models;
 using Microsoft.AspNetCore.Mvc;
 using System.Security.Claims;
@@ -7,9 +7,9 @@ namespace ElectroLabWeb.Controllers
 {
     public class ReportController : Controller
     {
-        private readonly ReportService _reportService;
+        private readonly IReportService _reportService;
 
-        public ReportController(ReportService reportService)
+        public ReportController(IReportService reportService)
         {
             _reportService = reportService;
         }

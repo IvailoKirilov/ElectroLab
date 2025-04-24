@@ -12,6 +12,8 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ElectroLabDB\ElectroLabDB.csproj" />
+    <ProjectReference Include="..\ElectroLabModels\ElectroLabModels.csproj" />
+    <ProjectReference Include="..\ElectroLabViewModels\ElectroLabViewModels.csproj" />
   </ItemGroup>
 
 </Project>

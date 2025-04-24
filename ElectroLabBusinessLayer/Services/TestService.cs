@@ -29,10 +29,11 @@ namespace ElectroLabBusinessLayer.Services
         public async Task CreateTestAsync(Test test)
         {
             _context.Tests.Add(test);
+            await _context.SaveChangesAsync();  // Save the Test first to generate the TestId
 
             foreach (var question in test.Questions)
             {
-                question.TestId = test.Id;
+                question.TestId = test.Id;  // Now that the TestId is valid, assign it to the question
 
                 if (question.CorrectAnswer.Split(' ') is [_, var indexStr] &&
                     int.TryParse(indexStr, out var index) &&
@@ -44,8 +45,9 @@ namespace ElectroLabBusinessLayer.Services
                 _context.Questions.Add(question);
             }
 
-            await _context.SaveChangesAsync();
+            await _context.SaveChangesAsync();  // Now save the Questions
         }
+
 
         public async Task<Test?> GetTestForTakingAsync(int id, bool isFromCourse = false)
         {

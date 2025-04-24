@@ -1,4 +1,4 @@
-﻿using ElectroLabBusinessLayer.Services;
+﻿using ElectroLabBusinessLayer.Interfaces;
 using ElectroLabModels.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -8,9 +8,9 @@ namespace ElectroLabWeb.Controllers
 {
     public class CourseController : Controller
     {
-        private readonly CourseService _courseService;
+        private readonly ICourseService _courseService;
 
-        public CourseController(CourseService courseService)
+        public CourseController(ICourseService courseService)
         {
             _courseService = courseService;
         }

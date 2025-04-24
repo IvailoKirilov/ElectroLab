@@ -117,19 +117,58 @@
   <resheader name="writer">
     <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </resheader>
+  <data name="BackToCourses" xml:space="preserve">
+    <value>Back to Courses</value>
+  </data>
+  <data name="BasicInformation" xml:space="preserve">
+    <value>Course Details</value>
+  </data>
+  <data name="Cancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
   <data name="Content" xml:space="preserve">
     <value>Contents:</value>
+  </data>
+  <data name="ContentHelp" xml:space="preserve">
+    <value>Add the main lessons, topics, or modules here</value>
+  </data>
+  <data name="CourseContent" xml:space="preserve">
+    <value>Lesson Content / Course Material</value>
+  </data>
+  <data name="CourseTip1" xml:space="preserve">
+    <value>Keep the information simple</value>
+  </data>
+  <data name="CourseTip2" xml:space="preserve">
+    <value>Add illustrations wherever possible</value>
+  </data>
+  <data name="CourseTip3" xml:space="preserve">
+    <value>Always explain why something happens</value>
+  </data>
+  <data name="CourseTip4" xml:space="preserve">
+    <value>Give examples</value>
   </data>
   <data name="CreateCourse" xml:space="preserve">
     <value>Create Course</value>
   </data>
+  <data name="CreateCourseSubtitle" xml:space="preserve">
+    <value>Fill in the details below</value>
+  </data>
   <data name="Description" xml:space="preserve">
     <value>Description:</value>
+  </data>
+  <data name="DescriptionHelp" xml:space="preserve">
+    <value>Briefly describle what the course covers (Course Summary / About This Course / Course Introduction)</value>
   </data>
   <data name="Save" xml:space="preserve">
     <value>Save</value>
   </data>
+  <data name="TipsForCreating" xml:space="preserve">
+    <value>Tips For Creating Courses</value>
+  </data>
   <data name="Title" xml:space="preserve">
     <value>Title:</value>
+  </data>
+  <data name="TitleHelp" xml:space="preserve">
+    <value>Enter a clear and descriptive course name / What will the course be called?</value>
   </data>
 </root>

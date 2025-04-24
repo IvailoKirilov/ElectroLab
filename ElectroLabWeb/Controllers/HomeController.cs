@@ -1,6 +1,6 @@
 using ElectroLabDB;
 using ElectroLabModels.Models;
-using ElectroLabModels.ViewModels;
+using ElectroLabViewModels;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;

@@ -1,4 +1,5 @@
-﻿using ElectroLabBusinessLayer.Services;
+﻿using ElectroLabBusinessLayer.Interfaces;
+using ElectroLabBusinessLayer.Services;
 using ElectroLabModels.Models;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
@@ -8,10 +9,10 @@ namespace ElectroLabWeb.Controllers
 {
     public class TestController : Controller
     {
-        private readonly TestService _testService;
+        private readonly ITestService _testService;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public TestController(TestService testService, UserManager<ApplicationUser> userManager)
+        public TestController(ITestService testService, UserManager<ApplicationUser> userManager)
         {
             _testService = testService;
             _userManager = userManager;

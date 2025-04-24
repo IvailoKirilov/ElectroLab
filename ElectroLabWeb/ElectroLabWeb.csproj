@@ -21,6 +21,7 @@
     <ProjectReference Include="..\ElectroLabBusinessLayer\ElectroLabBusinessLayer.csproj" />
     <ProjectReference Include="..\ElectroLabDB\ElectroLabDB.csproj" />
     <ProjectReference Include="..\ElectroLabModels\ElectroLabModels.csproj" />
+    <ProjectReference Include="..\ElectroLabViewModels\ElectroLabViewModels.csproj" />
   </ItemGroup>
 
   <ItemGroup>

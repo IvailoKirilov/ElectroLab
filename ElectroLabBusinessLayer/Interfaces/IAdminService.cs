@@ -1,5 +1,5 @@
 ﻿using ElectroLabModels.Models;
-using ElectroLabModels.ViewModels;
+using ElectroLabViewModels;
 
 namespace ElectroLabBusinessLayer.Interfaces
 {

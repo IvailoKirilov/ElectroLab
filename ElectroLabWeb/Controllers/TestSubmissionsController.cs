@@ -7,10 +7,10 @@ namespace ElectroLabWeb.Controllers
 {
     public class TestSubmissionsController : Controller
     {
-        private readonly TestSubmissionService _submissionService;
+        private readonly ITestSubmissionService _submissionService;
         private readonly UserManager<ApplicationUser> _userManager;
 
-        public TestSubmissionsController(TestSubmissionService submissionService, UserManager<ApplicationUser> userManager)
+        public TestSubmissionsController(ITestSubmissionService submissionService, UserManager<ApplicationUser> userManager)
         {
             _submissionService = submissionService;
             _userManager = userManager;

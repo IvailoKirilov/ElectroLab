@@ -7,7 +7,13 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <Folder Include="Admin\" />
+    <Compile Remove="Admin\**" />
+    <EmbeddedResource Remove="Admin\**" />
+    <None Remove="Admin\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\ElectroLabModels\ElectroLabModels.csproj" />
   </ItemGroup>
 
 </Project>

@@ -1,9 +1,9 @@
 ﻿using ElectroLabModels.Models;
-using ElectroLabModels.ViewModels;
 using ElectroLabDB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
 using ElectroLabBusinessLayer.Interfaces;
+using ElectroLabViewModels;
 
 
 
