@@ -1,9 +1,8 @@
-﻿using Microsoft.AspNetCore.Mvc;
-using ElectroLabBusinessLayer;
-using Microsoft.AspNetCore.Authorization;
-using Microsoft.AspNet.Identity;
-using System.Security.Claims;
+﻿using ElectroLabBusinessLayer.Services;
 using ElectroLabModels.Models;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Mvc;
+using System.Security.Claims;
 
 namespace ElectroLabWeb.Controllers
 {
@@ -38,7 +37,7 @@ namespace ElectroLabWeb.Controllers
         {
             var userId = User.Identity?.Name;
 
-            var result = await _courseService.DeleteCourseAsync(courseId, userId, User.Identity.GetUserName());
+            var result = await _courseService.DeleteCourseAsync(courseId, userId, User.Identity.Name);
 
             if (!result.Success)
             {

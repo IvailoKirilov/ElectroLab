@@ -3,12 +3,13 @@ using ElectroLabModels.ViewModels;
 using ElectroLabDB;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.AspNetCore.Identity;
+using ElectroLabBusinessLayer.Interfaces;
 
 
 
-namespace ElectroLabBusinessLayer
+namespace ElectroLabBusinessLayer.Services
 {
-    public class AdminService
+    public class AdminService : IAdminService
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;

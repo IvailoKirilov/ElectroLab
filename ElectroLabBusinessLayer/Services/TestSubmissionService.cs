@@ -2,9 +2,9 @@
 using ElectroLabDB;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElectroLabBusinessLayer
+namespace ElectroLabBusinessLayer.Services
 {
-    public class TestSubmissionService
+    public class TestSubmissionService : ITestSubmissionService
     {
         private readonly ApplicationDbContext _context;
 

@@ -58,10 +58,10 @@ namespace ElectroLabDB
                 .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<Comment>()
-    .HasOne(c => c.Course)
-    .WithMany(d => d.Comments)
-    .HasForeignKey(c => c.CourseId)
-    .OnDelete(DeleteBehavior.NoAction);
+                .HasOne(c => c.Course)
+                .WithMany(d => d.Comments)
+                .HasForeignKey(c => c.CourseId)
+                .OnDelete(DeleteBehavior.NoAction);
 
             modelBuilder.Entity<Comment>()
                 .HasOne(c => c.User)

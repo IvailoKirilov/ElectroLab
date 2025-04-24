@@ -1,11 +1,11 @@
-using System.Diagnostics;
+using ElectroLabDB;
 using ElectroLabModels.Models;
 using ElectroLabModels.ViewModels;
-using ElectroLabDB;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Localization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
+using System.Diagnostics;
 
 namespace ElectroLab.Controllers
 {

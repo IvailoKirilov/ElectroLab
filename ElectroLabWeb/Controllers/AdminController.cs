@@ -1,20 +1,16 @@
-﻿using ElectroLabBusinessLayer;
-using ElectroLabModels.Models;
-using Microsoft.AspNet.Identity;
-using Microsoft.AspNetCore.Identity;
+﻿using ElectroLabBusinessLayer.Interfaces;
+using ElectroLabBusinessLayer.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElectroLabWeb.Controllers
 {
     public class AdminController : Controller
     {
-        private readonly AdminService _adminService;
-        private readonly SignInManager<ApplicationUser> _signInManager;
+        private readonly IAdminService _adminService;
 
-        public AdminController(AdminService adminService, SignInManager<ApplicationUser> signInManager)
+        public AdminController(IAdminService adminService)
         {
             _adminService = adminService;
-            _signInManager = signInManager;
         }
 
         public async Task<IActionResult> Index()

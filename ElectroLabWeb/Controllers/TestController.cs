@@ -1,7 +1,7 @@
-﻿using ElectroLabBusinessLayer;
+﻿using ElectroLabBusinessLayer.Services;
 using ElectroLabModels.Models;
-using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Mvc;
 
 namespace ElectroLabWeb.Controllers

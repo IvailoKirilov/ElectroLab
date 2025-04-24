@@ -1,11 +1,12 @@
-﻿using ElectroLabModels.Models;
-using ElectroLabModels.SystemModels;
+﻿using ElectroLabBusinessLayer.Interfaces;
 using ElectroLabDB;
+using ElectroLabModels.Models;
+using ElectroLabModels.SystemModels;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElectroLabBusinessLayer
+namespace ElectroLabBusinessLayer.Services
 {
-    public class CourseService
+    public class CourseService : ICourseService
     {
         private ApplicationDbContext _context;
         private readonly Microsoft.AspNetCore.Identity.UserManager<ApplicationUser> _userManager;

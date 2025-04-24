@@ -1,11 +1,12 @@
 ﻿using ElectroLabModels.Models;
 using ElectroLabDB;
 using Microsoft.EntityFrameworkCore;
+using ElectroLabBusinessLayer.Interfaces;
 
 
-namespace ElectroLabBusinessLayer
+namespace ElectroLabBusinessLayer.Services
 {
-    public class ReportService
+    public class ReportService : IReportService
     {
         private readonly ApplicationDbContext _context;
 

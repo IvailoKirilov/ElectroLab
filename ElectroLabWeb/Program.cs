@@ -1,12 +1,12 @@
-using Microsoft.AspNetCore.Identity;
-using Microsoft.EntityFrameworkCore;
-using ElectroLabWeb.Data;
-using ElectroLabModels.Models;
-using Microsoft.AspNetCore.Mvc.Razor;
-using Microsoft.AspNetCore.Localization;
-using System.Globalization;
-using ElectroLabBusinessLayer;
+using ElectroLabBusinessLayer.Interfaces;
+using ElectroLabBusinessLayer.Services;
 using ElectroLabDB;
+using ElectroLabModels.Models;
+using Microsoft.AspNetCore.Identity;
+using Microsoft.AspNetCore.Localization;
+using Microsoft.AspNetCore.Mvc.Razor;
+using Microsoft.EntityFrameworkCore;
+using System.Globalization;
 namespace ElectroLabWeb;
 
 public class Program
@@ -26,7 +26,7 @@ public class Program
       .AddDefaultTokenProviders().AddDefaultUI();
 
         builder.Services.AddControllersWithViews().AddViewLocalization(LanguageViewLocationExpanderFormat.Suffix);
-        
+
         builder.Services.AddLocalization(options =>
         {
             options.ResourcesPath = "Resources";
@@ -37,9 +37,9 @@ public class Program
         {
             var supportedCultures = new[]
             {
-        new CultureInfo("en"),
-        new CultureInfo("bg-BG"),
-    };
+                new CultureInfo("en"),
+                new CultureInfo("bg-BG"),
+            };
 
             options.DefaultRequestCulture = new RequestCulture("en", "en");
             options.SupportedCultures = supportedCultures;
@@ -48,11 +48,11 @@ public class Program
             options.RequestCultureProviders = new[] { new CookieRequestCultureProvider() };
         });
 
-        builder.Services.AddScoped<AdminService>();
-        builder.Services.AddScoped<CourseService>();
-        builder.Services.AddScoped<ReportService>();
-        builder.Services.AddScoped<TestService>();
-        builder.Services.AddScoped<TestSubmissionService>();
+        builder.Services.AddScoped<IAdminService, AdminService>();
+        builder.Services.AddScoped<ICourseService, CourseService>();
+        builder.Services.AddScoped<IReportService, ReportService>();
+        builder.Services.AddScoped<ITestService, TestService>();
+        builder.Services.AddScoped<ITestSubmissionService, TestSubmissionService>();
 
 
         var app = builder.Build();

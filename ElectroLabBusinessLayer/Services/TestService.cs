@@ -1,11 +1,12 @@
-﻿using ElectroLabModels.Models;
+﻿using ElectroLabBusinessLayer.Interfaces;
 using ElectroLabDB;
+using ElectroLabModels.Models;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.EntityFrameworkCore;
 
-namespace ElectroLabBusinessLayer
+namespace ElectroLabBusinessLayer.Services
 {
-    public class TestService
+    public class TestService : ITestService
     {
         private readonly ApplicationDbContext _context;
         private readonly UserManager<ApplicationUser> _userManager;
@@ -149,13 +150,13 @@ namespace ElectroLabBusinessLayer
             var test = await _context.Tests.FirstOrDefaultAsync(t => t.CourseId == testId);
             var course = await _context.Courses.FirstOrDefaultAsync(c => c.Id == test.CourseId);
 
-            if (test == null || course == null) return (false);
+            if (test == null || course == null) return false;
 
             bool isAdminOrOwner = await _userManager.IsInRoleAsync(user, "Admin") ||
                                   await _userManager.IsInRoleAsync(user, "Owner");
             bool isCourseOwner = course.UserId == user.Id;
 
-            if (!isAdminOrOwner && !isCourseOwner) return (false);
+            if (!isAdminOrOwner && !isCourseOwner) return false;
 
             var submissions = await _context.Submissions
                 .Where(s => s.TestId == testId)
